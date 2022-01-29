@@ -291,51 +291,6 @@ require ABSPATH . WPINC . '/sitemaps/providers/class-wp-sitemaps-posts.php';
 require ABSPATH . WPINC . '/sitemaps/providers/class-wp-sitemaps-taxonomies.php';
 require ABSPATH . WPINC . '/sitemaps/providers/class-wp-sitemaps-users.php';
 
-/**
- * ArkPress 静态资源加载
- *
- * ArkPress 由于移除了全部本地静态资源，需要使用外链加载
- *
- */
-// 不合并静态加载请求
-const CONCATENATE_SCRIPTS = false;
-// 替换
-add_filter( 'script_loader_src', function ( $src ) {
-	// 防止误伤主题和插件
-	if ( ! str_contains( $src, '/wp-content/' ) ) {
-		$src = str_replace( home_url(), 'https://cdn.arkpress.icu/ArkPress@5.9', $src );
-	}
-
-	return $src;
-}, 9999 );
-add_filter( 'style_loader_src', function ( $src ) {
-	// 防止误伤主题和插件
-	if ( ! str_contains( $src, '/wp-content/' ) ) {
-		$src = str_replace( home_url(), 'https://cdn.arkpress.icu/ArkPress@5.9', $src );
-	}
-
-	return $src;
-}, 9999 );
-if ( is_admin() ) {
-	add_action( 'init', 'ap_super_static_replace' );
-	function ap_super_static_replace() {
-		ob_start( function ( $content ) {
-			return str_replace( addcslashes( wp_guess_url() . '/wp-includes', '/' ), 'https:\/\/cdn.arkpress.icu\/ArkPress@5.9\/wp-includes', $content );
-		} );
-	}
-}
-// 针对安装页面的特殊替换
-if ( wp_installing() ) {
-	add_action( 'init', 'ap_installing_replace' );
-	function ap_installing_replace() {
-		wp_styles()->base_url  = 'https://cdn.arkpress.icu/ArkPress@5.9';
-		wp_scripts()->base_url = 'https://cdn.arkpress.icu/ArkPress@5.9';
-		ob_start( function ( $content ) {
-			return str_replace( addcslashes( wp_guess_url() . '/wp-includes', '/' ), 'https:\/\/cdn.arkpress.icu\/ArkPress@5.9\/wp-includes', $content );
-		} );
-	}
-}
-
 $GLOBALS['wp_embed'] = new WP_Embed();
 
 // Load multisite-specific files.

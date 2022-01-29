@@ -962,8 +962,9 @@ function update_core( $from, $to ) {
 	apply_filters( 'update_feedback', __( 'Verifying the unpacked files&#8230;' ) );
 
 	// Sanity check the unzipped distribution.
+	// 新增ArkPress支持
 	$distro = '';
-	$roots  = array( '/wordpress/', '/wordpress-mu/' );
+	$roots  = array( '/wordpress/', '/wordpress-mu/', '/arkpress/' );
 
 	foreach ( $roots as $root ) {
 		if ( $wp_filesystem->exists( $from . $root . 'readme.html' )

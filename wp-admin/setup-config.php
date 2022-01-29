@@ -148,6 +148,10 @@ switch ( $step ) {
 			}
 		}
 
+		if ( ! isset( $loaded_language ) ) {
+			load_default_textdomain( 'zh_CN' );
+		}
+
 		setup_config_display_header();
 		$step_1 = 'setup-config.php?step=1';
 		if ( isset( $_REQUEST['noapi'] ) ) {
@@ -333,7 +337,7 @@ switch ( $step ) {
 			$no_api = isset( $_POST['noapi'] );
 
 			if ( ! $no_api ) {
-				$secret_keys = wp_remote_get( 'https://api.wordpress.org/secret-key/1.1/salt/' );
+				$secret_keys = wp_remote_get( 'https://api.arkpress.icu/secret-key/1.1/salt/' );
 			}
 
 			if ( $no_api || is_wp_error( $secret_keys ) ) {

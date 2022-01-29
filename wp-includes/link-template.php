@@ -4375,11 +4375,8 @@ function get_avatar_data( $id_or_email, $args = null ) {
 		'r' => $args['rating'],
 	);
 
-	if ( is_ssl() ) {
-		$url = 'https://secure.gravatar.com/avatar/' . $email_hash;
-	} else {
-		$url = sprintf( 'http://%d.gravatar.com/avatar/%s', $gravatar_server, $email_hash );
-	}
+	// 为了安全，强制使用HTTPS
+	$url = 'https://cravatar.cn/avatar/' . $email_hash;
 
 	$url = add_query_arg(
 		rawurlencode_deep( array_filter( $url_args ) ),

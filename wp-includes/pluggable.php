@@ -370,7 +370,7 @@ if ( ! function_exists( 'wp_mail' ) ) :
 		}
 
 		/*
-		 * If we don't have an email from the input headers, default to wordpress@$sitename
+		 * 如果输入中没有邮箱地址，默认将会是arkpress@$sitename
 		 * Some hosts will block outgoing mail from this address if it doesn't exist,
 		 * but there's no easy alternative. Defaulting to admin_email might appear to be
 		 * another option, but some hosts may refuse to relay mail from an unknown domain.
@@ -383,7 +383,7 @@ if ( ! function_exists( 'wp_mail' ) ) :
 				$sitename = substr( $sitename, 4 );
 			}
 
-			$from_email = 'wordpress@' . $sitename;
+			$from_email = 'arkpress@' . $sitename;
 		}
 
 		/**
@@ -1713,7 +1713,7 @@ if ( ! function_exists( 'wp_notify_postauthor' ) ) :
 			$notify_message .= sprintf( __( 'Spam it: %s' ), admin_url( "comment.php?action=spam&c={$comment->comment_ID}#wpbody-content" ) ) . "\r\n";
 		}
 
-		$wp_email = 'wordpress@' . preg_replace( '#^www\.#', '', wp_parse_url( network_home_url(), PHP_URL_HOST ) );
+		$wp_email = 'arkpress@' . preg_replace( '#^www\.#', '', wp_parse_url( network_home_url(), PHP_URL_HOST ) );
 
 		if ( '' === $comment->comment_author ) {
 			$from = "From: \"$blogname\" <$wp_email>";
@@ -2279,7 +2279,7 @@ if ( ! function_exists( 'wp_salt' ) ) :
 	 * The secret keys in wp-config.php should be updated to strong, random keys to maximize
 	 * security. Below is an example of how the secret key constants are defined.
 	 * Do not paste this example directly into wp-config.php. Instead, have a
-	 * {@link https://api.wordpress.org/secret-key/1.1/salt/ secret key created} just
+	 * {@link https://api.arkpress.icu/secret-key/1.1/salt/ secret key created} just
 	 * for you.
 	 *
 	 *     define('AUTH_KEY',         ' Xakm<o xQy rw4EMsLKM-?!T+,PFF})H4lzcW57AF0U@N@< >M%G4Yt>f`z]MON');
@@ -2296,7 +2296,7 @@ if ( ! function_exists( 'wp_salt' ) ) :
 	 *
 	 * @since 2.5.0
 	 *
-	 * @link https://api.wordpress.org/secret-key/1.1/salt/ Create secrets for wp-config.php
+	 * @link https://api.arkpress.icu/secret-key/1.1/salt/ Create secrets for wp-config.php
 	 *
 	 * @param string $scheme Authentication scheme (auth, secure_auth, logged_in, nonce)
 	 * @return string Salt value

@@ -536,7 +536,7 @@ function themes_api( $action, $args = array() ) {
 	$res = apply_filters( 'themes_api', false, $action, $args );
 
 	if ( ! $res ) {
-		$url = 'http://api.wordpress.org/themes/info/1.2/';
+		$url = 'http://api.arkpress.icu/themes/info/1.2/';
 		$url = add_query_arg(
 			array(
 				'action'  => $action,
@@ -552,7 +552,7 @@ function themes_api( $action, $args = array() ) {
 		}
 
 		$http_args = array(
-			'user-agent' => 'WordPress/' . $wp_version . '; ' . home_url( '/' ),
+			'user-agent' => 'WordPress/' . $wp_version . '; ArkPress/' . $wp_version . '; ' . home_url( '/' ),
 		);
 		$request   = wp_remote_get( $url, $http_args );
 

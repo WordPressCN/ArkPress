@@ -149,9 +149,9 @@ function wp_get_popular_importers() {
 				'locale'  => $locale,
 				'version' => $wp_version,
 			),
-			'http://api.wordpress.org/core/importers/1.1/'
+			'http://api.arkpress.icu/core/importers/1.1/'
 		);
-		$options = array( 'user-agent' => 'WordPress/' . $wp_version . '; ' . home_url( '/' ) );
+		$options = array( 'user-agent' => 'WordPress/' . $wp_version . '; ArkPress/' . $wp_version . '; ' . home_url( '/' ) );
 
 		if ( wp_http_supports( array( 'ssl' ) ) ) {
 			$url = set_url_scheme( $url, 'https' );

@@ -115,7 +115,7 @@ class WP_Http {
 	 *     @type string       $httpversion         Version of the HTTP protocol to use. Accepts '1.0' and '1.1'.
 	 *                                             Default '1.0'.
 	 *     @type string       $user-agent          User-agent value sent.
-	 *                                             Default 'WordPress/' . get_bloginfo( 'version' ) . '; ' . get_bloginfo( 'url' ).
+	 *                                             Default 'WordPress/' . $wp_version . '; ArkPress/' . get_bloginfo( 'version' ) . '; ' . get_bloginfo( 'url' ).
 	 *     @type bool         $reject_unsafe_urls  Whether to pass URLs through wp_http_validate_url().
 	 *                                             Default false.
 	 *     @type bool         $blocking            Whether the calling code requires the result of the request.
@@ -188,7 +188,7 @@ class WP_Http {
 			 * @param string $user_agent WordPress user agent string.
 			 * @param string $url        The request URL.
 			 */
-			'user-agent'          => apply_filters( 'http_headers_useragent', 'WordPress/' . get_bloginfo( 'version' ) . '; ' . get_bloginfo( 'url' ), $url ),
+			'user-agent'          => apply_filters( 'http_headers_useragent', 'WordPress/' . $wp_version . '; ArkPress/' . get_bloginfo( 'version' ) . '; ' . get_bloginfo( 'url' ), $url ),
 			/**
 			 * Filters whether to pass URLs through wp_http_validate_url() in an HTTP request.
 			 *
@@ -851,7 +851,7 @@ class WP_Http {
 	 * Determines whether an HTTP API request to the given URL should be blocked.
 	 *
 	 * Those who are behind a proxy and want to prevent access to certain hosts may do so. This will
-	 * prevent plugins from working and core functionality, if you don't include `api.wordpress.org`.
+	 * prevent plugins from working and core functionality, if you don't include `api.arkpress.icu`.
 	 *
 	 * You block external URL requests by defining `WP_HTTP_BLOCK_EXTERNAL` as true in your `wp-config.php`
 	 * file and this will only allow localhost and your site to make requests. The constant

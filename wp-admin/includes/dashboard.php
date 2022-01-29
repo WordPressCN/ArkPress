@@ -1345,7 +1345,7 @@ function wp_print_community_events_markup() {
 	 * won't be ready until wp.communityEvents.renderEventsTemplate() has run.
 	 */
 	?>
-	<div id="community-events" class="community-events" aria-hidden="true">
+	<div style="display: none;" id="community-events" class="community-events" aria-hidden="true">
 		<div class="activity-block">
 			<p>
 				<span id="community-events-location-message"></span>
@@ -1483,7 +1483,7 @@ function wp_print_community_events_templates() {
 }
 
 /**
- * 'WordPress Events and News' dashboard widget.
+ * 'ArkPress 新闻及公告' dashboard widget.
  *
  * @since 2.7.0
  * @since 4.8.0 Removed popular plugins feed.
@@ -1493,76 +1493,37 @@ function wp_dashboard_primary() {
 		'news'   => array(
 
 			/**
-			 * Filters the primary link URL for the 'WordPress Events and News' dashboard widget.
+			 * Filters the primary link URL for the 'ArkPress 新闻及公告' dashboard widget.
+			 * 此链接在域名备案完成前，暂时使用litepress.cn
 			 *
 			 * @since 2.5.0
 			 *
 			 * @param string $link The widget's primary link URL.
 			 */
-			'link'         => apply_filters( 'dashboard_primary_link', __( 'https://wordpress.org/news/' ) ),
+			'link'         => apply_filters( 'dashboard_primary_link', 'https://litepress.cn/news/' ),
 
 			/**
-			 * Filters the primary feed URL for the 'WordPress Events and News' dashboard widget.
+			 * Filters the primary feed URL for the 'ArkPress 新闻及公告' dashboard widget.
+			 * 此链接在域名备案完成前，暂时使用litepress.cn
 			 *
 			 * @since 2.3.0
 			 *
 			 * @param string $url The widget's primary feed URL.
 			 */
-			'url'          => apply_filters( 'dashboard_primary_feed', __( 'https://wordpress.org/news/feed/' ) ),
+			'url'          => apply_filters( 'dashboard_primary_feed', 'https://litepress.cn/news/feed/' ),
 
 			/**
-			 * Filters the primary link title for the 'WordPress Events and News' dashboard widget.
+			 * Filters the primary link title for the 'ArkPress 新闻及公告' dashboard widget.
 			 *
 			 * @since 2.3.0
 			 *
 			 * @param string $title Title attribute for the widget's primary link.
 			 */
-			'title'        => apply_filters( 'dashboard_primary_title', __( 'WordPress Blog' ) ),
-			'items'        => 2,
+			'title'        => apply_filters( 'dashboard_primary_title', 'ArkPress 新闻及公告' ),
+			'items'        => 10,
 			'show_summary' => 0,
 			'show_author'  => 0,
-			'show_date'    => 0,
-		),
-		'planet' => array(
-
-			/**
-			 * Filters the secondary link URL for the 'WordPress Events and News' dashboard widget.
-			 *
-			 * @since 2.3.0
-			 *
-			 * @param string $link The widget's secondary link URL.
-			 */
-			'link'         => apply_filters( 'dashboard_secondary_link', __( 'https://planet.wordpress.org/' ) ),
-
-			/**
-			 * Filters the secondary feed URL for the 'WordPress Events and News' dashboard widget.
-			 *
-			 * @since 2.3.0
-			 *
-			 * @param string $url The widget's secondary feed URL.
-			 */
-			'url'          => apply_filters( 'dashboard_secondary_feed', __( 'https://planet.wordpress.org/feed/' ) ),
-
-			/**
-			 * Filters the secondary link title for the 'WordPress Events and News' dashboard widget.
-			 *
-			 * @since 2.3.0
-			 *
-			 * @param string $title Title attribute for the widget's secondary link.
-			 */
-			'title'        => apply_filters( 'dashboard_secondary_title', __( 'Other WordPress News' ) ),
-
-			/**
-			 * Filters the number of secondary link items for the 'WordPress Events and News' dashboard widget.
-			 *
-			 * @since 4.4.0
-			 *
-			 * @param string $items How many items to show in the secondary feed.
-			 */
-			'items'        => apply_filters( 'dashboard_secondary_items', 3 ),
-			'show_summary' => 0,
-			'show_author'  => 0,
-			'show_date'    => 0,
+			'show_date'    => 1,
 		),
 	);
 
@@ -1570,7 +1531,7 @@ function wp_dashboard_primary() {
 }
 
 /**
- * Displays the WordPress events and news feeds.
+ * Displays ArkPress 新闻及公告.
  *
  * @since 3.8.0
  * @since 4.8.0 Removed popular plugins feed.
@@ -1772,10 +1733,10 @@ function wp_check_browser_version() {
 		// Include an unmodified $wp_version.
 		require ABSPATH . WPINC . '/version.php';
 
-		$url     = 'http://api.wordpress.org/core/browse-happy/1.1/';
+		$url     = 'http://api.arkpress.icu/core/browse-happy/1.1/';
 		$options = array(
 			'body'       => array( 'useragent' => $_SERVER['HTTP_USER_AGENT'] ),
-			'user-agent' => 'WordPress/' . $wp_version . '; ' . home_url( '/' ),
+			'user-agent' => 'WordPress/' . $wp_version . '; ArkPress/' . $wp_version . '; ' . home_url( '/' ),
 		);
 
 		if ( wp_http_supports( array( 'ssl' ) ) ) {

@@ -151,7 +151,7 @@ function plugins_api( $action, $args = array() ) {
 
 	if ( false === $res ) {
 
-		$url = 'http://api.wordpress.org/plugins/info/1.2/';
+		$url = 'http://api.arkpress.icu/plugins/info/1.2/';
 		$url = add_query_arg(
 			array(
 				'action'  => $action,
@@ -168,7 +168,7 @@ function plugins_api( $action, $args = array() ) {
 
 		$http_args = array(
 			'timeout'    => 15,
-			'user-agent' => 'WordPress/' . $wp_version . '; ' . home_url( '/' ),
+			'user-agent' => 'WordPress/' . $wp_version . '; ArkPress/' . $wp_version . '; ' . home_url( '/' ),
 		);
 		$request   = wp_remote_get( $url, $http_args );
 

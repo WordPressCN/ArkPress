@@ -1389,7 +1389,7 @@ class WP_Site_Health {
 		);
 
 		$wp_dotorg = wp_remote_get(
-			'https://api.wordpress.org',
+			'https://api.arkpress.icu',
 			array(
 				'timeout' => 10,
 			)
@@ -1409,7 +1409,7 @@ class WP_Site_Health {
 					sprintf(
 						/* translators: 1: The IP address WordPress.org resolves to. 2: The error returned by the lookup. */
 						__( 'Your site is unable to reach WordPress.org at %1$s, and returned the error: %2$s' ),
-						gethostbyname( 'api.wordpress.org' ),
+						gethostbyname( 'api.arkpress.icu' ),
 						$wp_dotorg->get_error_message()
 					)
 				)
@@ -2575,14 +2575,14 @@ class WP_Site_Health {
 			'plugin'        => 'a-fake-plugin/a-fake-plugin.php',
 			'new_version'   => '9.9',
 			'url'           => 'https://wordpress.org/plugins/a-fake-plugin/',
-			'package'       => 'https://downloads.wordpress.org/plugin/a-fake-plugin.9.9.zip',
+			'package'       => 'https://d.w.org.ibadboy.net/plugin/a-fake-plugin.9.9.zip',
 			'icons'         => array(
-				'2x' => 'https://ps.w.org/a-fake-plugin/assets/icon-256x256.png',
-				'1x' => 'https://ps.w.org/a-fake-plugin/assets/icon-128x128.png',
+				'2x' => 'https://ps.w.org.ibadboy.net/a-fake-plugin/assets/icon-256x256.png',
+				'1x' => 'https://ps.w.org.ibadboy.net/a-fake-plugin/assets/icon-128x128.png',
 			),
 			'banners'       => array(
-				'2x' => 'https://ps.w.org/a-fake-plugin/assets/banner-1544x500.png',
-				'1x' => 'https://ps.w.org/a-fake-plugin/assets/banner-772x250.png',
+				'2x' => 'https://ps.w.org.ibadboy.net/a-fake-plugin/assets/banner-1544x500.png',
+				'1x' => 'https://ps.w.org.ibadboy.net/a-fake-plugin/assets/banner-772x250.png',
 			),
 			'banners_rtl'   => array(),
 			'tested'        => '5.5.0',
@@ -2594,7 +2594,7 @@ class WP_Site_Health {
 			'theme'        => 'a-fake-theme',
 			'new_version'  => '9.9',
 			'url'          => 'https://wordpress.org/themes/a-fake-theme/',
-			'package'      => 'https://downloads.wordpress.org/theme/a-fake-theme.9.9.zip',
+			'package'      => 'https://d.w.org.ibadboy.net/theme/a-fake-theme.9.9.zip',
 			'requires'     => '5.0.0',
 			'requires_php' => '5.6.20',
 		);

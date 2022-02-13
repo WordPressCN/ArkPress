@@ -2,13 +2,13 @@
 /**
  * REST API: WP_REST_Server class
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage REST_API
  * @since 4.4.0
  */
 
 /**
- * Core class used to implement the WordPress REST API server.
+ * Core class used to implement the ArkPress REST API server.
  *
  * @since 4.4.0
  */
@@ -1275,7 +1275,7 @@ class WP_REST_Server {
 	}
 
 	/**
-	 * Exposes the site logo through the WordPress REST API.
+	 * Exposes the site logo through the ArkPress REST API.
 	 *
 	 * This is used for fetching this information when user has no rights
 	 * to update settings.
@@ -1291,7 +1291,7 @@ class WP_REST_Server {
 	}
 
 	/**
-	 * Exposes the site icon through the WordPress REST API.
+	 * Exposes the site icon through the ArkPress REST API.
 	 *
 	 * This is used for fetching this information when user has no rights
 	 * to update settings.
@@ -1307,7 +1307,7 @@ class WP_REST_Server {
 	}
 
 	/**
-	 * Exposes an image through the WordPress REST API.
+	 * Exposes an image through the ArkPress REST API.
 	 * This is used for fetching this information when user has no rights
 	 * to update settings.
 	 *

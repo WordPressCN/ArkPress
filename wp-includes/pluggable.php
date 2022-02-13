@@ -3,7 +3,7 @@
  * These functions can be replaced via plugins. If plugins do not redefine these
  * functions, then these will be used instead.
  *
- * @package WordPress
+ * @package ArkPress
  */
 
 if ( ! function_exists( 'wp_set_current_user' ) ) :
@@ -12,7 +12,7 @@ if ( ! function_exists( 'wp_set_current_user' ) ) :
 	 *
 	 * Set $id to null and specify a name if you do not know a user's ID.
 	 *
-	 * Some WordPress functionality is based on the current user and not based on
+	 * Some ArkPress functionality is based on the current user and not based on
 	 * the signed in user. Therefore, it opens the ability to edit and perform
 	 * actions on users who aren't signed in.
 	 *
@@ -125,7 +125,7 @@ if ( ! function_exists( 'cache_users' ) ) :
 	 *
 	 * @since 3.0.0
 	 *
-	 * @global wpdb $wpdb WordPress database abstraction object.
+	 * @global wpdb $wpdb ArkPress database abstraction object.
 	 *
 	 * @param array $user_ids User ID numbers list
 	 */
@@ -366,7 +366,7 @@ if ( ! function_exists( 'wp_mail' ) ) :
 
 		// If we don't have a name from the input headers.
 		if ( ! isset( $from_name ) ) {
-			$from_name = 'WordPress';
+			$from_name = 'ArkPress';
 		}
 
 		/*
@@ -1299,10 +1299,10 @@ if ( ! function_exists( 'wp_redirect' ) ) :
 	 *
 	 * @param string $location      The path or URL to redirect to.
 	 * @param int    $status        Optional. HTTP response status code to use. Default '302' (Moved Temporarily).
-	 * @param string $x_redirect_by Optional. The application doing the redirect. Default 'WordPress'.
+	 * @param string $x_redirect_by Optional. The application doing the redirect. Default 'ArkPress'.
 	 * @return bool False if the redirect was cancelled, true otherwise.
 	 */
-	function wp_redirect( $location, $status = 302, $x_redirect_by = 'WordPress' ) {
+	function wp_redirect( $location, $status = 302, $x_redirect_by = 'ArkPress' ) {
 		global $is_IIS;
 
 		/**
@@ -1442,10 +1442,10 @@ if ( ! function_exists( 'wp_safe_redirect' ) ) :
 	 *
 	 * @param string $location      The path or URL to redirect to.
 	 * @param int    $status        Optional. HTTP response status code to use. Default '302' (Moved Temporarily).
-	 * @param string $x_redirect_by Optional. The application doing the redirect. Default 'WordPress'.
+	 * @param string $x_redirect_by Optional. The application doing the redirect. Default 'ArkPress'.
 	 * @return bool False if the redirect was cancelled, true otherwise.
 	 */
-	function wp_safe_redirect( $location, $status = 302, $x_redirect_by = 'WordPress' ) {
+	function wp_safe_redirect( $location, $status = 302, $x_redirect_by = 'ArkPress' ) {
 
 		// Need to look at the URL the way it will end up in wp_redirect().
 		$location = wp_sanitize_redirect( $location );
@@ -1782,7 +1782,7 @@ if ( ! function_exists( 'wp_notify_moderator' ) ) :
 	 *
 	 * @since 1.0.0
 	 *
-	 * @global wpdb $wpdb WordPress database abstraction object.
+	 * @global wpdb $wpdb ArkPress database abstraction object.
 	 *
 	 * Uses the {@see 'notify_moderator'} filter to determine whether the site moderator
 	 * should be notified, overriding the site setting.
@@ -2305,7 +2305,7 @@ if ( ! function_exists( 'wp_salt' ) ) :
 		static $cached_salts = array();
 		if ( isset( $cached_salts[ $scheme ] ) ) {
 			/**
-			 * Filters the WordPress salt.
+			 * Filters the ArkPress salt.
 			 *
 			 * @since 2.5.0
 			 *
@@ -2616,7 +2616,7 @@ if ( ! function_exists( 'wp_set_password' ) ) :
 	 *
 	 * @since 2.5.0
 	 *
-	 * @global wpdb $wpdb WordPress database abstraction object.
+	 * @global wpdb $wpdb ArkPress database abstraction object.
 	 *
 	 * @param string $password The plaintext new user password
 	 * @param int    $user_id  User ID

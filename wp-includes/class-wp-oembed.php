@@ -4,10 +4,10 @@
  *
  * Used internally by the WP_Embed class, but is designed to be generic.
  *
- * @link https://wordpress.org/support/article/embeds/
+ * @link https://arkpress.icu/support/article/embeds/
  * @link http://oembed.com/
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage oEmbed
  */
 
@@ -123,7 +123,7 @@ class WP_oEmbed {
 		/**
 		 * Filters the list of sanctioned oEmbed providers.
 		 *
-		 * Since WordPress 4.4, oEmbed discovery is enabled for all users and allows embedding of sanitized
+		 * Since ArkPress 4.4, oEmbed discovery is enabled for all users and allows embedding of sanitized
 		 * iframes. The providers in this list are sanctioned, meaning they are trusted and allowed to
 		 * embed any content, such as iframes, videos, JavaScript, and arbitrary HTML.
 		 *
@@ -135,7 +135,7 @@ class WP_oEmbed {
 		 * | Flickr       | flickr.com                                | 2.9.0   |
 		 * | Scribd       | scribd.com                                | 2.9.0   |
 		 * | Vimeo        | vimeo.com                                 | 2.9.0   |
-		 * | WordPress.tv | wordpress.tv                              | 2.9.0   |
+		 * | ArkPress.tv | wordpress.tv                              | 2.9.0   |
 		 * | YouTube      | youtube.com/watch                         | 2.9.0   |
 		 * | Crowdsignal  | polldaddy.com                             | 3.0.0   |
 		 * | SmugMug      | smugmug.com                               | 3.0.0   |

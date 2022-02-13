@@ -120,7 +120,7 @@ var external_wp_i18n_ = __webpack_require__("l3Sj");
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -554,7 +554,7 @@ var external_wp_blob_ = __webpack_require__("xTGt");
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 

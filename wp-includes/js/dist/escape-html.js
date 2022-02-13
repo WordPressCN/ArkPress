@@ -187,7 +187,7 @@ function escapeLessThan(value) {
  * any literal U+0022 QUOTATION MARK characters (")"
  *
  * Note we also escape the greater than symbol, as this is used by wptexturize to
- * split HTML strings. This is a WordPress specific fix
+ * split HTML strings. This is a ArkPress specific fix
  *
  * Note that if a resolution for Trac#45387 comes to fruition, it is no longer
  * necessary for `__unstableEscapeGreaterThan` to be used.

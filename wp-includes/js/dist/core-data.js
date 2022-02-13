@@ -855,7 +855,7 @@ function receiveQueriedItems(items) {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -941,7 +941,7 @@ async function defaultProcessor(requests) {
 
 /**
  * Creates a batch, which can be used to combine multiple API requests into one
- * API request using the WordPress batch processing API (/v1/batch).
+ * API request using the ArkPress batch processing API (/v1/batch).
  *
  * ```
  * const batch = createBatch();
@@ -1143,7 +1143,7 @@ const STORE_NAME = 'core';
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -1855,7 +1855,7 @@ function receiveAutosaves(postId, autosaves) {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -2248,7 +2248,7 @@ function withWeakMapCache(fn) {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/queried-data/get-query-parts.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -2356,7 +2356,7 @@ function getQueryParts(query) {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -2596,7 +2596,7 @@ const reducer_queries = function () {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -3312,7 +3312,7 @@ function isRawAttribute(entity, attribute) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -3924,7 +3924,7 @@ function getEmbedPreview(state, url) {
 /**
  * Determines if the returned preview is an oEmbed link fallback.
  *
- * WordPress can be configured to return a simple link to a URL if it is not embeddable.
+ * ArkPress can be configured to return a simple link to a URL if it is not embeddable.
  * We need to be able to determine if a URL is embeddable or not, based on what we
  * get back from the oEmbed preview API.
  *
@@ -4130,7 +4130,7 @@ const forwardResolver = resolverName => function () {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -4888,7 +4888,7 @@ var external_wp_blocks_ = __webpack_require__("HSyU");
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -5117,7 +5117,7 @@ var external_wp_htmlEntities_ = __webpack_require__("rmEH");
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/fetch/__experimental-fetch-link-suggestions.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -5294,7 +5294,7 @@ const fetchLinkSuggestions = async function (search) {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/fetch/__experimental-fetch-url-data.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -5373,7 +5373,7 @@ const fetchUrlData = async function (url) {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/index.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**

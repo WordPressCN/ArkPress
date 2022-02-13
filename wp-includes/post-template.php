@@ -1,30 +1,30 @@
 <?php
 /**
- * WordPress Post Template Functions.
+ * ArkPress Post Template Functions.
  *
  * Gets content for the current post in the loop.
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage Template
  */
 
 /**
- * Display the ID of the current item in the WordPress Loop.
+ * Display the ID of the current item in the ArkPress Loop.
  *
  * @since 0.71
  */
-function the_ID() { // phpcs:ignore WordPress.NamingConventions.ValidFunctionName.FunctionNameInvalid
+function the_ID() { // phpcs:ignore ArkPress.NamingConventions.ValidFunctionName.FunctionNameInvalid
 	echo get_the_ID();
 }
 
 /**
- * Retrieve the ID of the current item in the WordPress Loop.
+ * Retrieve the ID of the current item in the ArkPress Loop.
  *
  * @since 2.1.0
  *
- * @return int|false The ID of the current item in the WordPress Loop. False if $post is not set.
+ * @return int|false The ID of the current item in the ArkPress Loop. False if $post is not set.
  */
-function get_the_ID() { // phpcs:ignore WordPress.NamingConventions.ValidFunctionName.FunctionNameInvalid
+function get_the_ID() { // phpcs:ignore ArkPress.NamingConventions.ValidFunctionName.FunctionNameInvalid
 	$post = get_post();
 	return ! empty( $post ) ? $post->ID : false;
 }
@@ -596,7 +596,7 @@ function body_class( $class = '' ) {
  *
  * @since 2.8.0
  *
- * @global WP_Query $wp_query WordPress Query object.
+ * @global WP_Query $wp_query ArkPress Query object.
  *
  * @param string|string[] $class Space-separated string or array of class names to add to the class list.
  * @return string[] Array of class names.
@@ -1019,7 +1019,7 @@ function wp_link_pages( $args = '' ) {
  * @since 3.1.0
  * @access private
  *
- * @global WP_Rewrite $wp_rewrite WordPress rewrite component.
+ * @global WP_Rewrite $wp_rewrite ArkPress rewrite component.
  *
  * @param int $i Page number.
  * @return string Link.
@@ -1227,7 +1227,7 @@ function wp_dropdown_pages( $args = '' ) {
  *
  * @see get_pages()
  *
- * @global WP_Query $wp_query WordPress Query object.
+ * @global WP_Query $wp_query ArkPress Query object.
  *
  * @param array|string $args {
  *     Optional. Array or string of arguments to generate a list of pages. See `get_pages()` for additional arguments.

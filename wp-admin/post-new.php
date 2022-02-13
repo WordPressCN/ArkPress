@@ -2,11 +2,11 @@
 /**
  * New Post Administration Screen.
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage Administration
  */
 
-/** Load WordPress Administration Bootstrap */
+/** Load ArkPress Administration Bootstrap */
 require_once __DIR__ . '/admin.php';
 
 /**

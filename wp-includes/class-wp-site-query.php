@@ -2,7 +2,7 @@
 /**
  * Site API: WP_Site_Query class
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage Sites
  * @since 4.6.0
  */
@@ -252,7 +252,7 @@ class WP_Site_Query {
 	}
 
 	/**
-	 * Sets up the WordPress query for retrieving sites.
+	 * Sets up the ArkPress query for retrieving sites.
 	 *
 	 * @since 4.6.0
 	 *
@@ -271,7 +271,7 @@ class WP_Site_Query {
 	 *
 	 * @since 4.6.0
 	 *
-	 * @global wpdb $wpdb WordPress database abstraction object.
+	 * @global wpdb $wpdb ArkPress database abstraction object.
 	 *
 	 * @return array|int List of WP_Site objects, a list of site IDs when 'fields' is set to 'ids',
 	 *                   or the number of sites when 'count' is passed as a query var.
@@ -305,7 +305,7 @@ class WP_Site_Query {
 		/**
 		 * Filters the site data before the get_sites query takes place.
 		 *
-		 * Return a non-null value to bypass WordPress' default site queries.
+		 * Return a non-null value to bypass ArkPress' default site queries.
 		 *
 		 * The expected return type from this filter depends on the value passed
 		 * in the request query vars:
@@ -423,7 +423,7 @@ class WP_Site_Query {
 	 *
 	 * @since 4.6.0
 	 *
-	 * @global wpdb $wpdb WordPress database abstraction object.
+	 * @global wpdb $wpdb ArkPress database abstraction object.
 	 *
 	 * @return int|array A single count of site IDs if a count query. An array of site IDs if a full query.
 	 */
@@ -700,7 +700,7 @@ class WP_Site_Query {
 	 *
 	 * @since 4.6.0
 	 *
-	 * @global wpdb $wpdb WordPress database abstraction object.
+	 * @global wpdb $wpdb ArkPress database abstraction object.
 	 */
 	private function set_found_sites() {
 		global $wpdb;
@@ -725,7 +725,7 @@ class WP_Site_Query {
 	 *
 	 * @since 4.6.0
 	 *
-	 * @global wpdb $wpdb WordPress database abstraction object.
+	 * @global wpdb $wpdb ArkPress database abstraction object.
 	 *
 	 * @param string   $string  Search string.
 	 * @param string[] $columns Array of columns to search.
@@ -753,7 +753,7 @@ class WP_Site_Query {
 	 *
 	 * @since 4.6.0
 	 *
-	 * @global wpdb $wpdb WordPress database abstraction object.
+	 * @global wpdb $wpdb ArkPress database abstraction object.
 	 *
 	 * @param string $orderby Alias for the field to order by.
 	 * @return string|false Value to used in the ORDER clause. False otherwise.

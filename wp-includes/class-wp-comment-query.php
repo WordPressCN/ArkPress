@@ -2,7 +2,7 @@
 /**
  * Comment API: WP_Comment_Query class
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage Comments
  * @since 4.4.0
  */
@@ -350,7 +350,7 @@ class WP_Comment_Query {
 	}
 
 	/**
-	 * Sets up the WordPress query for retrieving comments.
+	 * Sets up the ArkPress query for retrieving comments.
 	 *
 	 * @since 3.1.0
 	 * @since 4.1.0 Introduced 'comment__in', 'comment__not_in', 'post_author__in',
@@ -372,7 +372,7 @@ class WP_Comment_Query {
 	 *
 	 * @since 4.2.0
 	 *
-	 * @global wpdb $wpdb WordPress database abstraction object.
+	 * @global wpdb $wpdb ArkPress database abstraction object.
 	 *
 	 * @return int|array List of comments or number of found comments if `$count` argument is true.
 	 */
@@ -405,7 +405,7 @@ class WP_Comment_Query {
 		/**
 		 * Filters the comments data before the query takes place.
 		 *
-		 * Return a non-null value to bypass WordPress' default comment queries.
+		 * Return a non-null value to bypass ArkPress' default comment queries.
 		 *
 		 * The expected return type from this filter depends on the value passed
 		 * in the request query vars:
@@ -534,7 +534,7 @@ class WP_Comment_Query {
 	 *
 	 * @since 4.4.0
 	 *
-	 * @global wpdb $wpdb WordPress database abstraction object.
+	 * @global wpdb $wpdb ArkPress database abstraction object.
 	 *
 	 * @return int|array A single count of comment IDs if a count query. An array of comment IDs if a full query.
 	 */
@@ -842,7 +842,7 @@ class WP_Comment_Query {
 				// $field_value may be an array.
 				$esses = array_fill( 0, count( (array) $field_value ), '%s' );
 
-				// phpcs:ignore WordPress.DB.PreparedSQLPlaceholders.UnfinishedPrepare
+				// phpcs:ignore ArkPress.DB.PreparedSQLPlaceholders.UnfinishedPrepare
 				$this->sql_clauses['where'][ $field_name ] = $wpdb->prepare( " {$wpdb->posts}.{$field_name} IN (" . implode( ',', $esses ) . ')', $field_value );
 			}
 		}
@@ -865,7 +865,7 @@ class WP_Comment_Query {
 
 				$esses = array_fill( 0, count( $q_values ), '%s' );
 
-				// phpcs:ignore WordPress.DB.PreparedSQLPlaceholders.UnfinishedPrepare
+				// phpcs:ignore ArkPress.DB.PreparedSQLPlaceholders.UnfinishedPrepare
 				$this->sql_clauses['where'][ $field_name ] = $wpdb->prepare( " {$wpdb->posts}.{$field_name} IN (" . implode( ',', $esses ) . ')', $q_values );
 			}
 		}
@@ -976,7 +976,7 @@ class WP_Comment_Query {
 	 *
 	 * @since 4.6.0
 	 *
-	 * @global wpdb $wpdb WordPress database abstraction object.
+	 * @global wpdb $wpdb ArkPress database abstraction object.
 	 */
 	private function set_found_comments() {
 		global $wpdb;
@@ -1004,7 +1004,7 @@ class WP_Comment_Query {
 	 *
 	 * @since 4.4.0
 	 *
-	 * @global wpdb $wpdb WordPress database abstraction object.
+	 * @global wpdb $wpdb ArkPress database abstraction object.
 	 *
 	 * @param WP_Comment[] $comments Array of top-level comments whose descendants should be filled in.
 	 * @return array
@@ -1120,7 +1120,7 @@ class WP_Comment_Query {
 	 *
 	 * @since 3.1.0
 	 *
-	 * @global wpdb $wpdb WordPress database abstraction object.
+	 * @global wpdb $wpdb ArkPress database abstraction object.
 	 *
 	 * @param string $string
 	 * @param array  $cols
@@ -1144,7 +1144,7 @@ class WP_Comment_Query {
 	 *
 	 * @since 4.2.0
 	 *
-	 * @global wpdb $wpdb WordPress database abstraction object.
+	 * @global wpdb $wpdb ArkPress database abstraction object.
 	 *
 	 * @param string $orderby Alias for the field to order by.
 	 * @return string|false Value to used in the ORDER clause. False otherwise.

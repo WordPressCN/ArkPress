@@ -1,17 +1,17 @@
 <?php
 /**
- * WordPress Version
+ * ArkPress Version
  *
- * Contains version information for the current WordPress release.
+ * Contains version information for the current ArkPress release.
  *
- * @package WordPress
+ * @package ArkPress
  * @since 1.2.0
  */
 
 /**
- * The WordPress version string.
+ * The ArkPress version string.
  *
- * Holds the current version number for WordPress core. Used to bust caches
+ * Holds the current version number for ArkPress core. Used to bust caches
  * and to enable development mode for scripts when running from the /src directory.
  *
  * @global string $wp_version
@@ -19,7 +19,7 @@
 $wp_version = '5.9';
 
 /**
- * Holds the WordPress DB revision, increments when changes are made to the WordPress DB schema.
+ * Holds the ArkPress DB revision, increments when changes are made to the ArkPress DB schema.
  *
  * @global int $wp_db_version
  */

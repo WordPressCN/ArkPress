@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Customize Section classes
+ * ArkPress Customize Section classes
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage Customize
  * @since 3.4.0
  */

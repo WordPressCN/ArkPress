@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Administration Update API
+ * ArkPress Administration Update API
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage Administration
  */
 
@@ -76,7 +76,7 @@ function get_core_updates( $options = array() ) {
 }
 
 /**
- * Gets the best available (and enabled) Auto-Update for WordPress core.
+ * Gets the best available (and enabled) Auto-Update for ArkPress core.
  *
  * If there's 1.2.3 and 1.3 on offer, it'll choose 1.3 if the installation allows it, else, 1.2.3.
  *
@@ -111,7 +111,7 @@ function find_core_auto_update() {
 }
 
 /**
- * Gets and caches the checksums for the given version of WordPress.
+ * Gets and caches the checksums for the given version of ArkPress.
  *
  * @since 3.7.0
  *
@@ -137,9 +137,9 @@ function get_core_checksums( $version, $locale ) {
 		trigger_error(
 			sprintf(
 				/* translators: %s: Support forums URL. */
-				__( 'An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="%s">support forums</a>.' ),
-				__( 'https://wordpress.org/support/forums/' )
-			) . ' ' . __( '(WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.)' ),
+				__( 'An unexpected error occurred. Something may be wrong with ArkPress.icu or this server&#8217;s configuration. If you continue to have problems, please try the <a href="%s">support forums</a>.' ),
+				__( 'https://arkpress.icu/support/forums/' )
+			) . ' ' . __( '(ArkPress could not establish a secure connection to ArkPress.icu. Please contact your server administrator.)' ),
 			headers_sent() || WP_DEBUG ? E_USER_WARNING : E_USER_NOTICE
 		);
 		$response = wp_remote_get( $http_url, $options );
@@ -195,7 +195,7 @@ function undismiss_core_update( $version, $locale ) {
 }
 
 /**
- * Finds the available update for WordPress core.
+ * Finds the available update for ArkPress core.
  *
  * @since 2.7.0
  *
@@ -227,7 +227,7 @@ function find_core_update( $version, $locale ) {
  */
 function core_update_footer( $msg = '' ) {
 	if ( ! current_user_can( 'update_core' ) ) {
-		/* translators: %s: WordPress version. */
+		/* translators: %s: ArkPress version. */
 		return sprintf( __( 'Version %s' ), get_bloginfo( 'version', 'display' ) );
 	}
 
@@ -251,7 +251,7 @@ function core_update_footer( $msg = '' ) {
 
 	if ( $is_development_version ) {
 		return sprintf(
-			/* translators: 1: WordPress version number, 2: URL to WordPress Updates screen. */
+			/* translators: 1: ArkPress version number, 2: URL to ArkPress Updates screen. */
 			__( 'You are using a development version (%1$s). Cool! Please <a href="%2$s">stay updated</a>.' ),
 			get_bloginfo( 'version', 'display' ),
 			network_admin_url( 'update-core.php' )
@@ -263,13 +263,13 @@ function core_update_footer( $msg = '' ) {
 			return sprintf(
 				'<strong><a href="%s">%s</a></strong>',
 				network_admin_url( 'update-core.php' ),
-				/* translators: %s: WordPress version. */
+				/* translators: %s: ArkPress version. */
 				sprintf( __( 'Get Version %s' ), $cur->current )
 			);
 
 		case 'latest':
 		default:
-			/* translators: %s: WordPress version. */
+			/* translators: %s: ArkPress version. */
 			return sprintf( __( 'Version %s' ), get_bloginfo( 'version', 'display' ) );
 	}
 }
@@ -298,24 +298,24 @@ function update_nag() {
 	}
 
 	$version_url = sprintf(
-		/* translators: %s: WordPress version. */
-		esc_url( __( 'https://wordpress.org/support/wordpress-version/version-%s/' ) ),
+		/* translators: %s: ArkPress version. */
+		esc_url( __( 'https://arkpress.icu/support/wordpress-version/version-%s/' ) ),
 		sanitize_title( $cur->current )
 	);
 
 	if ( current_user_can( 'update_core' ) ) {
 		$msg = sprintf(
-			/* translators: 1: URL to WordPress release notes, 2: New WordPress version, 3: URL to network admin, 4: Accessibility text. */
-			__( '<a href="%1$s">WordPress %2$s</a> is available! <a href="%3$s" aria-label="%4$s">Please update now</a>.' ),
+			/* translators: 1: URL to ArkPress release notes, 2: New ArkPress version, 3: URL to network admin, 4: Accessibility text. */
+			__( '<a href="%1$s">ArkPress %2$s</a> is available! <a href="%3$s" aria-label="%4$s">Please update now</a>.' ),
 			$version_url,
 			$cur->current,
 			network_admin_url( 'update-core.php' ),
-			esc_attr__( 'Please update WordPress now' )
+			esc_attr__( 'Please update ArkPress now' )
 		);
 	} else {
 		$msg = sprintf(
-			/* translators: 1: URL to WordPress release notes, 2: New WordPress version. */
-			__( '<a href="%1$s">WordPress %2$s</a> is available! Please notify the site administrator.' ),
+			/* translators: 1: URL to ArkPress release notes, 2: New ArkPress version. */
+			__( '<a href="%1$s">ArkPress %2$s</a> is available! Please notify the site administrator.' ),
 			$version_url,
 			$cur->current
 		);
@@ -325,7 +325,7 @@ function update_nag() {
 }
 
 /**
- * Displays WordPress version and active theme in the 'At a Glance' dashboard widget.
+ * Displays ArkPress version and active theme in the 'At a Glance' dashboard widget.
  *
  * @since 2.5.0
  */
@@ -344,14 +344,14 @@ function update_right_now_message() {
 			$msg .= sprintf(
 				'<a href="%s" class="button" aria-describedby="wp-version">%s</a> ',
 				network_admin_url( 'update-core.php' ),
-				/* translators: %s: WordPress version number, or 'Latest' string. */
+				/* translators: %s: ArkPress version number, or 'Latest' string. */
 				sprintf( __( 'Update to %s' ), $cur->current ? $cur->current : __( 'Latest' ) )
 			);
 		}
 	}
 
 	/* translators: 1: Version number, 2: Theme name. */
-	$content = __( 'WordPress %1$s running %2$s theme.' );
+	$content = __( 'ArkPress %1$s running %2$s theme.' );
 
 	/**
 	 * Filters the text displayed in the 'At a Glance' dashboard widget.
@@ -573,12 +573,12 @@ function wp_plugin_update_row( $file, $plugin_data ) {
 		 *     @type string[] $icons        An array of plugin icon URLs.
 		 *     @type string[] $banners      An array of plugin banner URLs.
 		 *     @type string[] $banners_rtl  An array of plugin RTL banner URLs.
-		 *     @type string   $requires     The version of WordPress which the plugin requires.
-		 *     @type string   $tested       The version of WordPress the plugin is tested against.
+		 *     @type string   $requires     The version of ArkPress which the plugin requires.
+		 *     @type string   $tested       The version of ArkPress the plugin is tested against.
 		 *     @type string   $requires_php The version of PHP which the plugin requires.
 		 * }
 		 */
-		do_action( "in_plugin_update_message-{$file}", $plugin_data, $response ); // phpcs:ignore WordPress.NamingConventions.ValidHookName.UseUnderscores
+		do_action( "in_plugin_update_message-{$file}", $plugin_data, $response ); // phpcs:ignore ArkPress.NamingConventions.ValidHookName.UseUnderscores
 
 		echo '</p></div></td></tr>';
 	}
@@ -722,21 +722,21 @@ function wp_theme_update_row( $theme_key, $theme ) {
 		if ( ! $compatible_wp && ! $compatible_php ) {
 			printf(
 				/* translators: %s: Theme name. */
-				__( 'There is a new version of %s available, but it doesn&#8217;t work with your versions of WordPress and PHP.' ),
+				__( 'There is a new version of %s available, but it doesn&#8217;t work with your versions of ArkPress and PHP.' ),
 				$theme['Name']
 			);
 			if ( current_user_can( 'update_core' ) && current_user_can( 'update_php' ) ) {
 				printf(
-					/* translators: 1: URL to WordPress Updates screen, 2: URL to Update PHP page. */
-					' ' . __( '<a href="%1$s">Please update WordPress</a>, and then <a href="%2$s">learn more about updating PHP</a>.' ),
+					/* translators: 1: URL to ArkPress Updates screen, 2: URL to Update PHP page. */
+					' ' . __( '<a href="%1$s">Please update ArkPress</a>, and then <a href="%2$s">learn more about updating PHP</a>.' ),
 					self_admin_url( 'update-core.php' ),
 					esc_url( wp_get_update_php_url() )
 				);
 				wp_update_php_annotation( '</p><p><em>', '</em>' );
 			} elseif ( current_user_can( 'update_core' ) ) {
 				printf(
-					/* translators: %s: URL to WordPress Updates screen. */
-					' ' . __( '<a href="%s">Please update WordPress</a>.' ),
+					/* translators: %s: URL to ArkPress Updates screen. */
+					' ' . __( '<a href="%s">Please update ArkPress</a>.' ),
 					self_admin_url( 'update-core.php' )
 				);
 			} elseif ( current_user_can( 'update_php' ) ) {
@@ -750,13 +750,13 @@ function wp_theme_update_row( $theme_key, $theme ) {
 		} elseif ( ! $compatible_wp ) {
 			printf(
 				/* translators: %s: Theme name. */
-				__( 'There is a new version of %s available, but it doesn&#8217;t work with your version of WordPress.' ),
+				__( 'There is a new version of %s available, but it doesn&#8217;t work with your version of ArkPress.' ),
 				$theme['Name']
 			);
 			if ( current_user_can( 'update_core' ) ) {
 				printf(
-					/* translators: %s: URL to WordPress Updates screen. */
-					' ' . __( '<a href="%s">Please update WordPress</a>.' ),
+					/* translators: %s: URL to ArkPress Updates screen. */
+					' ' . __( '<a href="%s">Please update ArkPress</a>.' ),
 					self_admin_url( 'update-core.php' )
 				);
 			}
@@ -782,7 +782,7 @@ function wp_theme_update_row( $theme_key, $theme ) {
 	 * row of the themes list table.
 	 *
 	 * The dynamic portion of the hook name, `$theme_key`, refers to
-	 * the theme slug as found in the WordPress.org themes repository.
+	 * the theme slug as found in the ArkPress.icu themes repository.
 	 *
 	 * @since 3.1.0
 	 *
@@ -795,7 +795,7 @@ function wp_theme_update_row( $theme_key, $theme ) {
 	 *     @type string $package     Theme update package URL.
 	 * }
 	 */
-	do_action( "in_theme_update_message-{$theme_key}", $theme, $response ); // phpcs:ignore WordPress.NamingConventions.ValidHookName.UseUnderscores
+	do_action( "in_theme_update_message-{$theme_key}", $theme, $response ); // phpcs:ignore ArkPress.NamingConventions.ValidHookName.UseUnderscores
 
 	echo '</p></div></td></tr>';
 }
@@ -835,12 +835,12 @@ function maintenance_nag() {
 
 	if ( current_user_can( 'update_core' ) ) {
 		$msg = sprintf(
-			/* translators: %s: URL to WordPress Updates screen. */
-			__( 'An automated WordPress update has failed to complete - <a href="%s">please attempt the update again now</a>.' ),
+			/* translators: %s: URL to ArkPress Updates screen. */
+			__( 'An automated ArkPress update has failed to complete - <a href="%s">please attempt the update again now</a>.' ),
 			'update-core.php'
 		);
 	} else {
-		$msg = __( 'An automated WordPress update has failed to complete! Please notify the site administrator.' );
+		$msg = __( 'An automated ArkPress update has failed to complete! Please notify the site administrator.' );
 	}
 
 	echo "<div class='update-nag notice notice-warning inline'>$msg</div>";

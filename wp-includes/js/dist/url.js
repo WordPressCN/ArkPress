@@ -227,7 +227,7 @@ function isValidProtocol(protocol) {
  *
  * @example
  * ```js
- * const authority1 = getAuthority( 'https://wordpress.org/help/' ); // 'wordpress.org'
+ * const authority1 = getAuthority( 'https://arkpress.icu/help/' ); // 'wordpress.org'
  * const authority2 = getAuthority( 'https://localhost:8080/test/' ); // 'localhost:8080'
  * ```
  *
@@ -272,7 +272,7 @@ function isValidAuthority(authority) {
  * @example
  * ```js
  * const path1 = getPath( 'http://localhost:8080/this/is/a/test?query=true' ); // 'this/is/a/test'
- * const path2 = getPath( 'https://wordpress.org/help/faq/' ); // 'help/faq'
+ * const path2 = getPath( 'https://arkpress.icu/help/faq/' ); // 'help/faq'
  * ```
  *
  * @return {string|void} The path part of the URL.
@@ -427,7 +427,7 @@ function isValidQueryString(queryString) {
  * @example
  * ```js
  * const pathAndQueryString1 = getPathAndQueryString( 'http://localhost:8080/this/is/a/test?query=true' ); // '/this/is/a/test?query=true'
- * const pathAndQueryString2 = getPathAndQueryString( 'https://wordpress.org/help/faq/' ); // '/help/faq'
+ * const pathAndQueryString2 = getPathAndQueryString( 'https://arkpress.icu/help/faq/' ); // '/help/faq'
  * ```
  *
  * @return {string} The path part and query string part of the URL.
@@ -841,7 +841,7 @@ var external_lodash_ = __webpack_require__("YLtl");
 /**
  * Performs some basic cleanup of a string for use as a post slug.
  *
- * This replicates some of what `sanitize_title()` does in WordPress core, but
+ * This replicates some of what `sanitize_title()` does in ArkPress core, but
  * is only designed to approximate what the slug will be.
  *
  * Converts Latin-1 Supplement and Latin Extended-A letters to basic Latin

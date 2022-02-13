@@ -1,8 +1,8 @@
 <?php
 /**
- * Multisite WordPress API
+ * Multisite ArkPress API
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage Multisite
  * @since 3.0.0
  */
@@ -235,7 +235,7 @@ function add_user_to_blog( $blog_id, $user_id, $role ) {
  *
  * @since MU (3.0.0)
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb ArkPress database abstraction object.
  *
  * @param int $user_id  ID of the user being removed.
  * @param int $blog_id  Optional. ID of the blog the user is being removed from. Default 0.
@@ -343,7 +343,7 @@ function get_blog_permalink( $blog_id, $post_id ) {
  *
  * @since MU (3.0.0)
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb ArkPress database abstraction object.
  *
  * @param string $domain
  * @param string $path   Optional. Not required for subdomain installations.
@@ -455,7 +455,7 @@ function is_email_address_unsafe( $user_email ) {
  *
  * @since MU (3.0.0)
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb ArkPress database abstraction object.
  *
  * @param string $user_name  The login name provided by the user.
  * @param string $user_email The email provided by the user.
@@ -612,11 +612,11 @@ function wpmu_validate_user_signup( $user_name, $user_email ) {
  * effectively an override of this limitation.
  *
  * Filter {@see 'wpmu_validate_blog_signup'} if you want to modify
- * the way that WordPress validates new site signups.
+ * the way that ArkPress validates new site signups.
  *
  * @since MU (3.0.0)
  *
- * @global wpdb   $wpdb   WordPress database abstraction object.
+ * @global wpdb   $wpdb   ArkPress database abstraction object.
  * @global string $domain
  *
  * @param string         $blogname   The blog name provided by the user. Must be unique.
@@ -780,7 +780,7 @@ function wpmu_validate_blog_signup( $blogname, $blog_title, $user = '' ) {
  *
  * @since MU (3.0.0)
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb ArkPress database abstraction object.
  *
  * @param string $domain     The requested domain.
  * @param string $path       The requested path.
@@ -849,7 +849,7 @@ function wpmu_signup_blog( $domain, $path, $title, $user, $user_email, $meta = a
  *
  * @since MU (3.0.0)
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb ArkPress database abstraction object.
  *
  * @param string $user       The user's requested login name.
  * @param string $user_email The user's email address.
@@ -962,7 +962,7 @@ function wpmu_signup_blog_notification( $domain, $path, $title, $user_login, $us
 		$admin_email = 'support@' . wp_parse_url( network_home_url(), PHP_URL_HOST );
 	}
 
-	$from_name       = ( '' !== get_site_option( 'site_name' ) ) ? esc_html( get_site_option( 'site_name' ) ) : 'WordPress';
+	$from_name       = ( '' !== get_site_option( 'site_name' ) ) ? esc_html( get_site_option( 'site_name' ) ) : 'ArkPress';
 	$message_headers = "From: \"{$from_name}\" <{$admin_email}>\n" . 'Content-Type: text/plain; charset="' . get_option( 'blog_charset' ) . "\"\n";
 
 	$user            = get_user_by( 'login', $user_login );
@@ -1089,7 +1089,7 @@ function wpmu_signup_user_notification( $user_login, $user_email, $key, $meta = 
 		$admin_email = 'support@' . wp_parse_url( network_home_url(), PHP_URL_HOST );
 	}
 
-	$from_name       = ( '' !== get_site_option( 'site_name' ) ) ? esc_html( get_site_option( 'site_name' ) ) : 'WordPress';
+	$from_name       = ( '' !== get_site_option( 'site_name' ) ) ? esc_html( get_site_option( 'site_name' ) ) : 'ArkPress';
 	$message_headers = "From: \"{$from_name}\" <{$admin_email}>\n" . 'Content-Type: text/plain; charset="' . get_option( 'blog_charset' ) . "\"\n";
 	$message         = sprintf(
 		/**
@@ -1161,7 +1161,7 @@ function wpmu_signup_user_notification( $user_login, $user_email, $key, $meta = 
  *
  * @since MU (3.0.0)
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb ArkPress database abstraction object.
  *
  * @param string $key The activation key provided to the user.
  * @return array|WP_Error An array containing information about the activated user and/or blog
@@ -1673,12 +1673,12 @@ We hope you enjoy your new site. Thanks!
 		$admin_email = 'support@' . wp_parse_url( network_home_url(), PHP_URL_HOST );
 	}
 
-	$from_name       = ( '' !== get_site_option( 'site_name' ) ) ? esc_html( get_site_option( 'site_name' ) ) : 'WordPress';
+	$from_name       = ( '' !== get_site_option( 'site_name' ) ) ? esc_html( get_site_option( 'site_name' ) ) : 'ArkPress';
 	$message_headers = "From: \"{$from_name}\" <{$admin_email}>\n" . 'Content-Type: text/plain; charset="' . get_option( 'blog_charset' ) . "\"\n";
 	$message         = $welcome_email;
 
 	if ( empty( $current_network->site_name ) ) {
-		$current_network->site_name = 'WordPress';
+		$current_network->site_name = 'ArkPress';
 	}
 
 	/* translators: New site notification email subject. 1: Network title, 2: New site title. */
@@ -1879,12 +1879,12 @@ function wpmu_welcome_user_notification( $user_id, $password, $meta = array() ) 
 		$admin_email = 'support@' . wp_parse_url( network_home_url(), PHP_URL_HOST );
 	}
 
-	$from_name       = ( '' !== get_site_option( 'site_name' ) ) ? esc_html( get_site_option( 'site_name' ) ) : 'WordPress';
+	$from_name       = ( '' !== get_site_option( 'site_name' ) ) ? esc_html( get_site_option( 'site_name' ) ) : 'ArkPress';
 	$message_headers = "From: \"{$from_name}\" <{$admin_email}>\n" . 'Content-Type: text/plain; charset="' . get_option( 'blog_charset' ) . "\"\n";
 	$message         = $welcome_email;
 
 	if ( empty( $current_network->site_name ) ) {
-		$current_network->site_name = 'WordPress';
+		$current_network->site_name = 'ArkPress';
 	}
 
 	/* translators: New user notification email subject. 1: Network title, 2: New user login. */
@@ -1935,7 +1935,7 @@ function get_current_site() {
  *
  * @since MU (3.0.0)
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb ArkPress database abstraction object.
  *
  * @param int $user_id
  * @return array Contains the blog_id, post_id, post_date_gmt, and post_gmt_ts
@@ -1982,7 +1982,7 @@ function get_most_recent_post_of_user( $user_id ) {
 /**
  * Check an array of MIME types against a list of allowed types.
  *
- * WordPress ships with a set of allowed upload filetypes,
+ * ArkPress ships with a set of allowed upload filetypes,
  * which is defined in wp-includes/functions.php in
  * get_allowed_mime_types(). This function is used to filter
  * that list against the filetypes allowed provided by Multisite
@@ -2009,14 +2009,14 @@ function check_upload_mimes( $mimes ) {
 /**
  * Update a blog's post count.
  *
- * WordPress MS stores a blog's post count as an option so as
+ * ArkPress MS stores a blog's post count as an option so as
  * to avoid extraneous COUNTs when a blog's details are fetched
  * with get_site(). This function is called when posts are published
  * or unpublished to make sure the count stays current.
  *
  * @since MU (3.0.0)
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb ArkPress database abstraction object.
  *
  * @param string $deprecated Not used.
  */
@@ -2031,7 +2031,7 @@ function update_posts_count( $deprecated = '' ) {
  * @since MU (3.0.0)
  * @since 5.1.0 Parameters now support input from the {@see 'wp_initialize_site'} action.
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb ArkPress database abstraction object.
  *
  * @param WP_Site|int $blog_id The new site's object or ID.
  * @param int|array   $user_id User ID, or array of arguments including 'user_id'.
@@ -2068,7 +2068,7 @@ function wpmu_log_new_registrations( $blog_id, $user_id ) {
  *
  * @see term_id_filter
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb ArkPress database abstraction object.
  *
  * @param int    $term_id    An ID for a term on the current blog.
  * @param string $deprecated Not used.
@@ -2295,7 +2295,7 @@ function maybe_add_existing_user_to_blog() {
 			home_url(),
 			admin_url()
 		),
-		__( 'WordPress &rsaquo; Success' ),
+		__( 'ArkPress &rsaquo; Success' ),
 		array( 'response' => 200 )
 	);
 }
@@ -2482,7 +2482,7 @@ function force_ssl_content( $force = '' ) {
  * @param string $url URL
  * @return string URL with https as the scheme
  */
-function filter_SSL( $url ) {  // phpcs:ignore WordPress.NamingConventions.ValidFunctionName.FunctionNameInvalid
+function filter_SSL( $url ) {  // phpcs:ignore ArkPress.NamingConventions.ValidFunctionName.FunctionNameInvalid
 	if ( ! is_string( $url ) ) {
 		return get_bloginfo( 'url' ); // Return home blog URL with proper scheme.
 	}
@@ -2609,7 +2609,7 @@ function wp_update_network_site_counts( $network_id = null ) {
  * @since 3.7.0
  * @since 4.8.0 The `$network_id` parameter has been added.
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb ArkPress database abstraction object.
  *
  * @param int|null $network_id ID of the network. Default is the current network.
  */

@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Taxonomy Administration API.
+ * ArkPress Taxonomy Administration API.
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage Administration
  */
 

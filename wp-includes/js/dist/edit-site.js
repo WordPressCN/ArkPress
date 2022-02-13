@@ -98,7 +98,7 @@ this["wp"] = this["wp"] || {}; this["wp"]["editSite"] =
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const plugins = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_1__["SVG"], {
@@ -130,7 +130,7 @@ const plugins = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createEl
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const chevronRight = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_1__["SVG"], {
@@ -155,7 +155,7 @@ const chevronRight = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["cre
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const chevronLeft = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_1__["SVG"], {
@@ -198,7 +198,7 @@ var external_wp_primitives_ = __webpack_require__("Tqx9");
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const pencil = Object(external_wp_element_["createElement"])(external_wp_primitives_["SVG"], {
@@ -230,7 +230,7 @@ const pencil = Object(external_wp_element_["createElement"])(external_wp_primiti
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const cog = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_1__["SVG"], {
@@ -257,7 +257,7 @@ const cog = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElemen
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const layout = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_1__["SVG"], {
@@ -387,7 +387,7 @@ var external_wp_i18n_ = __webpack_require__("l3Sj");
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -425,7 +425,7 @@ var external_wp_primitives_ = __webpack_require__("Tqx9");
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const download_download = Object(external_wp_element_["createElement"])(external_wp_primitives_["SVG"], {
@@ -447,7 +447,7 @@ var external_wp_notices_ = __webpack_require__("onLe");
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -516,7 +516,7 @@ const TEMPLATE_PART_AREA_GENERAL = 'uncategorized';
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/edit-site/build-module/components/navigation-sidebar/navigation-panel/constants.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -566,7 +566,7 @@ const TEMPLATE_PARTS_SUB_MENUS = [{
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/edit-site/build-module/store/reducer.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -839,7 +839,7 @@ function isTemplateRevertable(template) {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/edit-site/build-module/store/actions.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -1340,7 +1340,7 @@ function getTemplatesLocationMap(templates) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -1632,7 +1632,7 @@ const getCurrentTemplateTemplateParts = Object(external_wp_data_["createRegistry
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/edit-site/build-module/store/index.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -1660,7 +1660,7 @@ Object(external_wp_data_["registerStore"])(STORE_NAME, storeConfig);
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -1683,7 +1683,7 @@ function WelcomeGuideMenuItem() {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -1705,7 +1705,7 @@ var external_wp_hooks_ = __webpack_require__("g56x");
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/edit-site/build-module/hooks/components.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -1743,7 +1743,7 @@ typeof d?d:I(d)},push:z,replace:A,go:y,back:function(){y(-1)},forward:function()
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -1767,7 +1767,7 @@ history_history.replace = history_replace;
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -1843,7 +1843,7 @@ var external_wp_a11y_ = __webpack_require__("gdqT");
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -1892,7 +1892,7 @@ function FeatureToggle(_ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -1960,7 +1960,7 @@ const MoreMenu = () => Object(external_wp_element_["createElement"])(external_wp
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -2013,7 +2013,7 @@ var external_wp_keycodes_ = __webpack_require__("RxS6");
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -2042,7 +2042,7 @@ function UndoButton() {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -2082,7 +2082,7 @@ var chevron_down = __webpack_require__("NWDH");
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -2207,7 +2207,7 @@ function DocumentActions(_ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -2259,7 +2259,7 @@ function Link(_ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -2400,7 +2400,7 @@ function TemplateAreas(_ref4) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -2425,7 +2425,7 @@ function EditTemplateTitle(_ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -2517,7 +2517,7 @@ function TemplateDetails(_ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -2671,7 +2671,7 @@ var cog = __webpack_require__("Cg8A");
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 function DefaultSidebar(_ref) {
@@ -2705,7 +2705,7 @@ function DefaultSidebar(_ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const styles_styles = Object(external_wp_element_["createElement"])(external_wp_primitives_["SVG"], {
@@ -2915,7 +2915,7 @@ function getValueFromVariable(features, blockName, variable) {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/edit-site/build-module/components/global-styles/context.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const DEFAULT_GLOBAL_STYLES_CONTEXT = {
@@ -2932,7 +2932,7 @@ const GlobalStylesContext = Object(external_wp_element_["createContext"])(DEFAUL
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -3109,7 +3109,7 @@ function useColorsPerOrigin(name) {
 
     if (shouldDisplayDefaultColors && defaultColors && defaultColors.length) {
       result.push({
-        name: Object(external_wp_i18n_["_x"])('Default', 'Indicates this palette comes from WordPress.'),
+        name: Object(external_wp_i18n_["_x"])('Default', 'Indicates this palette comes from ArkPress.'),
         colors: defaultColors
       });
     }
@@ -3141,7 +3141,7 @@ function useGradientsPerOrigin(name) {
 
     if (shouldDisplayDefaultGradients && defaultGradients && defaultGradients.length) {
       result.push({
-        name: Object(external_wp_i18n_["_x"])('Default', 'Indicates this palette comes from WordPress.'),
+        name: Object(external_wp_i18n_["_x"])('Default', 'Indicates this palette comes from ArkPress.'),
         gradients: defaultGradients
       });
     }
@@ -3161,7 +3161,7 @@ function useGradientsPerOrigin(name) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -3205,7 +3205,7 @@ const StylesPreview = () => {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -3237,7 +3237,7 @@ function NavigationButton(_ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const typography = Object(external_wp_element_["createElement"])(external_wp_primitives_["SVG"], {
@@ -3252,7 +3252,7 @@ const typography = Object(external_wp_element_["createElement"])(external_wp_pri
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const color_color = Object(external_wp_element_["createElement"])(external_wp_primitives_["SVG"], {
@@ -3270,7 +3270,7 @@ var layout = __webpack_require__("Civd");
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -3375,7 +3375,7 @@ function useHasColorPanel(name) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -3548,7 +3548,7 @@ function DimensionsPanel(_ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -3661,7 +3661,7 @@ function TypographyPanel(_ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -3704,7 +3704,7 @@ function ContextMenu(_ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -3735,7 +3735,7 @@ function ScreenRoot() {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -3778,7 +3778,7 @@ function ScreenHeader(_ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -3836,7 +3836,7 @@ function ScreenBlockList() {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -3866,7 +3866,7 @@ function ScreenBlock(_ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -3886,7 +3886,7 @@ function Subtitle(_ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -3980,7 +3980,7 @@ function ScreenTypography(_ref2) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -4022,7 +4022,7 @@ function ScreenTypographyElement(_ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -4077,7 +4077,7 @@ function Palette(_ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -4196,7 +4196,7 @@ function ScreenColors(_ref4) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -4247,7 +4247,7 @@ function ColorPalettePanel(_ref) {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -4305,7 +4305,7 @@ function GradientPalettePanel(_ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -4354,7 +4354,7 @@ function ScreenColorPalette(_ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -4444,7 +4444,7 @@ function ScreenBackgroundColor(_ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -4501,7 +4501,7 @@ function ScreenTextColor(_ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -4558,7 +4558,7 @@ function ScreenLinkColor(_ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -4592,7 +4592,7 @@ function ScreenLayout(_ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -4685,7 +4685,7 @@ function GlobalStylesUI() {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -5065,7 +5065,7 @@ function useGlobalStylesOutput() {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -5116,7 +5116,7 @@ const SIDEBAR_BLOCK = 'edit-site/block-inspector';
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -5172,7 +5172,7 @@ const SettingsHeader = _ref => {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -5249,7 +5249,7 @@ function template_areas_TemplateAreas() {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -5306,7 +5306,7 @@ function TemplateCard() {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -5385,7 +5385,7 @@ var external_wp_htmlEntities_ = __webpack_require__("rmEH");
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const home = Object(external_wp_element_["createElement"])(external_wp_primitives_["SVG"], {
@@ -5403,7 +5403,7 @@ var symbol_filled = __webpack_require__("OE6V");
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const slotName = '__experimentalMainDashboardButton';
@@ -5441,7 +5441,7 @@ MainDashboardButton.Slot = main_dashboard_button_Slot;
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -5557,7 +5557,7 @@ var wordpress = __webpack_require__("wduq");
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -5658,7 +5658,7 @@ function NavigationToggle(_ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -5707,7 +5707,7 @@ var external_wp_reusableBlocks_ = __webpack_require__("diJD");
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -5740,7 +5740,7 @@ function ConvertToRegularBlocks(_ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -5845,7 +5845,7 @@ function CreateTemplatePartModal(_ref) {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -5914,7 +5914,7 @@ function ConvertToTemplatePart(_ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -5961,7 +5961,7 @@ var edit = __webpack_require__("B9Az");
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -6003,7 +6003,7 @@ function NavigateToLink(_ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -6056,7 +6056,7 @@ function BlockInspectorButton(_ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -6131,7 +6131,7 @@ var arrow_left = __webpack_require__("cjQ8");
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -6169,7 +6169,7 @@ function BackButton() {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -6209,7 +6209,7 @@ function ResizeHandle(_ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -6363,7 +6363,7 @@ function ResizableEditor(_ref) {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -6466,7 +6466,7 @@ function BlockEditor(_ref) {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/edit-site/build-module/components/keyboard-shortcuts/index.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -6626,7 +6626,7 @@ KeyboardShortcuts.Register = KeyboardShortcutsRegister;
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/edit-site/build-module/components/url-query-controller/index.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -6711,7 +6711,7 @@ var library_close = __webpack_require__("w95h");
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -6759,7 +6759,7 @@ var close_small = __webpack_require__("bWcr");
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -6827,7 +6827,7 @@ function ListViewSidebar() {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -6914,7 +6914,7 @@ function WelcomeGuideImage(_ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -6966,7 +6966,7 @@ function WelcomeGuideEditor() {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -7042,7 +7042,7 @@ function WelcomeGuideStyles() {
       }, Object(external_wp_i18n_["__"])('Learn more')), Object(external_wp_element_["createElement"])("p", {
         className: "edit-site-welcome-guide__text"
       }, Object(external_wp_i18n_["__"])('New to block themes and styling your site? '), Object(external_wp_element_["createElement"])(external_wp_components_["ExternalLink"], {
-        href: Object(external_wp_i18n_["__"])('https://wordpress.org/support/article/styles-overview/')
+        href: Object(external_wp_i18n_["__"])('https://arkpress.icu/support/article/styles-overview/')
       }, Object(external_wp_i18n_["__"])('Here’s a detailed guide to learn how to make the most of it.'))))
     }]
   });
@@ -7062,7 +7062,7 @@ function WelcomeGuide() {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/edit-site/build-module/components/editor/global-styles-renderer.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -7114,7 +7114,7 @@ function GlobalStylesRenderer() {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -7238,7 +7238,7 @@ function GlobalStylesProvider(_ref) {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/edit-site/build-module/components/routes/use-title.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -7271,7 +7271,7 @@ function useTitle(title) {
       // @see https://github.com/WordPress/wordpress-develop/blob/94849898192d271d533e09756007e176feb80697/src/wp-admin/admin-header.php#L67-L68
       const formattedTitle = Object(external_wp_i18n_["sprintf"])(
       /* translators: Admin screen title. 1: Admin screen name, 2: Network or site name. */
-      Object(external_wp_i18n_["__"])('%1$s ‹ %2$s — WordPress'), title, siteTitle);
+      Object(external_wp_i18n_["__"])('%1$s ‹ %2$s — ArkPress'), title, siteTitle);
       document.title = formattedTitle; // Announce title on route change for screen readers.
 
       Object(external_wp_a11y_["speak"])(Object(external_wp_i18n_["sprintf"])(
@@ -7285,7 +7285,7 @@ function useTitle(title) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -7476,7 +7476,7 @@ function Editor(_ref) {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/edit-site/build-module/components/list/use-register-shortcuts.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -7524,7 +7524,7 @@ function useRegisterShortcuts() {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -7649,7 +7649,7 @@ function NewTemplate(_ref) {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -7736,7 +7736,7 @@ function NewTemplatePart(_ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -7773,7 +7773,7 @@ function AddNewTemplate(_ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -7826,7 +7826,7 @@ function isTemplateRemovable(template) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -7928,7 +7928,7 @@ function RenameMenuItem(_ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -8017,7 +8017,7 @@ var plugins = __webpack_require__("0Ene");
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const commentAuthorAvatar = Object(external_wp_element_["createElement"])(external_wp_primitives_["SVG"], {
@@ -8039,7 +8039,7 @@ const commentAuthorAvatar = Object(external_wp_element_["createElement"])(extern
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -8188,7 +8188,7 @@ function AddedBy(_ref5) {
         isCustomized: template.source === 'custom'
       });
     } // Template was created from scratch, but has no author. Author support
-    // was only added to templates in WordPress 5.9. Fallback to showing the
+    // was only added to templates in ArkPress 5.9. Fallback to showing the
     // site logo and title.
 
 
@@ -8208,7 +8208,7 @@ function AddedBy(_ref5) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -8315,7 +8315,7 @@ function Table(_ref) {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -8410,7 +8410,7 @@ function getIsListPage(_ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -8447,7 +8447,7 @@ function EditSiteApp(_ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -8533,7 +8533,7 @@ function PluginSidebarEditSite(_ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -8595,7 +8595,7 @@ function PluginSidebarMoreMenuItem(props) {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/edit-site/build-module/components/header/plugin-more-menu-item/index.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -8668,7 +8668,7 @@ function PluginSidebarMoreMenuItem(props) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -8766,7 +8766,7 @@ function initializeEditor(id, settings) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const redo = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_1__["SVG"], {
@@ -8812,7 +8812,7 @@ const redo = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createEleme
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const chevronDown = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_1__["SVG"], {
@@ -8837,7 +8837,7 @@ const chevronDown = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["crea
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const undo = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_1__["SVG"], {
@@ -8862,7 +8862,7 @@ const undo = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createEleme
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const symbolFilled = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_1__["SVG"], {
@@ -8887,7 +8887,7 @@ const symbolFilled = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["cre
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const listView = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_1__["SVG"], {
@@ -8912,7 +8912,7 @@ const listView = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createE
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const plus = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_1__["SVG"], {
@@ -8944,7 +8944,7 @@ const plus = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createEleme
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const check = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_1__["SVG"], {
@@ -9120,7 +9120,7 @@ var external_lodash_ = __webpack_require__("YLtl");
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -9496,7 +9496,7 @@ const STORE_NAME = 'core/interface';
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/interface/build-module/store/index.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -9537,7 +9537,7 @@ var external_wp_plugins_ = __webpack_require__("TvNi");
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/interface/build-module/components/complementary-area-context/index.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /* harmony default export */ var complementary_area_context = (Object(external_wp_plugins_["withPluginContext"])((context, ownProps) => {
@@ -9556,7 +9556,7 @@ var external_wp_plugins_ = __webpack_require__("TvNi");
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -9606,7 +9606,7 @@ function ComplementaryAreaToggle(_ref) {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -9647,7 +9647,7 @@ const ComplementaryAreaHeader = _ref => {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -9733,7 +9733,7 @@ ActionItem.Slot = ActionItemSlot;
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -9783,7 +9783,7 @@ function ComplementaryAreaMoreMenuItem(_ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -9823,7 +9823,7 @@ PinnedItems.Slot = PinnedItemsSlot;
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -9999,7 +9999,7 @@ ComplementaryAreaWrapped.Slot = ComplementaryAreaSlot;
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/interface/build-module/components/fullscreen-mode/index.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -10009,7 +10009,7 @@ const FullscreenMode = _ref => {
   } = _ref;
   Object(external_wp_element_["useEffect"])(() => {
     let isSticky = false; // `is-fullscreen-mode` is set in PHP as a body class by Gutenberg, and this causes
-    // `sticky-menu` to be applied by WordPress and prevents the admin menu being scrolled
+    // `sticky-menu` to be applied by ArkPress and prevents the admin menu being scrolled
     // even if `is-fullscreen-mode` is then removed. Let's remove `sticky-menu` here as
     // a consequence of the FullscreenMode setup
 
@@ -10054,11 +10054,11 @@ var external_wp_compose_ = __webpack_require__("K9lf");
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -10182,7 +10182,7 @@ var more_vertical = __webpack_require__("VKE3");
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -10222,7 +10222,7 @@ var external_wp_a11y_ = __webpack_require__("gdqT");
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -10298,7 +10298,7 @@ function MoreMenuFeatureToggle(_ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const starFilled = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_1__["SVG"], {
@@ -10323,7 +10323,7 @@ const starFilled = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["creat
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const moreVertical = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_1__["SVG"], {
@@ -10348,7 +10348,7 @@ const moreVertical = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["cre
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const starEmpty = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_1__["SVG"], {
@@ -10389,7 +10389,7 @@ const starEmpty = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["create
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const closeSmall = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_1__["SVG"], {
@@ -10414,7 +10414,7 @@ const closeSmall = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["creat
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const arrowLeft = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_1__["SVG"], {
@@ -10463,7 +10463,7 @@ const arrowLeft = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["create
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("GRId");
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /** @typedef {{icon: JSX.Element, size?: number} & import('@wordpress/primitives').SVGProps} IconProps */
@@ -11000,7 +11000,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const close = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_1__["SVG"], {
@@ -11025,7 +11025,7 @@ const close = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElem
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const wordpress = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_1__["SVG"], {

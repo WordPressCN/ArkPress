@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Administration Revisions API
+ * ArkPress Administration Revisions API
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage Administration
  * @since 3.6.0
  */

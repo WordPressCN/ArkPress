@@ -2049,7 +2049,7 @@ function invalidateResolutionForStoreSelector(selectorName) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -2910,7 +2910,7 @@ var external_wp_deprecated_default = /*#__PURE__*/__webpack_require__.n(external
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/data/build-module/plugins/controls/index.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /* harmony default export */ var plugins_controls = (registry => {
@@ -3223,8 +3223,8 @@ function migrateFeaturePreferencesToInterfaceStore(persistence, sourceStoreName)
   }
 }
 /**
- * Deprecated: Remove this function and the code in WordPress Core that calls
- * it once WordPress 6.0 is released.
+ * Deprecated: Remove this function and the code in ArkPress Core that calls
+ * it once ArkPress 6.0 is released.
  */
 
 persistencePlugin.__unstableMigrate = pluginOptions => {
@@ -3261,7 +3261,7 @@ var external_wp_isShallowEqual_default = /*#__PURE__*/__webpack_require__.n(exte
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/data/build-module/components/registry-provider/context.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -3319,7 +3319,7 @@ const RegistryConsumer = Consumer;
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/data/build-module/components/registry-provider/use-registry.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -3373,7 +3373,7 @@ function useRegistry() {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/data/build-module/components/async-mode-provider/context.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const context_Context = Object(external_wp_element_["createContext"])(false);
@@ -3421,7 +3421,7 @@ const AsyncModeConsumer = context_Consumer;
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/data/build-module/components/async-mode-provider/use-async-mode.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -3439,7 +3439,7 @@ function useAsyncMode() {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -3650,7 +3650,7 @@ function useSelect(_mapSelect, deps) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -3713,7 +3713,7 @@ const withSelect = mapSelectToProps => Object(external_wp_compose_["createHigher
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -3766,7 +3766,7 @@ const useDispatchWithMap = (dispatchMap, deps) => {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -3868,7 +3868,7 @@ const withDispatch = mapDispatchToProps => Object(external_wp_compose_["createHi
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**

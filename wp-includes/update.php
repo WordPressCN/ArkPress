@@ -2,25 +2,25 @@
 /**
  * A simple set of functions to check our version 1.0 update service.
  *
- * @package WordPress
+ * @package ArkPress
  * @since 2.3.0
  */
 
 /**
- * Check WordPress version against the newest version.
+ * Check ArkPress version against the newest version.
  *
- * The WordPress version, PHP version, and locale is sent.
+ * The ArkPress version, PHP version, and locale is sent.
  *
- * Checks against the WordPress server at api.arkpress.icu. Will only check
- * if WordPress isn't installing.
+ * Checks against the ArkPress server at api.arkpress.icu. Will only check
+ * if ArkPress isn't installing.
  *
  * @since 2.3.0
  *
- * @global string $wp_version       Used to check against the newest WordPress version.
- * @global wpdb   $wpdb             WordPress database abstraction object.
+ * @global string $wp_version       Used to check against the newest ArkPress version.
+ * @global wpdb   $wpdb             ArkPress database abstraction object.
  * @global string $wp_local_package Locale code of the package.
  *
- * @param array $extra_stats Extra statistics to report to the WordPress.org API.
+ * @param array $extra_stats Extra statistics to report to the ArkPress.icu API.
  * @param bool  $force_check Whether to bypass the transient cache and force a fresh update check. Defaults to false, true if $extra_stats is set.
  */
 function wp_version_check( $extra_stats = array(), $force_check = false ) {
@@ -61,7 +61,7 @@ function wp_version_check( $extra_stats = array(), $force_check = false ) {
 	}
 
 	/**
-	 * Filters the locale requested for WordPress core translations.
+	 * Filters the locale requested for ArkPress core translations.
 	 *
 	 * @since 2.8.0
 	 *
@@ -115,15 +115,15 @@ function wp_version_check( $extra_stats = array(), $force_check = false ) {
 	 * @param array $query {
 	 *     Version check query arguments.
 	 *
-	 *     @type string $version            WordPress version number.
+	 *     @type string $version            ArkPress version number.
 	 *     @type string $php                PHP version number.
 	 *     @type string $locale             The locale to retrieve updates for.
 	 *     @type string $mysql              MySQL version number.
 	 *     @type string $local_package      The value of the $wp_local_package global, when set.
-	 *     @type int    $blogs              Number of sites on this WordPress installation.
-	 *     @type int    $users              Number of users on this WordPress installation.
-	 *     @type int    $multisite_enabled  Whether this WordPress installation uses Multisite.
-	 *     @type int    $initial_db_version Database version of WordPress at time of installation.
+	 *     @type int    $blogs              Number of sites on this ArkPress installation.
+	 *     @type int    $users              Number of users on this ArkPress installation.
+	 *     @type int    $multisite_enabled  Whether this ArkPress installation uses Multisite.
+	 *     @type int    $initial_db_version Database version of ArkPress at time of installation.
 	 * }
 	 */
 	$query = apply_filters( 'core_version_check_query_args', $query );
@@ -169,9 +169,9 @@ function wp_version_check( $extra_stats = array(), $force_check = false ) {
 		trigger_error(
 			sprintf(
 				/* translators: %s: Support forums URL. */
-				__( 'An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="%s">support forums</a>.' ),
-				__( 'https://wordpress.org/support/forums/' )
-			) . ' ' . __( '(WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.)' ),
+				__( 'An unexpected error occurred. Something may be wrong with ArkPress.icu or this server&#8217;s configuration. If you continue to have problems, please try the <a href="%s">support forums</a>.' ),
+				__( 'https://arkpress.icu/support/forums/' )
+			) . ' ' . __( '(ArkPress could not establish a secure connection to ArkPress.icu. Please contact your server administrator.)' ),
 			headers_sent() || WP_DEBUG ? E_USER_WARNING : E_USER_NOTICE
 		);
 		$response = wp_remote_post( $http_url, $options );
@@ -258,20 +258,20 @@ function wp_version_check( $extra_stats = array(), $force_check = false ) {
 }
 
 /**
- * Checks for available updates to plugins based on the latest versions hosted on WordPress.org.
+ * Checks for available updates to plugins based on the latest versions hosted on ArkPress.icu.
  *
  * Despite its name this function does not actually perform any updates, it only checks for available updates.
  *
  * A list of all plugins installed is sent to WP, along with the site locale.
  *
- * Checks against the WordPress server at api.arkpress.icu. Will only check
- * if WordPress isn't installing.
+ * Checks against the ArkPress server at api.arkpress.icu. Will only check
+ * if ArkPress isn't installing.
  *
  * @since 2.3.0
  *
- * @global string $wp_version The WordPress version string.
+ * @global string $wp_version The ArkPress version string.
  *
- * @param array $extra_stats Extra statistics to report to the WordPress.org API.
+ * @param array $extra_stats Extra statistics to report to the ArkPress.icu API.
  */
 function wp_update_plugins( $extra_stats = array() ) {
 	if ( wp_installing() ) {
@@ -407,9 +407,9 @@ function wp_update_plugins( $extra_stats = array() ) {
 		trigger_error(
 			sprintf(
 				/* translators: %s: Support forums URL. */
-				__( 'An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="%s">support forums</a>.' ),
-				__( 'https://wordpress.org/support/forums/' )
-			) . ' ' . __( '(WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.)' ),
+				__( 'An unexpected error occurred. Something may be wrong with ArkPress.icu or this server&#8217;s configuration. If you continue to have problems, please try the <a href="%s">support forums</a>.' ),
+				__( 'https://arkpress.icu/support/forums/' )
+			) . ' ' . __( '(ArkPress could not establish a secure connection to ArkPress.icu. Please contact your server administrator.)' ),
 			headers_sent() || WP_DEBUG ? E_USER_WARNING : E_USER_NOTICE
 		);
 		$raw_response = wp_remote_post( $http_url, $options );
@@ -452,7 +452,7 @@ function wp_update_plugins( $extra_stats = array() ) {
 		 *     @type string $version      The version of the plugin.
 		 *     @type string $url          The URL for details of the plugin.
 		 *     @type string $package      Optional. The update ZIP for the plugin.
-		 *     @type string $tested       Optional. The version of WordPress the plugin is tested against.
+		 *     @type string $tested       Optional. The version of ArkPress the plugin is tested against.
 		 *     @type string $requires_php Optional. The version of PHP which the plugin requires.
 		 *     @type bool   $autoupdate   Optional. Whether the plugin should automatically update.
 		 *     @type array  $icons        Optional. Array of plugin icons.
@@ -491,7 +491,7 @@ function wp_update_plugins( $extra_stats = array() ) {
 		$update->id     = $plugin_data['UpdateURI'];
 		$update->plugin = $plugin_file;
 
-		// WordPress needs the version field specified as 'new_version'.
+		// ArkPress needs the version field specified as 'new_version'.
 		if ( ! isset( $update->new_version ) ) {
 			$update->new_version = $update->version;
 		}
@@ -532,20 +532,20 @@ function wp_update_plugins( $extra_stats = array() ) {
 }
 
 /**
- * Checks for available updates to themes based on the latest versions hosted on WordPress.org.
+ * Checks for available updates to themes based on the latest versions hosted on ArkPress.icu.
  *
  * Despite its name this function does not actually perform any updates, it only checks for available updates.
  *
  * A list of all themes installed is sent to WP, along with the site locale.
  *
- * Checks against the WordPress server at api.arkpress.icu. Will only check
- * if WordPress isn't installing.
+ * Checks against the ArkPress server at api.arkpress.icu. Will only check
+ * if ArkPress isn't installing.
  *
  * @since 2.7.0
  *
- * @global string $wp_version The WordPress version string.
+ * @global string $wp_version The ArkPress version string.
  *
- * @param array $extra_stats Extra statistics to report to the WordPress.org API.
+ * @param array $extra_stats Extra statistics to report to the ArkPress.icu API.
  */
 function wp_update_themes( $extra_stats = array() ) {
 	if ( wp_installing() ) {
@@ -687,9 +687,9 @@ function wp_update_themes( $extra_stats = array() ) {
 		trigger_error(
 			sprintf(
 				/* translators: %s: Support forums URL. */
-				__( 'An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="%s">support forums</a>.' ),
-				__( 'https://wordpress.org/support/forums/' )
-			) . ' ' . __( '(WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.)' ),
+				__( 'An unexpected error occurred. Something may be wrong with ArkPress.icu or this server&#8217;s configuration. If you continue to have problems, please try the <a href="%s">support forums</a>.' ),
+				__( 'https://arkpress.icu/support/forums/' )
+			) . ' ' . __( '(ArkPress could not establish a secure connection to ArkPress.icu. Please contact your server administrator.)' ),
 			headers_sent() || WP_DEBUG ? E_USER_WARNING : E_USER_NOTICE
 		);
 		$raw_response = wp_remote_post( $http_url, $options );
@@ -715,9 +715,9 @@ function wp_update_themes( $extra_stats = array() ) {
 }
 
 /**
- * Performs WordPress automatic background updates.
+ * Performs ArkPress automatic background updates.
  *
- * Updates WordPress core plus any plugins and themes that have automatic updates enabled.
+ * Updates ArkPress core plus any plugins and themes that have automatic updates enabled.
  *
  * @since 3.7.0
  */
@@ -815,8 +815,8 @@ function wp_get_update_data() {
 	$titles          = array();
 
 	if ( $counts['wordpress'] ) {
-		/* translators: %d: Number of available WordPress updates. */
-		$titles['wordpress'] = sprintf( __( '%d WordPress Update' ), $counts['wordpress'] );
+		/* translators: %d: Number of available ArkPress updates. */
+		$titles['wordpress'] = sprintf( __( '%d ArkPress Update' ), $counts['wordpress'] );
 	}
 
 	if ( $counts['plugins'] ) {
@@ -840,14 +840,14 @@ function wp_get_update_data() {
 		'title'  => $update_title,
 	);
 	/**
-	 * Filters the returned array of update data for plugins, themes, and WordPress core.
+	 * Filters the returned array of update data for plugins, themes, and ArkPress core.
 	 *
 	 * @since 3.5.0
 	 *
 	 * @param array $update_data {
 	 *     Fetched update data.
 	 *
-	 *     @type array   $counts       An array of counts for available plugin, theme, and WordPress updates.
+	 *     @type array   $counts       An array of counts for available plugin, theme, and ArkPress updates.
 	 *     @type string  $update_title Titles of available updates.
 	 * }
 	 * @param array $titles An array of update counts and UI strings for available updates.
@@ -860,7 +860,7 @@ function wp_get_update_data() {
  *
  * @since 2.8.0
  *
- * @global string $wp_version The WordPress version string.
+ * @global string $wp_version The ArkPress version string.
  */
 function _maybe_update_core() {
 	// Include an unmodified $wp_version.
@@ -880,7 +880,7 @@ function _maybe_update_core() {
 /**
  * Check the last time plugins were run before checking plugin versions.
  *
- * This might have been backported to WordPress 2.6.1 for performance reasons.
+ * This might have been backported to ArkPress 2.6.1 for performance reasons.
  * This is used for the wp-admin to check only so often instead of every page
  * load.
  *

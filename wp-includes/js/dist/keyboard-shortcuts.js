@@ -265,7 +265,7 @@ var external_wp_keycodes_ = __webpack_require__("RxS6");
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -400,7 +400,7 @@ const getCategoryShortcuts = Object(rememo["a" /* default */])((state, categoryN
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/keyboard-shortcuts/build-module/store/index.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -431,7 +431,7 @@ var external_wp_element_ = __webpack_require__("GRId");
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/keyboard-shortcuts/build-module/hooks/use-shortcut-event-match.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -476,14 +476,14 @@ function useShortcutEventMatch() {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/keyboard-shortcuts/build-module/context.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const context = Object(external_wp_element_["createContext"])();
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/keyboard-shortcuts/build-module/hooks/use-shortcut.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -535,7 +535,7 @@ var esm_extends = __webpack_require__("wx14");
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**

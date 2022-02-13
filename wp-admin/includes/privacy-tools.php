@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Administration Privacy Tools API.
+ * ArkPress Administration Privacy Tools API.
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage Administration
  */
 

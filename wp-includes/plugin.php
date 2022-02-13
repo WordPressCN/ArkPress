@@ -16,7 +16,7 @@
  *
  * This file should have no external dependencies.
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage Plugin
  * @since 1.5.0
  */
@@ -50,7 +50,7 @@ if ( ! isset( $wp_current_filter ) ) {
 /**
  * Adds a callback function to a filter hook.
  *
- * WordPress offers filter hooks to allow plugins to modify
+ * ArkPress offers filter hooks to allow plugins to modify
  * various types of internal data at runtime.
  *
  * A plugin can modify data by binding a callback to a filter hook. When the filter
@@ -378,7 +378,7 @@ function doing_filter( $hook_name = null ) {
 /**
  * Adds a callback function to an action hook.
  *
- * Actions are the hooks that the WordPress core launches at specific points
+ * Actions are the hooks that the ArkPress core launches at specific points
  * during execution, or when specific events occur. Plugins can specify that
  * one or more of its PHP functions are executed at these points, using the
  * Action API.
@@ -650,7 +650,7 @@ function did_action( $hook_name ) {
  *
  * @param string $hook_name   The name of the filter hook.
  * @param array  $args        Array of additional function arguments to be passed to apply_filters().
- * @param string $version     The version of WordPress that deprecated the hook.
+ * @param string $version     The version of ArkPress that deprecated the hook.
  * @param string $replacement Optional. The hook that should have been used. Default empty.
  * @param string $message     Optional. A message regarding the change. Default empty.
  */
@@ -677,7 +677,7 @@ function apply_filters_deprecated( $hook_name, $args, $version, $replacement = '
  *
  * @param string $hook_name   The name of the action hook.
  * @param array  $args        Array of additional function arguments to be passed to do_action().
- * @param string $version     The version of WordPress that deprecated the hook.
+ * @param string $version     The version of ArkPress that deprecated the hook.
  * @param string $replacement Optional. The hook that should have been used. Default empty.
  * @param string $message     Optional. A message regarding the change. Default empty.
  */

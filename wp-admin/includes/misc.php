@@ -1,8 +1,8 @@
 <?php
 /**
- * Misc WordPress Administration API.
+ * Misc ArkPress Administration API.
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage Administration
  */
 
@@ -135,7 +135,7 @@ function insert_with_markers( $filename, $marker, $insertion ) {
 		/* translators: 1: Marker. */
 		__(
 			'The directives (lines) between "BEGIN %1$s" and "END %1$s" are
-dynamically generated, and should only be modified via WordPress filters.
+dynamically generated, and should only be modified via ArkPress filters.
 Any changes to the directives between these markers will be overwritten.'
 		),
 		$marker
@@ -242,7 +242,7 @@ Any changes to the directives between these markers will be overwritten.'
  *
  * @since 1.5.0
  *
- * @global WP_Rewrite $wp_rewrite WordPress rewrite component.
+ * @global WP_Rewrite $wp_rewrite ArkPress rewrite component.
  *
  * @return bool|null True on write success, false on failure. Null in multisite.
  */
@@ -266,7 +266,7 @@ function save_mod_rewrite_rules() {
 	if ( ( ! file_exists( $htaccess_file ) && is_writable( $home_path ) && $wp_rewrite->using_mod_rewrite_permalinks() ) || is_writable( $htaccess_file ) ) {
 		if ( got_mod_rewrite() ) {
 			$rules = explode( "\n", $wp_rewrite->mod_rewrite_rules() );
-			return insert_with_markers( $htaccess_file, 'WordPress', $rules );
+			return insert_with_markers( $htaccess_file, 'ArkPress', $rules );
 		}
 	}
 
@@ -279,7 +279,7 @@ function save_mod_rewrite_rules() {
  *
  * @since 2.8.0
  *
- * @global WP_Rewrite $wp_rewrite WordPress rewrite component.
+ * @global WP_Rewrite $wp_rewrite ArkPress rewrite component.
  *
  * @return bool|null True on write success, false on failure. Null in multisite.
  */
@@ -710,7 +710,7 @@ function set_screen_options() {
 					 * @param string $option        The option name.
 					 * @param int    $value         The option value.
 					 */
-					$screen_option = apply_filters( 'set-screen-option', $screen_option, $option, $value ); // phpcs:ignore WordPress.NamingConventions.ValidHookName.UseUnderscores
+					$screen_option = apply_filters( 'set-screen-option', $screen_option, $option, $value ); // phpcs:ignore ArkPress.NamingConventions.ValidHookName.UseUnderscores
 				}
 
 				/**
@@ -750,7 +750,7 @@ function set_screen_options() {
 }
 
 /**
- * Check if rewrite rule for WordPress already exists in the IIS 7+ configuration file
+ * Check if rewrite rule for ArkPress already exists in the IIS 7+ configuration file
  *
  * @since 2.8.0
  *
@@ -770,7 +770,7 @@ function iis7_rewrite_rule_exists( $filename ) {
 		return false;
 	}
 	$xpath = new DOMXPath( $doc );
-	$rules = $xpath->query( '/configuration/system.webServer/rewrite/rules/rule[starts-with(@name,\'wordpress\')] | /configuration/system.webServer/rewrite/rules/rule[starts-with(@name,\'WordPress\')]' );
+	$rules = $xpath->query( '/configuration/system.webServer/rewrite/rules/rule[starts-with(@name,\'arkpress\')] | /configuration/system.webServer/rewrite/rules/rule[starts-with(@name,\'ArkPress\')]' );
 	if ( 0 == $rules->length ) {
 		return false;
 	} else {
@@ -779,7 +779,7 @@ function iis7_rewrite_rule_exists( $filename ) {
 }
 
 /**
- * Delete WordPress rewrite rule from web.config file if it exists there
+ * Delete ArkPress rewrite rule from web.config file if it exists there
  *
  * @since 2.8.0
  *
@@ -803,7 +803,7 @@ function iis7_delete_rewrite_rule( $filename ) {
 		return false;
 	}
 	$xpath = new DOMXPath( $doc );
-	$rules = $xpath->query( '/configuration/system.webServer/rewrite/rules/rule[starts-with(@name,\'wordpress\')] | /configuration/system.webServer/rewrite/rules/rule[starts-with(@name,\'WordPress\')]' );
+	$rules = $xpath->query( '/configuration/system.webServer/rewrite/rules/rule[starts-with(@name,\'arkpress\')] | /configuration/system.webServer/rewrite/rules/rule[starts-with(@name,\'ArkPress\')]' );
 	if ( $rules->length > 0 ) {
 		$child  = $rules->item( 0 );
 		$parent = $child->parentNode;
@@ -815,7 +815,7 @@ function iis7_delete_rewrite_rule( $filename ) {
 }
 
 /**
- * Add WordPress rewrite rule to the IIS 7+ configuration file.
+ * Add ArkPress rewrite rule to the IIS 7+ configuration file.
  *
  * @since 2.8.0
  *
@@ -845,7 +845,7 @@ function iis7_add_rewrite_rule( $filename, $rewrite_rule ) {
 	$xpath = new DOMXPath( $doc );
 
 	// First check if the rule already exists as in that case there is no need to re-add it.
-	$wordpress_rules = $xpath->query( '/configuration/system.webServer/rewrite/rules/rule[starts-with(@name,\'wordpress\')] | /configuration/system.webServer/rewrite/rules/rule[starts-with(@name,\'WordPress\')]' );
+	$wordpress_rules = $xpath->query( '/configuration/system.webServer/rewrite/rules/rule[starts-with(@name,\'arkpress\')] | /configuration/system.webServer/rewrite/rules/rule[starts-with(@name,\'ArkPress\')]' );
 	if ( $wordpress_rules->length > 0 ) {
 		return true;
 	}
@@ -905,7 +905,7 @@ function iis7_add_rewrite_rule( $filename, $rewrite_rule ) {
  * @param DOMDocument $doc
  * @param string      $filename
  */
-function saveDomDocument( $doc, $filename ) { // phpcs:ignore WordPress.NamingConventions.ValidFunctionName.FunctionNameInvalid
+function saveDomDocument( $doc, $filename ) { // phpcs:ignore ArkPress.NamingConventions.ValidFunctionName.FunctionNameInvalid
 	$config = $doc->saveXML();
 	$config = preg_replace( "/([^\r])\n/", "$1\r\n", $config );
 	$fp     = fopen( $filename, 'w' );
@@ -1467,10 +1467,10 @@ function wp_check_php_version() {
 
 		/**
 		 * Response should be an array with:
-		 *  'recommended_version' - string - The PHP version recommended by WordPress.
+		 *  'recommended_version' - string - The PHP version recommended by ArkPress.
 		 *  'is_supported' - boolean - Whether the PHP version is actively supported.
 		 *  'is_secure' - boolean - Whether the PHP version receives security updates.
-		 *  'is_acceptable' - boolean - Whether the PHP version is still acceptable for WordPress.
+		 *  'is_acceptable' - boolean - Whether the PHP version is still acceptable for ArkPress.
 		 */
 		$response = json_decode( wp_remote_retrieve_body( $response ), true );
 
@@ -1483,7 +1483,7 @@ function wp_check_php_version() {
 
 	if ( isset( $response['is_acceptable'] ) && $response['is_acceptable'] ) {
 		/**
-		 * Filters whether the active PHP version is considered acceptable by WordPress.
+		 * Filters whether the active PHP version is considered acceptable by ArkPress.
 		 *
 		 * Returning false will trigger a PHP version warning to show up in the admin dashboard to administrators.
 		 *

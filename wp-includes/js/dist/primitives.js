@@ -122,7 +122,7 @@ var external_wp_element_ = __webpack_require__("GRId");
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 

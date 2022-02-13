@@ -2,7 +2,7 @@
 /**
  * Bookmark Template Functions for usage in Themes
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage Template
  */
 

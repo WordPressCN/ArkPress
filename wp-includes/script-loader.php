@@ -1,6 +1,6 @@
 <?php
 /**
- * WordPress scripts and styles default loader.
+ * ArkPress scripts and styles default loader.
  *
  * Several constants are used to manage the loading, concatenating and compression of scripts and CSS:
  * define('SCRIPT_DEBUG', true); loads the development (non-minified) versions of all scripts and CSS, and disables compression and concatenation,
@@ -13,25 +13,25 @@
  * to temporarily override the above settings. Also a compression test is run once and the result is saved
  * as option 'can_compress_scripts' (0/1). The test will run again if that option is deleted.
  *
- * @package WordPress
+ * @package ArkPress
  */
 
-/** WordPress Dependency Class */
+/**  ArkPress Dependency Class */
 require ABSPATH . WPINC . '/class-wp-dependency.php';
 
-/** WordPress Dependencies Class */
+/**  ArkPress Dependencies Class */
 require ABSPATH . WPINC . '/class.wp-dependencies.php';
 
-/** WordPress Scripts Class */
+/**  ArkPress Scripts Class */
 require ABSPATH . WPINC . '/class.wp-scripts.php';
 
-/** WordPress Scripts Functions */
+/**  ArkPress Scripts Functions */
 require ABSPATH . WPINC . '/functions.wp-scripts.php';
 
-/** WordPress Styles Class */
+/**  ArkPress Styles Class */
 require ABSPATH . WPINC . '/class.wp-styles.php';
 
-/** WordPress Styles Functions */
+/**  ArkPress Styles Functions */
 require ABSPATH . WPINC . '/functions.wp-styles.php';
 
 /**
@@ -70,14 +70,14 @@ function wp_register_tinymce_scripts( $scripts, $force_uncompressed = false ) {
 }
 
 /**
- * Registers all the WordPress vendor scripts that are in the standardized
+ * Registers all the ArkPress vendor scripts that are in the standardized
  * `js/dist/vendor/` location.
  *
  * For the order of `$scripts->add` see `wp_default_scripts`.
  *
  * @since 5.0.0
  *
- * @global WP_Locale $wp_locale WordPress date and time locale object.
+ * @global WP_Locale $wp_locale ArkPress date and time locale object.
  *
  * @param WP_Scripts $scripts WP_Scripts object.
  */
@@ -215,7 +215,7 @@ function wp_get_script_polyfill( $scripts, $tests ) {
 }
 
 /**
- * Registers all the WordPress packages scripts that are in the standardized
+ * Registers all the ArkPress packages scripts that are in the standardized
  * `js/dist/` location.
  *
  * For the order of `$scripts->add` see `wp_default_scripts`.
@@ -267,7 +267,7 @@ function wp_default_packages_scripts( $scripts ) {
 		 * Manually set the text direction localization after wp-i18n is printed.
 		 * This ensures that wp.i18n.isRTL() returns true in RTL languages.
 		 * We cannot use $scripts->set_translations( 'wp-i18n' ) to do this
-		 * because WordPress prints a script's translations *before* the script,
+		 * because ArkPress prints a script's translations *before* the script,
 		 * which means, in the case of wp-i18n, that wp.i18n.setLocaleData()
 		 * is called before wp.i18n is defined.
 		 */
@@ -280,11 +280,11 @@ function wp_default_packages_scripts( $scripts ) {
 }
 
 /**
- * Adds inline scripts required for the WordPress JavaScript packages.
+ * Adds inline scripts required for the ArkPress JavaScript packages.
  *
  * @since 5.0.0
  *
- * @global WP_Locale $wp_locale WordPress date and time locale object.
+ * @global WP_Locale $wp_locale ArkPress date and time locale object.
  *
  * @param WP_Scripts $scripts WP_Scripts object.
  */
@@ -552,7 +552,7 @@ function wp_tinymce_inline_scripts() {
 }
 
 /**
- * Registers all the WordPress packages scripts.
+ * Registers all the ArkPress packages scripts.
  *
  * @since 5.0.0
  *
@@ -607,7 +607,7 @@ function wp_scripts_get_suffix( $type = '' ) {
 }
 
 /**
- * Register all WordPress scripts.
+ * Register all ArkPress scripts.
  *
  * Localizes some of them.
  * args order: `$scripts->add( 'handle', 'url', 'dependencies', 'query-string', 1 );`
@@ -740,7 +740,7 @@ function wp_default_scripts( $scripts ) {
 
 	$scripts->add( 'wp-lists', "/wp-includes/js/wp-lists$suffix.js", array( 'wp-ajax-response', 'jquery-color' ), false, 1 );
 
-	// WordPress no longer uses or bundles Prototype or script.aculo.us. These are now pulled from an external source.
+	// ArkPress no longer uses or bundles Prototype or script.aculo.us. These are now pulled from an external source.
 	$scripts->add( 'prototype', 'https://ajax.googleapis.com/ajax/libs/prototype/1.7.1.0/prototype.js', array(), '1.7.1' );
 	$scripts->add( 'scriptaculous-root', 'https://ajax.googleapis.com/ajax/libs/scriptaculous/1.9.0/scriptaculous.js', array( 'prototype' ), '1.9.0' );
 	$scripts->add( 'scriptaculous-builder', 'https://ajax.googleapis.com/ajax/libs/scriptaculous/1.9.0/builder.js', array( 'scriptaculous-root' ), '1.9.0' );
@@ -1648,7 +1648,7 @@ function wp_just_in_time_script_localization() {
  *
  * @link https://api.jqueryui.com/datepicker/#options
  *
- * @global WP_Locale $wp_locale WordPress date and time locale object.
+ * @global WP_Locale $wp_locale ArkPress date and time locale object.
  */
 function wp_localize_jquery_ui_datepicker() {
 	global $wp_locale;
@@ -2352,15 +2352,15 @@ function wp_maybe_inline_styles() {
 }
 
 /**
- * Make URLs relative to the WordPress installation.
+ * Make URLs relative to the ArkPress installation.
  *
  * @since 5.9.0
  * @access private
  *
- * @param string $css            The CSS to make URLs relative to the WordPress installation.
+ * @param string $css            The CSS to make URLs relative to the ArkPress installation.
  * @param string $stylesheet_url The URL to the stylesheet.
  *
- * @return string The CSS with URLs made relative to the WordPress installation.
+ * @return string The CSS with URLs made relative to the ArkPress installation.
  */
 function _wp_normalize_relative_css_links( $css, $stylesheet_url ) {
 	$has_src_results = preg_match_all( '#url\s*\(\s*[\'"]?\s*([^\'"\)]+)#', $css, $src_results );

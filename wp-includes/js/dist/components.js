@@ -439,7 +439,7 @@ function getActiveElement() {
 // @ts-nocheck
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -1806,7 +1806,7 @@ module.exports = function HasProperty(O, P) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const chevronRight = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_1__["SVG"], {
@@ -1964,7 +1964,7 @@ exports['default'] = _propTypes2['default'].oneOf(_constants.WEEKDAYS);
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const chevronLeft = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_1__["SVG"], {
@@ -3791,7 +3791,7 @@ module.exports = function ToPropertyDescriptor(Obj) {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -4199,7 +4199,7 @@ function v4(options, buf, offset) {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -4220,12 +4220,12 @@ function v4(options, buf, offset) {
  * The hope is that we can improve render performance by removing functional
  * component wrappers.
  *
- * @template {import('./wordpress-component').WordPressComponentProps<{}, any, any>} P
+ * @template {import('./wordpress-component').ArkPressComponentProps<{}, any, any>} P
  * @param {(props: P, ref: import('react').Ref<any>) => JSX.Element | null} Component            The component to register into the Context system.
  * @param {string}                                                          namespace            The namespace to register the component under.
  * @param {Object}                                                          options
  * @param {boolean}                                                         [options.memo=false]
- * @return {import('./wordpress-component').WordPressComponentFromProps<P>} The connected WordPressComponent
+ * @return {import('./wordpress-component').ArkPressComponentFromProps<P>} The connected ArkPressComponent
  */
 
 function contextConnect(Component, namespace) {
@@ -4262,7 +4262,7 @@ function contextConnect(Component, namespace) {
 
   WrappedComponent.displayName = namespace; // @ts-ignore internal property
 
-  WrappedComponent[_constants__WEBPACK_IMPORTED_MODULE_3__[/* CONNECT_STATIC_NAMESPACE */ "c"]] = Object(lodash__WEBPACK_IMPORTED_MODULE_0__["uniq"])(mergedNamespace); // @ts-ignore WordPressComponent property
+  WrappedComponent[_constants__WEBPACK_IMPORTED_MODULE_3__[/* CONNECT_STATIC_NAMESPACE */ "c"]] = Object(lodash__WEBPACK_IMPORTED_MODULE_0__["uniq"])(mergedNamespace); // @ts-ignore ArkPressComponent property
 
   WrappedComponent.selector = `.${Object(_get_styled_class_name_from_key__WEBPACK_IMPORTED_MODULE_4__[/* getStyledClassNameFromKey */ "a"])(namespace)}`; // @ts-ignore
 
@@ -4653,7 +4653,7 @@ module.exports = __webpack_require__("zt9T");
 // eslint-disable-next-line no-restricted-imports
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -6089,7 +6089,7 @@ module.exports = $Array.isArray || function IsArray(argument) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const link = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_1__["SVG"], {
@@ -6115,7 +6115,7 @@ const link = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createEleme
 /* harmony import */ var _get_styled_class_name_from_key__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("UAm0");
 /* harmony import */ var _utils_hooks_use_cx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("h9+V");
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -8052,7 +8052,7 @@ __webpack_require__("H24B");
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("GRId");
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const ToolbarContext = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createContext"])();
@@ -8708,7 +8708,7 @@ var Clickable = Object(reakit_system_createComponent__WEBPACK_IMPORTED_MODULE_1_
 // @ts-nocheck
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -9099,7 +9099,7 @@ exports.parse = (GradientParser || {}).parse;
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const external = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_1__["SVG"], {
@@ -9526,7 +9526,7 @@ function setUserFocus(element, value) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const linkOff = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_1__["SVG"], {
@@ -10041,7 +10041,7 @@ exports['default'] = (0, _reactWithStyles.withStyles)(function (_ref2) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const upload = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_1__["SVG"], {
@@ -10066,7 +10066,7 @@ const upload = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createEle
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const chevronDown = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_1__["SVG"], {
@@ -12018,7 +12018,7 @@ function isObject(arg) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const plus = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_1__["SVG"], {
@@ -12248,7 +12248,7 @@ function _createForOfIteratorHelperLoose(o, allowArrayLike) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const check = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_1__["SVG"], {
@@ -12654,7 +12654,7 @@ var component = __webpack_require__("iSWJ");
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -14885,7 +14885,7 @@ function AlignmentMatrixControlIcon(_ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -23633,7 +23633,7 @@ var use_context_system = __webpack_require__("C6yU");
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/flex/context.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const FlexContext = Object(external_wp_element_["createContext"])({
@@ -23699,7 +23699,7 @@ var use_cx = __webpack_require__("h9+V");
 
 
 /**
- * @param {import('../../ui/context').WordPressComponentProps<import('../types').FlexItemProps, 'div'>} props
+ * @param {import('../../ui/context').ArkPressComponentProps<import('../types').FlexItemProps, 'div'>} props
  */
 
 function useFlexItem(props) {
@@ -23728,7 +23728,7 @@ function useFlexItem(props) {
 
 
 /**
- * @param {import('../../ui/context').WordPressComponentProps<import('../types').FlexBlockProps, 'div'>} props
+ * @param {import('../../ui/context').ArkPressComponentProps<import('../types').FlexBlockProps, 'div'>} props
  */
 
 function useFlexBlock(props) {
@@ -23751,7 +23751,7 @@ function useFlexBlock(props) {
 
 
 /**
- * @param {import('../../ui/context').WordPressComponentProps<import('../types').FlexBlockProps, 'div'>} props
+ * @param {import('../../ui/context').ArkPressComponentProps<import('../types').FlexBlockProps, 'div'>} props
  * @param {import('react').Ref<any>}                                                                     forwardedRef
  */
 
@@ -23787,7 +23787,7 @@ const ConnectedFlexBlock = Object(context_connect["a" /* contextConnect */])(Fle
 
 
 /**
- * @param {import('../../ui/context').WordPressComponentProps<import('../types').FlexItemProps, 'div'>} props
+ * @param {import('../../ui/context').ArkPressComponentProps<import('../types').FlexItemProps, 'div'>} props
  * @param {import('react').Ref<any>}                                                                    forwardedRef
  */
 
@@ -23818,7 +23818,7 @@ var external_wp_deprecated_default = /*#__PURE__*/__webpack_require__.n(external
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/ui/utils/use-responsive-value.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const breakpoints = ['40em', '52em', '64em'];
@@ -23923,7 +23923,7 @@ function space(value) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -24022,7 +24022,7 @@ rtl_rtl.watch = () => Object(external_wp_i18n_["isRTL"])();
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -24038,8 +24038,8 @@ rtl_rtl.watch = () => Object(external_wp_i18n_["isRTL"])();
 
 /**
  *
- * @param {import('../../ui/context').WordPressComponentProps<import('../types').FlexProps, 'div'>} props
- * @return {import('../../ui/context').WordPressComponentProps<import('../types').FlexProps, 'div'>} Props with the deprecated props removed.
+ * @param {import('../../ui/context').ArkPressComponentProps<import('../types').FlexProps, 'div'>} props
+ * @return {import('../../ui/context').ArkPressComponentProps<import('../types').FlexProps, 'div'>} Props with the deprecated props removed.
  */
 
 function useDeprecatedProps(_ref) {
@@ -24061,7 +24061,7 @@ function useDeprecatedProps(_ref) {
   return otherProps;
 }
 /**
- * @param {import('../../ui/context').WordPressComponentProps<import('../types').FlexProps, 'div'>} props
+ * @param {import('../../ui/context').ArkPressComponentProps<import('../types').FlexProps, 'div'>} props
  */
 
 
@@ -24131,7 +24131,7 @@ function useFlex(props) {
 
 
 /**
- * @param {import('../../ui/context').WordPressComponentProps<import('../types').FlexProps, 'div'>} props
+ * @param {import('../../ui/context').ArkPressComponentProps<import('../types').FlexProps, 'div'>} props
  * @param {import('react').Ref<any>}                                                                forwardedRef
  */
 
@@ -24300,7 +24300,7 @@ function truncateContent() {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -24313,7 +24313,7 @@ function truncateContent() {
 
 
 /**
- * @param {import('../ui/context').WordPressComponentProps<import('./types').Props, 'span'>} props
+ * @param {import('../ui/context').ArkPressComponentProps<import('./types').Props, 'span'>} props
  */
 
 function useTruncate(props) {
@@ -24565,7 +24565,7 @@ var dist = __webpack_require__("5V/u");
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -24793,7 +24793,7 @@ function hook_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to strin
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -24811,7 +24811,7 @@ function hook_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to strin
 
 
 /**
- * @param {import('../ui/context').WordPressComponentProps<import('./types').Props, 'span'>} props
+ * @param {import('../ui/context').ArkPressComponentProps<import('./types').Props, 'span'>} props
  */
 
 var hook_ref =  true ? {
@@ -24958,7 +24958,7 @@ function useText(props) {
 
 
 /**
- * @param {import('../ui/context').WordPressComponentProps<import('./types').Props, 'span'>} props
+ * @param {import('../ui/context').ArkPressComponentProps<import('./types').Props, 'span'>} props
  * @param {import('react').Ref<any>}                                                         forwardedRef
  */
 
@@ -25254,7 +25254,7 @@ const Suffix = Object(emotion_styled_base_browser_esm["a" /* default */])("span"
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -25319,7 +25319,7 @@ function label_Label(_ref) {
 // eslint-disable-next-line no-restricted-imports
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -28282,7 +28282,7 @@ var external_wp_keycodes_ = __webpack_require__("RxS6");
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/input-control/utils.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -28380,7 +28380,7 @@ const UPDATE = 'UPDATE';
  // eslint-disable-next-line no-restricted-imports
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -28729,7 +28729,7 @@ function isValueNumeric(value) {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/utils/hooks/use-update-effect.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -28766,7 +28766,7 @@ function useUpdateEffect(effect, deps) {
  // eslint-disable-next-line no-restricted-imports
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -29007,7 +29007,7 @@ const ForwardedComponent = Object(external_wp_element_["forwardRef"])(InputField
  // eslint-disable-next-line no-restricted-imports
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -29119,7 +29119,7 @@ const CircleIndicator = Object(emotion_styled_base_browser_esm["a" /* default */
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -29299,7 +29299,7 @@ function Spacer(props, forwardedRef) {
  *   return (
  *     <View>
  *       <Spacer>
- *         <Heading>WordPress.org</Heading>
+ *         <Heading>ArkPress.icu</Heading>
  *       </Spacer>
  *       <Text>
  *         Code is Poetry
@@ -29322,7 +29322,7 @@ const ConnectedSpacer = Object(context_connect["a" /* contextConnect */])(Spacer
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -29394,7 +29394,7 @@ var external_wp_a11y_ = __webpack_require__("gdqT");
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -29498,7 +29498,7 @@ var build_module_popover = __webpack_require__("oXO/");
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -29573,7 +29573,7 @@ function getAutoCompleterUI(autocompleter) {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -30242,7 +30242,7 @@ function roundClampString() {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -30489,7 +30489,7 @@ const UnitSelect = Object(emotion_styled_base_browser_esm["a" /* default */])("s
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/unit-control/utils.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -30854,7 +30854,7 @@ function UnitSelectControl(_ref) {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/utils/hooks/use-controlled-state.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -30952,7 +30952,7 @@ function useControlledState(currentState) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -31339,7 +31339,7 @@ function Tooltip(_ref3) {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -32014,7 +32014,7 @@ var link_off = __webpack_require__("Mp0b");
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -32111,7 +32111,7 @@ const LeftView = /*#__PURE__*/Object(emotion_styled_base_browser_esm["a" /* defa
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -32270,7 +32270,7 @@ function useSideAnimation(value) {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -32426,7 +32426,7 @@ BoxControl.__Visualizer = BoxControlVisualizer;
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -32468,7 +32468,7 @@ const Elevation =  true ? {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -32492,7 +32492,7 @@ function getBoxShadow(value) {
   return boxShadow;
 }
 /**
- * @param {import('../ui/context').WordPressComponentProps<import('./types').Props, 'div'>} props
+ * @param {import('../ui/context').ArkPressComponentProps<import('./types').Props, 'div'>} props
  */
 
 function useElevation(props) {
@@ -32564,7 +32564,7 @@ function useElevation(props) {
 
 
 /**
- * @param {import('../ui/context').WordPressComponentProps<import('./types').Props, 'div'>} props
+ * @param {import('../ui/context').ArkPressComponentProps<import('./types').Props, 'div'>} props
  * @param {import('react').Ref<any>}                                                        forwardedRef
  */
 
@@ -32779,7 +32779,7 @@ const getVariant = (variant, surfaceBackgroundSize, surfaceBackgroundSizeDotted)
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/surface/hook.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -32790,7 +32790,7 @@ const getVariant = (variant, surfaceBackgroundSize, surfaceBackgroundSizeDotted)
 
 
 /**
- * @param {import('../ui/context').WordPressComponentProps<import('./types').Props, 'div'>} props
+ * @param {import('../ui/context').ArkPressComponentProps<import('./types').Props, 'div'>} props
  */
 
 function useSurface(props) {
@@ -32822,7 +32822,7 @@ function useSurface(props) {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/card/card/hook.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -32835,7 +32835,7 @@ function useSurface(props) {
 
 
 /**
- * @param {import('../../ui/context').WordPressComponentProps<import('../types').Props, 'div'>} props
+ * @param {import('../../ui/context').ArkPressComponentProps<import('../types').Props, 'div'>} props
  */
 
 function hook_useDeprecatedProps(_ref) {
@@ -32845,7 +32845,7 @@ function hook_useDeprecatedProps(_ref) {
     ...otherProps
   } = _ref;
 
-  /**@type {import('../../ui/context').WordPressComponentProps<import('../types').Props, 'div'>} */
+  /**@type {import('../../ui/context').ArkPressComponentProps<import('../types').Props, 'div'>} */
   const propsToReturn = { ...otherProps
   };
   let computedElevation = elevation;
@@ -32869,7 +32869,7 @@ function hook_useDeprecatedProps(_ref) {
   return propsToReturn;
 }
 /**
- * @param {import('../../ui/context').WordPressComponentProps<import('../types').Props, 'div'>} props
+ * @param {import('../../ui/context').ArkPressComponentProps<import('../types').Props, 'div'>} props
  */
 
 
@@ -32906,7 +32906,7 @@ function useCard(props) {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -32922,7 +32922,7 @@ function useCard(props) {
 
 
 /**
- * @param {import('../../ui/context').WordPressComponentProps<import('../types').Props, 'div'>} props
+ * @param {import('../../ui/context').ArkPressComponentProps<import('../types').Props, 'div'>} props
  * @param {import('react').Ref<any>}                                                            forwardedRef
  */
 
@@ -33045,7 +33045,7 @@ const scrollAuto =  true ? {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/scrollable/hook.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -33058,7 +33058,7 @@ const scrollAuto =  true ? {
 /* eslint-disable jsdoc/valid-types */
 
 /**
- * @param {import('../ui/context').WordPressComponentProps<import('./types').Props, 'div'>} props
+ * @param {import('../ui/context').ArkPressComponentProps<import('./types').Props, 'div'>} props
  */
 
 /* eslint-enable jsdoc/valid-types */
@@ -33088,7 +33088,7 @@ function useScrollable(props) {
 
 
 /**
- * @param {import('../ui/context').WordPressComponentProps<import('./types').Props, 'div'>} props
+ * @param {import('../ui/context').ArkPressComponentProps<import('./types').Props, 'div'>} props
  * @param {import('react').Ref<any>}                                                        forwardedRef
  */
 
@@ -33121,7 +33121,7 @@ const ConnectedScrollable = Object(context_connect["a" /* contextConnect */])(co
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/card/card-body/hook.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -33132,7 +33132,7 @@ const ConnectedScrollable = Object(context_connect["a" /* contextConnect */])(co
 
 
 /**
- * @param {import('../../ui/context').WordPressComponentProps<import('../types').BodyProps, 'div'>} props
+ * @param {import('../../ui/context').ArkPressComponentProps<import('../types').BodyProps, 'div'>} props
  */
 
 function useCardBody(props) {
@@ -33164,7 +33164,7 @@ function useCardBody(props) {
 
 
 /**
- * @param {import('../../ui/context').WordPressComponentProps<import('../types').BodyProps, 'div'>} props
+ * @param {import('../../ui/context').ArkPressComponentProps<import('../types').BodyProps, 'div'>} props
  * @param {import('react').Ref<any>}                                                                forwardedRef
  */
 
@@ -33332,7 +33332,7 @@ const ConnectedDivider = Object(context_connect["a" /* contextConnect */])(compo
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/card/card-divider/hook.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -33343,7 +33343,7 @@ const ConnectedDivider = Object(context_connect["a" /* contextConnect */])(compo
 
 
 /**
- * @param {import('../../ui/context').WordPressComponentProps<import('../../divider').DividerProps, 'hr', false>} props
+ * @param {import('../../ui/context').ArkPressComponentProps<import('../../divider').DividerProps, 'hr', false>} props
  */
 
 function useCardDivider(props) {
@@ -33370,7 +33370,7 @@ function useCardDivider(props) {
 
 
 /**
- * @param {import('../../ui/context').WordPressComponentProps<import('../../divider').DividerProps, 'hr', false>} props
+ * @param {import('../../ui/context').ArkPressComponentProps<import('../../divider').DividerProps, 'hr', false>} props
  * @param {import('react').Ref<any>}                                                                              forwardedRef
  */
 
@@ -33402,7 +33402,7 @@ const ConnectedCardDivider = Object(context_connect["a" /* contextConnect */])(C
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/card/card-footer/hook.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -33413,7 +33413,7 @@ const ConnectedCardDivider = Object(context_connect["a" /* contextConnect */])(C
 
 
 /**
- * @param {import('../../ui/context').WordPressComponentProps<import('../types').FooterProps, 'div'>} props
+ * @param {import('../../ui/context').ArkPressComponentProps<import('../types').FooterProps, 'div'>} props
  */
 
 function useCardFooter(props) {
@@ -33445,7 +33445,7 @@ function useCardFooter(props) {
 
 
 /**
- * @param {import('../../ui/context').WordPressComponentProps<import('../types').FooterProps, 'div'>} props
+ * @param {import('../../ui/context').ArkPressComponentProps<import('../types').FooterProps, 'div'>} props
  * @param {import('react').Ref<any>}                                                                  forwardedRef
  */
 
@@ -33475,7 +33475,7 @@ const ConnectedCardFooter = Object(context_connect["a" /* contextConnect */])(Ca
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/card/card-header/hook.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -33486,7 +33486,7 @@ const ConnectedCardFooter = Object(context_connect["a" /* contextConnect */])(Ca
 
 
 /**
- * @param {import('../../ui/context').WordPressComponentProps<import('../types').HeaderProps, 'div'>} props
+ * @param {import('../../ui/context').ArkPressComponentProps<import('../types').HeaderProps, 'div'>} props
  */
 
 function useCardHeader(props) {
@@ -33516,7 +33516,7 @@ function useCardHeader(props) {
 
 
 /**
- * @param {import('../../ui/context').WordPressComponentProps<import('../types').HeaderProps, 'div'>} props
+ * @param {import('../../ui/context').ArkPressComponentProps<import('../types').HeaderProps, 'div'>} props
  * @param {import('react').Ref<any>}                                                                  forwardedRef
  */
 
@@ -33546,7 +33546,7 @@ const ConnectedCardHeader = Object(context_connect["a" /* contextConnect */])(Ca
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/card/card-media/hook.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -33557,7 +33557,7 @@ const ConnectedCardHeader = Object(context_connect["a" /* contextConnect */])(Ca
 
 
 /**
- * @param {import('../../ui/context').WordPressComponentProps<{ children: import('react').ReactNode }, 'div'>} props
+ * @param {import('../../ui/context').ArkPressComponentProps<{ children: import('react').ReactNode }, 'div'>} props
  */
 
 function useCardMedia(props) {
@@ -33584,7 +33584,7 @@ function useCardMedia(props) {
 
 
 /**
- * @param {import('../../ui/context').WordPressComponentProps<{ children: import('react').ReactNode }, 'div'>} props
+ * @param {import('../../ui/context').ArkPressComponentProps<{ children: import('react').ReactNode }, 'div'>} props
  * @param {import('react').Ref<any>}                                                                           forwardedRef
  */
 
@@ -33631,7 +33631,7 @@ var check = __webpack_require__("RMJe");
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -33699,7 +33699,7 @@ function CheckboxControl(_ref) {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -33899,7 +33899,7 @@ function getAlignmentProps(alignment) {
 // eslint-disable-next-line no-restricted-imports
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -33928,7 +33928,7 @@ function getValidChildren(children) {
 
 /**
  *
- * @param {import('../ui/context').WordPressComponentProps<import('./types').Props, 'div'>} props
+ * @param {import('../ui/context').ArkPressComponentProps<import('./types').Props, 'div'>} props
  */
 
 function useHStack(props) {
@@ -33981,7 +33981,7 @@ function useHStack(props) {
 
 
 /**
- * @param {import('../ui/context').WordPressComponentProps<import('./types').Props, 'div'>} props
+ * @param {import('../ui/context').ArkPressComponentProps<import('./types').Props, 'div'>} props
  * @param {import('react').Ref<any>}                                                        forwardedRef
  */
 
@@ -34104,7 +34104,7 @@ const DownArrowWrapper = Object(emotion_styled_base_browser_esm["a" /* default *
  // eslint-disable-next-line no-restricted-imports
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -34240,7 +34240,7 @@ var components_build_module_icon = __webpack_require__("9VDH");
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -34596,7 +34596,7 @@ const ActionRightWrapper = Object(emotion_styled_base_browser_esm["a" /* default
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -34681,7 +34681,7 @@ function RangeMark(_ref) {
 // @ts-nocheck
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -34798,7 +34798,7 @@ function useMarks(_ref3) {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -34871,7 +34871,7 @@ function useTooltipPosition(_ref2) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -37736,7 +37736,7 @@ var TooltipReference = Object(createComponent["a" /* createComponent */])({
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/ui/tooltip/context.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -38091,7 +38091,7 @@ const {
 } = tooltip_styles_namespaceObject;
 /**
  *
- * @param {import('../context').WordPressComponentProps<import('./types').ContentProps, 'div'>} props
+ * @param {import('../context').ArkPressComponentProps<import('./types').ContentProps, 'div'>} props
  * @param {import('react').Ref<any>}                                                            forwardedRef
  */
 
@@ -38126,7 +38126,7 @@ function content_TooltipContent(props, forwardedRef) {
 // eslint-disable-next-line no-restricted-imports
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -38139,7 +38139,7 @@ function content_TooltipContent(props, forwardedRef) {
 
 
 /**
- * @param {import('../context').WordPressComponentProps<import('./types').Props, 'div'>} props
+ * @param {import('../context').ArkPressComponentProps<import('./types').Props, 'div'>} props
  * @param {import('react').Ref<any>}                                                     forwardedRef
  */
 
@@ -38198,7 +38198,7 @@ function component_Tooltip(props, forwardedRef) {
  * function Example() {
  * 	return (
  * 		<Tooltip content="Code is Poetry">
- * 			<Text>WordPress.org</Text>
+ * 			<Text>ArkPress.icu</Text>
  * 		</Tooltip>
  * 	)
  * }
@@ -38217,7 +38217,7 @@ const ConnectedTooltip = Object(context_connect["a" /* contextConnect */])(compo
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -38593,7 +38593,7 @@ const HslInput = _ref => {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -38687,7 +38687,7 @@ function index_module_u(){return(index_module_u=Object.assign||function(e){for(v
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -38709,7 +38709,7 @@ const Picker = _ref => {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/utils/hooks/use-controlled-value.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -38760,7 +38760,7 @@ function useControlledValue(_ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -38860,7 +38860,7 @@ const ConnectedColorPicker = Object(context_connect["a" /* contextConnect */])(C
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -39015,7 +39015,7 @@ function useItemGroup(props) {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/item-group/context.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -39077,7 +39077,7 @@ function ItemGroup(props, forwardedRef) {
 
 /**
  *
- * @param {import('../ui/context').WordPressComponentProps<import('./types').Props, 'div'>} props
+ * @param {import('../ui/context').ArkPressComponentProps<import('./types').Props, 'div'>} props
  */
 
 function useVStack(props) {
@@ -39104,7 +39104,7 @@ function useVStack(props) {
 
 
 /**
- * @param {import('../ui/context').WordPressComponentProps<import('./types').Props, 'div'>} props
+ * @param {import('../ui/context').ArkPressComponentProps<import('./types').Props, 'div'>} props
  * @param {import('react').Ref<any>}                                                        forwardedRef
  */
 
@@ -39152,7 +39152,7 @@ const ConnectedVStack = Object(context_connect["a" /* contextConnect */])(VStack
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -39261,7 +39261,7 @@ function Dropdown(_ref) {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -39461,7 +39461,7 @@ const ColorHeading = /*#__PURE__*/Object(emotion_styled_base_browser_esm["a" /* 
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -39817,7 +39817,7 @@ function getHorizontalRelativeGradientPosition(mouseXCoordinate, containerElemen
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -40082,7 +40082,7 @@ ControlPoints.InsertPoint = InsertPoint;
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -40261,7 +40261,7 @@ var node_default = /*#__PURE__*/__webpack_require__.n(build_node);
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/custom-gradient-picker/constants.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const DEFAULT_GRADIENT = 'linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%)';
@@ -40494,7 +40494,7 @@ const AccessoryWrapper = /*#__PURE__*/Object(emotion_styled_base_browser_esm["a"
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -40631,7 +40631,7 @@ function CustomGradientPicker(_ref3) {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -40753,7 +40753,7 @@ function GradientPicker(_ref5) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const menu_menu = Object(external_wp_element_["createElement"])(external_wp_primitives_["SVG"], {
@@ -40777,7 +40777,7 @@ var external_wp_dom_ = __webpack_require__("1CF3");
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -40943,7 +40943,7 @@ forwardedNavigableContainer.displayName = 'NavigableContainer';
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -41011,7 +41011,7 @@ function NavigableMenu(_ref, ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -41164,7 +41164,7 @@ function DropdownMenu(dropdownMenuProps) {
 // eslint-disable-next-line no-restricted-imports
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -41300,7 +41300,7 @@ const RemoveButton = /*#__PURE__*/Object(emotion_styled_base_browser_esm["a" /* 
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -41614,7 +41614,7 @@ var close_small = __webpack_require__("bWcr");
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -41692,7 +41692,7 @@ var lib_default = /*#__PURE__*/__webpack_require__.n(lib);
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -41808,7 +41808,7 @@ suggestions_list_SuggestionsList.defaultProps = {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -41829,7 +41829,7 @@ suggestions_list_SuggestionsList.defaultProps = {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -46225,7 +46225,7 @@ function useMultipleSelection(userProps) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -46398,7 +46398,7 @@ var DayPickerSingleDateController_default = /*#__PURE__*/__webpack_require__.n(D
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -46591,7 +46591,7 @@ var external_wp_date_ = __webpack_require__("FqII");
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -46639,7 +46639,7 @@ const TimeZone = () => {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -46907,7 +46907,7 @@ function TimePicker(_ref2) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -46997,7 +46997,7 @@ function DateTimePicker(_ref, ref) {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -47037,7 +47037,7 @@ const findSizeBySlug = (sizes, slug) => sizes.find(size => slug === size.slug);
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -47128,7 +47128,7 @@ const StyledWrapper = Object(emotion_styled_base_browser_esm["a" /* default */])
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -47258,7 +47258,7 @@ Disabled.Consumer = Consumer;
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -47739,7 +47739,7 @@ var AnimatePresence = function (_a) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -47878,7 +47878,7 @@ function DropZoneComponent(_ref) {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/drop-zone/provider.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 function DropZoneProvider(_ref) {
@@ -47895,7 +47895,7 @@ function DropZoneProvider(_ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const swatch = Object(external_wp_element_["createElement"])(external_wp_primitives_["SVG"], {
@@ -47910,7 +47910,7 @@ const swatch = Object(external_wp_element_["createElement"])(external_wp_primiti
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -48056,7 +48056,7 @@ function DuotoneSwatch(_ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -48160,7 +48160,7 @@ function CustomDuotoneBar(_ref) {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -48255,7 +48255,7 @@ function external_link_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You hav
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const StyledIcon = /*#__PURE__*/Object(emotion_styled_base_browser_esm["a" /* default */])(build_module_icon["a" /* default */],  true ? {
@@ -48275,7 +48275,7 @@ const StyledIcon = /*#__PURE__*/Object(emotion_styled_base_browser_esm["a" /* de
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -48599,7 +48599,7 @@ var PopoverDisclosure = Object(createComponent["a" /* createComponent */])({
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/flyout/context.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -48619,7 +48619,7 @@ var react_resize_aware_dist_default = /*#__PURE__*/__webpack_require__.n(react_r
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -49835,7 +49835,7 @@ const CardView = /*#__PURE__*/Object(emotion_styled_base_browser_esm["a" /* defa
 
 /**
  *
- * @param {import('../../ui/context').WordPressComponentProps<import('../types').ContentProps, 'div', false>} props
+ * @param {import('../../ui/context').ArkPressComponentProps<import('../types').ContentProps, 'div', false>} props
  * @param {import('react').Ref<any>}                                                                          forwardedRef
  */
 
@@ -49887,7 +49887,7 @@ const ConnectedFlyoutContent = Object(context_connect["a" /* contextConnect */])
 
 
 /**
- * @param {import('../../ui/context').WordPressComponentProps<import('../types').Props, 'div', false>} props
+ * @param {import('../../ui/context').ArkPressComponentProps<import('../types').Props, 'div', false>} props
  */
 
 function useFlyout(props) {
@@ -49930,7 +49930,7 @@ function useFlyout(props) {
 // eslint-disable-next-line no-restricted-imports
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -49946,7 +49946,7 @@ function useFlyout(props) {
 
 /**
  *
- * @param {import('../../ui/context').WordPressComponentProps<import('../types').Props, 'div', false>} props
+ * @param {import('../../ui/context').ArkPressComponentProps<import('../types').Props, 'div', false>} props
  * @param {import('react').Ref<any>}                                                                   forwardedRef
  */
 
@@ -50135,7 +50135,7 @@ function fractionToPercentage(fraction) {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -50207,7 +50207,7 @@ function focal_point_style_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have t
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -50286,7 +50286,7 @@ function FocalPoint(_ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -50360,7 +50360,7 @@ function useRevealAnimation(value) {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -50440,7 +50440,7 @@ function MediaPlaceholderElement(_ref2) {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -50807,7 +50807,7 @@ focal_point_picker_FocalPointPicker.defaultProps = {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -50957,7 +50957,7 @@ const BackdropView = Object(emotion_styled_base_browser_esm["a" /* default */])(
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -51031,7 +51031,7 @@ function ToggleGroupControlBackdrop(_ref) {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/toggle-group-control/context.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -51054,7 +51054,7 @@ const useToggleGroupControlContext = () => Object(external_wp_element_["useConte
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -51380,7 +51380,7 @@ const medium = /*#__PURE__*/Object(emotion_react_browser_esm["a" /* css */])("mi
 // eslint-disable-next-line no-restricted-imports
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -51482,7 +51482,7 @@ const ConnectedToggleGroupControlOption = Object(context_connect["a" /* contextC
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/font-size-picker/utils.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const DEFAULT_FONT_SIZE = 'default';
@@ -51605,7 +51605,7 @@ function getSelectedOption(fontSizes, value) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -51793,7 +51793,7 @@ function FontSizePicker(_ref, ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -51892,7 +51892,7 @@ var external_wp_isShallowEqual_default = /*#__PURE__*/__webpack_require__.n(exte
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -51962,7 +51962,7 @@ function Token(_ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -51991,7 +51991,7 @@ function Token(_ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -52694,7 +52694,7 @@ function utils_getAlignmentProps(alignment) {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -52708,7 +52708,7 @@ function utils_getAlignmentProps(alignment) {
 
 
 /**
- * @param {import('../ui/context').WordPressComponentProps<import('./types').Props, 'div'>} props
+ * @param {import('../ui/context').ArkPressComponentProps<import('./types').Props, 'div'>} props
  */
 
 function useGrid(props) {
@@ -52766,7 +52766,7 @@ function useGrid(props) {
 
 
 /**
- * @param {import('../ui/context').WordPressComponentProps<import('./types').Props, 'div'>} props
+ * @param {import('../ui/context').ArkPressComponentProps<import('./types').Props, 'div'>} props
  * @param {import('react').Ref<any>}                                                        forwardedRef
  */
 
@@ -52929,7 +52929,7 @@ function StyleProvider(_ref) {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -53061,7 +53061,7 @@ function Modal(_ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const PageControlIcon = _ref => {
@@ -53089,7 +53089,7 @@ const PageControlIcon = _ref => {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -53129,7 +53129,7 @@ function PageControl(_ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -53167,7 +53167,7 @@ function FinishButton(props) {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -53266,7 +53266,7 @@ function Guide(_ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -53286,7 +53286,7 @@ function GuidePage(props) {
 // @ts-nocheck
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -53327,7 +53327,7 @@ function IconButton(_ref, ref) {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -53387,7 +53387,7 @@ function KeyboardShortcuts(_ref2) {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -53436,7 +53436,7 @@ var build_module_shortcut = __webpack_require__("Cw+6");
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -53505,7 +53505,7 @@ function MenuItem(props, ref) {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -53552,7 +53552,7 @@ var scroll_lock = __webpack_require__("k8OV");
 // @ts-nocheck
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -53612,7 +53612,7 @@ const SEARCH_FOCUS_DELAY = 100;
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -53647,7 +53647,7 @@ var library_search = __webpack_require__("cGtP");
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/utils/hooks/use-combined-ref.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -53683,7 +53683,7 @@ function useCombinedRef() {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -53774,7 +53774,7 @@ function navigation_styles_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have t
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -53844,7 +53844,7 @@ const ItemTitleUI = /*#__PURE__*/Object(emotion_styled_base_browser_esm["a" /* d
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -53869,7 +53869,7 @@ const useNavigationTreeNodes = () => {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigation/use-create-navigation-tree.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -53971,7 +53971,7 @@ const useCreateNavigationTree = () => {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -54059,7 +54059,7 @@ var chevron_left = __webpack_require__("2gm7");
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -54117,7 +54117,7 @@ function NavigationBackButton(_ref, ref) {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigation/group/context.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const NavigationGroupContext = Object(external_wp_element_["createContext"])({
@@ -54134,7 +54134,7 @@ const useNavigationGroupContext = () => Object(external_wp_element_["useContext"
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -54209,7 +54209,7 @@ function NavigationItemBaseContent(props) {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigation/menu/context.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const NavigationMenuContext = Object(external_wp_element_["createContext"])({
@@ -54229,7 +54229,7 @@ const normalizedSearch = (title, search) => -1 !== normalizeInput(title).indexOf
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigation/item/use-navigation-tree-item.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -54279,7 +54279,7 @@ const useNavigationTreeItem = (itemId, props) => {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -54324,7 +54324,7 @@ function NavigationItemBase(props) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -54405,7 +54405,7 @@ function NavigationItem(props) {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigation/menu/use-navigation-tree-menu.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -54440,7 +54440,7 @@ const useNavigationTreeMenu = props => {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -54533,7 +54533,7 @@ function MenuTitleSearch(_ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -54616,7 +54616,7 @@ function NavigationMenuTitle(_ref) {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -54652,7 +54652,7 @@ function NavigationSearchNoResultsFound(_ref) {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -54728,7 +54728,7 @@ function NavigationMenu(props) {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigator/context.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -54750,7 +54750,7 @@ function component_EMOTION_STRINGIFIED_CSS_ERROR_() { return "You have tried to 
 // eslint-disable-next-line no-restricted-imports
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -54852,7 +54852,7 @@ function navigator_screen_component_EMOTION_STRINGIFIED_CSS_ERROR_() { return "Y
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -54991,7 +54991,7 @@ const ConnectedNavigatorScreen = Object(context_connect["a" /* contextConnect */
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/navigator/use-navigator.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -55030,7 +55030,7 @@ var library_close = __webpack_require__("w95h");
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -55230,7 +55230,7 @@ function PanelHeader(_ref) {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -55270,7 +55270,7 @@ var chevron_up = __webpack_require__("XgzB");
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -55382,7 +55382,7 @@ body_ForwardedComponent.displayName = 'PanelBody';
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -55407,7 +55407,7 @@ const PanelRow = Object(external_wp_element_["forwardRef"])((_ref, ref) => {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -55528,7 +55528,7 @@ function buildTermsTree(flatTerms) {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -55579,7 +55579,7 @@ function TreeSelect(_ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -55635,7 +55635,7 @@ function AuthorSelect(_ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -55734,7 +55734,7 @@ function QueryControls(_ref) {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/radio-context/index.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const RadioContext = Object(external_wp_element_["createContext"])({
@@ -55752,7 +55752,7 @@ const RadioContext = Object(external_wp_element_["createContext"])({
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -55790,7 +55790,7 @@ function radio_Radio(_ref, ref) {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -55841,7 +55841,7 @@ function radio_group_RadioGroup(_ref, ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -56767,7 +56767,7 @@ var lib_Resizable = /** @class */ (function (_super) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -57031,7 +57031,7 @@ const LabelText = /*#__PURE__*/Object(emotion_styled_base_browser_esm["a" /* def
 // eslint-disable-next-line no-restricted-imports
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -57108,7 +57108,7 @@ const label_ForwardedComponent = Object(external_wp_element_["forwardRef"])(resi
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
  // eslint-disable-next-line no-restricted-imports
@@ -57166,7 +57166,7 @@ const resize_tooltip_ForwardedComponent = Object(external_wp_element_["forwardRe
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -57240,7 +57240,7 @@ function ResizableBox(_ref, ref) {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -57280,7 +57280,7 @@ function ResponsiveWrapper(_ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -57526,7 +57526,7 @@ var snackbar = __webpack_require__("iB/h");
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -57663,7 +57663,7 @@ function Spinner() {
 
 
 /**
- * @param {import('../ui/context').WordPressComponentProps<import('./types').Props, 'div'>} props
+ * @param {import('../ui/context').ArkPressComponentProps<import('./types').Props, 'div'>} props
  * @param {import('react').Ref<any>}                                                        forwardedRef
  */
 
@@ -57708,7 +57708,7 @@ const ConnectedSurface = Object(context_connect["a" /* contextConnect */])(compo
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -57804,7 +57804,7 @@ function TabPanel(_ref2) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -57945,7 +57945,7 @@ const StyledTextarea = Object(emotion_styled_base_browser_esm["a" /* default */]
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -57994,7 +57994,7 @@ function TextareaControl(_ref) {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -58022,7 +58022,7 @@ const TextHighlight = _ref => {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -58058,7 +58058,7 @@ function Tip(props) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -58131,7 +58131,7 @@ const ToolbarButtonContainer = props => Object(external_wp_element_["createEleme
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -58218,7 +58218,7 @@ const ToolbarGroupContainer = _ref => {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -58265,7 +58265,7 @@ function ToolbarGroupCollapsed(_ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -58451,7 +58451,7 @@ var Toolbar = Object(createComponent["a" /* createComponent */])({
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -58496,7 +58496,7 @@ function ToolbarContainer(_ref, ref) {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -58552,7 +58552,7 @@ function toolbar_Toolbar(_ref, ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -58590,7 +58590,7 @@ function ToolbarDropdownMenu(props, ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const reset_reset = Object(external_wp_element_["createElement"])(external_wp_primitives_["SVG"], {
@@ -58655,7 +58655,7 @@ const styles_DropdownMenu =  true ? {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/tools-panel/context.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -58681,7 +58681,7 @@ const useToolsPanelContext = () => Object(external_wp_element_["useContext"])(To
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/tools-panel/tools-panel-header/hook.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -58732,7 +58732,7 @@ function useToolsPanelHeader(props) {
 // eslint-disable-next-line no-restricted-imports
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -58873,7 +58873,7 @@ const ConnectedToolsPanelHeader = Object(context_connect["a" /* contextConnect *
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/tools-panel/tools-panel/hook.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -59135,7 +59135,7 @@ const ConnectedToolsPanel = Object(context_connect["a" /* contextConnect */])(co
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/tools-panel/tools-panel-item/hook.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -59280,7 +59280,7 @@ const ConnectedToolsPanelItem = Object(context_connect["a" /* contextConnect */]
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/components/build-module/tree-grid/roving-tab-index-context.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const RovingTabIndexContext = Object(external_wp_element_["createContext"])();
@@ -59291,7 +59291,7 @@ const RovingTabIndexProvider = RovingTabIndexContext.Provider;
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -59334,7 +59334,7 @@ function RovingTabIndex(_ref) {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -59548,7 +59548,7 @@ function TreeGrid(_ref, ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -59584,7 +59584,7 @@ function TreeGridRow(_ref, ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -59631,7 +59631,7 @@ function TreeGridRow(_ref, ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -59654,7 +59654,7 @@ function TreeGridRow(_ref, ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -59686,7 +59686,7 @@ function TreeGridRow(_ref, ref) {
 
 
 /**
- * @param {import('../ui/context').WordPressComponentProps<import('./types').Props, 'span'>} props
+ * @param {import('../ui/context').ArkPressComponentProps<import('./types').Props, 'span'>} props
  * @param {import('react').Ref<any>}                                                         forwardedRef
  */
 
@@ -59729,7 +59729,7 @@ const ConnectedTruncate = Object(context_connect["a" /* contextConnect */])(comp
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -59822,7 +59822,7 @@ const positionRelative =  true ? {
 // eslint-disable-next-line no-restricted-imports
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -59867,7 +59867,7 @@ function ZStack(props, forwardedRef) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -59962,7 +59962,7 @@ function useNavigateRegions() {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const withConstrainedTabbing = Object(external_wp_compose_["createHigherOrderComponent"])(WrappedComponent => function ComponentWithConstrainedTabbing(props) {
@@ -59983,7 +59983,7 @@ const withConstrainedTabbing = Object(external_wp_compose_["createHigherOrderCom
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -60055,7 +60055,7 @@ var external_wp_hooks_ = __webpack_require__("g56x");
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -60165,7 +60165,7 @@ function withFilters(hookName) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -60241,7 +60241,7 @@ const with_focus_return_Provider = _ref => {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -61929,7 +61929,7 @@ module.exports = function callBoundIntrinsic(name, allowMissing) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const moreVertical = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_1__["SVG"], {
@@ -61985,7 +61985,7 @@ function isPortalEvent(event) {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -62487,7 +62487,7 @@ module.exports = {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const chevronUp = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_1__["SVG"], {
@@ -63782,7 +63782,7 @@ module.exports = function IsRegExp(argument) {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -64120,7 +64120,7 @@ module.exports = Number.isFinite || function (x) { return typeof x === 'number' 
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const lineSolid = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_1__["SVG"], {
@@ -64147,7 +64147,7 @@ const lineSolid = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["create
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const closeSmall = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_1__["SVG"], {
@@ -64219,7 +64219,7 @@ if (true) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const search = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_1__["SVG"], {
@@ -64275,7 +64275,7 @@ var external_lodash_ = __webpack_require__("YLtl");
 // @ts-nocheck
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const SlotFillContext = Object(external_wp_element_["createContext"])({
@@ -64293,7 +64293,7 @@ const SlotFillContext = Object(external_wp_element_["createContext"])({
 // @ts-nocheck
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -64336,7 +64336,7 @@ const useSlot = name => {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -64416,7 +64416,7 @@ const Fill = props => Object(external_wp_element_["createElement"])(context.Cons
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -64523,7 +64523,7 @@ var bubbles_virtually_use_slot = __webpack_require__("+WFq");
 // @ts-nocheck
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -64589,7 +64589,7 @@ var slot_fill_context = __webpack_require__("JYkG");
 // @ts-nocheck
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -64638,7 +64638,7 @@ var external_wp_isShallowEqual_default = /*#__PURE__*/__webpack_require__.n(exte
 // @ts-nocheck
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -64742,7 +64742,7 @@ function slot_fill_provider_SlotFillProvider(_ref) {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -64866,7 +64866,7 @@ class provider_SlotFillProvider extends external_wp_element_["Component"] {
 // @ts-nocheck
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -65846,7 +65846,7 @@ var external_wp_element_ = __webpack_require__("GRId");
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -66230,7 +66230,7 @@ var hoistNonReactStatics = (function (targetComponent, sourceComponent) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -66373,7 +66373,7 @@ function Snackbar(_ref, ref) {
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("GRId");
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /** @typedef {{icon: JSX.Element, size?: number} & import('@wordpress/primitives').SVGProps} IconProps */
@@ -66579,7 +66579,7 @@ var component = __webpack_require__("q9zb");
 
 
 /**
- * @param {import('../ui/context').WordPressComponentProps<{ children: import('react').ReactNode }, 'div'>} props
+ * @param {import('../ui/context').ArkPressComponentProps<{ children: import('react').ReactNode }, 'div'>} props
  * @param {import('react').Ref<any>}                                                                        forwardedRef
  */
 
@@ -67592,7 +67592,7 @@ function isSelfTarget(event) {
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("GRId");
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /*
@@ -67682,7 +67682,7 @@ function ScrollLock() {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -68956,7 +68956,7 @@ exports['default'] = (0, _reactWithStyles.withStyles)(function (_ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const settings = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_1__["SVG"], {
@@ -69203,7 +69203,7 @@ var external_wp_i18n_ = __webpack_require__("l3Sj");
 // @ts-nocheck
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -69533,7 +69533,7 @@ var build_module_animate = __webpack_require__("L8Kx");
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -70158,7 +70158,7 @@ function getTransformStyles(transformValue) {
  * }
  * ```
  *
- * @type {import('../ui/context').WordPressComponent<'div', { children?: import('react').ReactNode }, true>}
+ * @type {import('../ui/context').ArkPressComponent<'div', { children?: import('react').ReactNode }, true>}
  */
 // @ts-ignore
 const View = Object(_emotion_styled_base__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])("div",  true ? {
@@ -72029,7 +72029,7 @@ module.exports = function IsAccessorDescriptor(Desc) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const close = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_1__["SVG"], {

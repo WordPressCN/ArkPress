@@ -498,7 +498,7 @@ var external_lodash_ = __webpack_require__("YLtl");
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -640,7 +640,7 @@ function removeFormatTypes(names) {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/store/index.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -913,7 +913,7 @@ const ZWNBSP = '\ufeff';
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/create.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -1910,7 +1910,7 @@ function join(values) {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/register-format-type.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -2505,7 +2505,7 @@ function splitAtSelection(_ref2) {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/get-format-type.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -3208,7 +3208,7 @@ var external_wp_escapeHtml_ = __webpack_require__("Vx3V");
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/to-html-string.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -3355,7 +3355,7 @@ var external_wp_i18n_ = __webpack_require__("l3Sj");
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/toggle-format.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -3401,7 +3401,7 @@ function toggleFormat(value, format) {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/unregister-format-type.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -3797,7 +3797,7 @@ var external_wp_element_ = __webpack_require__("GRId");
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/component/use-anchor-ref.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -3874,7 +3874,7 @@ var external_wp_compose_ = __webpack_require__("K9lf");
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/component/use-default-style.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -3915,7 +3915,7 @@ function useDefaultStyle() {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/component/use-boundary-style.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /*
@@ -3974,7 +3974,7 @@ function useBoundaryStyle(_ref) {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/component/use-copy-handler.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -4027,7 +4027,7 @@ var external_wp_keycodes_ = __webpack_require__("RxS6");
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/component/use-format-boundaries.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -4140,7 +4140,7 @@ function useFormatBoundaries(props) {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/component/use-select-object.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 function useSelectObject() {
@@ -4176,7 +4176,7 @@ function useSelectObject() {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/component/use-indent-list-item-on-space.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -4301,7 +4301,7 @@ function updateFormats(_ref) {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/component/use-input-and-selection.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -4573,7 +4573,7 @@ function useInputAndSelection(props) {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/component/use-delete.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -4646,7 +4646,7 @@ function useDelete(props) {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/component/use-space.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -4718,7 +4718,7 @@ function useSpace() {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/rich-text/build-module/component/index.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 

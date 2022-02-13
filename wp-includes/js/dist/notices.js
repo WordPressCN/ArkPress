@@ -447,7 +447,7 @@ function getNotices(state) {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/notices/build-module/store/index.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**

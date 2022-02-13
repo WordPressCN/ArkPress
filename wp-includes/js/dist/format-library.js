@@ -98,7 +98,7 @@ this["wp"] = this["wp"] || {}; this["wp"]["formatLibrary"] =
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const code = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_1__["SVG"], {
@@ -130,7 +130,7 @@ const code = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createEleme
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const link = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_1__["SVG"], {
@@ -155,7 +155,7 @@ const link = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createEleme
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const formatStrikethrough = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_1__["SVG"], {
@@ -194,7 +194,7 @@ const formatStrikethrough = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const linkOff = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_1__["SVG"], {
@@ -240,7 +240,7 @@ const linkOff = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createEl
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const keyboardReturn = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_1__["SVG"], {
@@ -268,7 +268,7 @@ const keyboardReturn = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["c
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("GRId");
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /** @typedef {{icon: JSX.Element, size?: number} & import('@wordpress/primitives').SVGProps} IconProps */
@@ -319,7 +319,7 @@ function Icon(_ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const button = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_1__["SVG"], {
@@ -373,7 +373,7 @@ var external_wp_primitives_ = __webpack_require__("Tqx9");
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const formatBold = Object(external_wp_element_["createElement"])(external_wp_primitives_["SVG"], {
@@ -388,7 +388,7 @@ const formatBold = Object(external_wp_element_["createElement"])(external_wp_pri
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -453,7 +453,7 @@ var code = __webpack_require__("1Yn1");
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -540,7 +540,7 @@ var keyboard_return = __webpack_require__("btIw");
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -689,7 +689,7 @@ function Edit(_ref2) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const formatItalic = Object(external_wp_element_["createElement"])(external_wp_primitives_["SVG"], {
@@ -704,7 +704,7 @@ const formatItalic = Object(external_wp_element_["createElement"])(external_wp_p
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -789,7 +789,7 @@ var external_lodash_ = __webpack_require__("YLtl");
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -1043,7 +1043,7 @@ function useLinkInstanceKey(instance) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -1278,7 +1278,7 @@ function getRichTextValueFromSelection(value, isActive) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -1424,7 +1424,7 @@ var format_strikethrough = __webpack_require__("Crq9");
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -1471,7 +1471,7 @@ const strikethrough = {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -1524,7 +1524,7 @@ var icon = __webpack_require__("iClF");
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const textColor = Object(external_wp_element_["createElement"])(external_wp_primitives_["SVG"], {
@@ -1543,7 +1543,7 @@ const textColor = Object(external_wp_element_["createElement"])(external_wp_prim
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -1713,7 +1713,7 @@ function InlineColorUI(_ref2) {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -1843,7 +1843,7 @@ const text_color_textColor = {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const subscript = Object(external_wp_element_["createElement"])(external_wp_primitives_["SVG"], {
@@ -1858,7 +1858,7 @@ const subscript = Object(external_wp_element_["createElement"])(external_wp_prim
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -1909,7 +1909,7 @@ const subscript_subscript = {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const superscript = Object(external_wp_element_["createElement"])(external_wp_primitives_["SVG"], {
@@ -1924,7 +1924,7 @@ const superscript = Object(external_wp_element_["createElement"])(external_wp_pr
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -1978,7 +1978,7 @@ var library_button = __webpack_require__("oMoS");
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -2044,7 +2044,7 @@ const keyboard = {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/format-library/build-module/index.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**

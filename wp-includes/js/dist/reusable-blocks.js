@@ -181,7 +181,7 @@ var external_wp_i18n_ = __webpack_require__("l3Sj");
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -272,7 +272,7 @@ function __experimentalSetEditingReusableBlock(clientId, isEditing) {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/reusable-blocks/build-module/store/reducer.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 function isEditingReusableBlock() {
@@ -305,7 +305,7 @@ function __experimentalIsEditingReusableBlock(state, clientId) {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/reusable-blocks/build-module/store/index.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -345,7 +345,7 @@ var external_wp_primitives_ = __webpack_require__("Tqx9");
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const reusable_block_reusableBlock = Object(external_wp_element_["createElement"])(external_wp_primitives_["SVG"], {
@@ -366,7 +366,7 @@ var external_wp_coreData_ = __webpack_require__("jZUy");
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -497,7 +497,7 @@ var external_wp_url_ = __webpack_require__("Mmq9");
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -553,7 +553,7 @@ function ReusableBlocksManageButton(_ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 

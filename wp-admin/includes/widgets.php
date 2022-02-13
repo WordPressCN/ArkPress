@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Widgets Administration API
+ * ArkPress Widgets Administration API
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage Administration
  */
 

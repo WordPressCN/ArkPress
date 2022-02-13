@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Ajax Process Execution
+ * ArkPress Ajax Process Execution
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage Administration
  *
  * @link https://codex.wordpress.org/AJAX_in_Plugins
@@ -18,7 +18,7 @@ if ( ! defined( 'WP_ADMIN' ) ) {
 	define( 'WP_ADMIN', true );
 }
 
-/** Load WordPress Bootstrap */
+/** Load ArkPress Bootstrap */
 require_once dirname( __DIR__ ) . '/wp-load.php';
 
 /** Allow for cross-domain requests (from the front end). */
@@ -32,10 +32,10 @@ if ( empty( $_REQUEST['action'] ) ) {
 	wp_die( '0', 400 );
 }
 
-/** Load WordPress Administration APIs */
+/** Load ArkPress Administration APIs */
 require_once ABSPATH . 'wp-admin/includes/admin.php';
 
-/** Load Ajax Handlers for WordPress Core */
+/** Load Ajax Handlers for ArkPress Core */
 require_once ABSPATH . 'wp-admin/includes/ajax-actions.php';
 
 send_nosniff_header();

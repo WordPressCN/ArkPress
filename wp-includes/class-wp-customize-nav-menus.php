@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Customize Nav Menus classes
+ * ArkPress Customize Nav Menus classes
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage Customize
  * @since 4.3.0
  */

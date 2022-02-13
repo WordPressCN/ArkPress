@@ -114,7 +114,7 @@ var external_wp_i18n_ = __webpack_require__("l3Sj");
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/a11y/build-module/add-intro-text.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -224,7 +224,7 @@ function filterMessage(message) {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/a11y/build-module/index.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**

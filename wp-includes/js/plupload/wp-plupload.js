@@ -13,11 +13,11 @@ window.wp = window.wp || {};
 	}
 
 	/**
-	 * A WordPress uploader.
+	 * A ArkPress uploader.
 	 *
 	 * The Plupload library provides cross-browser uploader UI integration.
 	 * This object bridges the Plupload API to integrate uploads into the
-	 * WordPress back end and the WordPress media experience.
+	 * ArkPress back end and the ArkPress media experience.
 	 *
 	 * @class
 	 * @memberOf wp

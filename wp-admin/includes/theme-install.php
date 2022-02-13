@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Theme Installation Administration API
+ * ArkPress Theme Installation Administration API
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage Administration
  */
 
@@ -51,7 +51,7 @@ $theme_field_defaults = array(
 );
 
 /**
- * Retrieve list of WordPress theme features (aka theme tags).
+ * Retrieve list of ArkPress theme features (aka theme tags).
  *
  * @since 2.8.0
  *

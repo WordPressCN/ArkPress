@@ -242,7 +242,7 @@ var external_wp_isShallowEqual_default = /*#__PURE__*/__webpack_require__.n(exte
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -353,7 +353,7 @@ class listener_Listener {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -468,7 +468,7 @@ function withGlobalEvents(eventTypesToHandlers) {
 /* eslint-disable jsdoc/check-types */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -546,7 +546,7 @@ const withInstanceId = create_higher_order_component(WrappedComponent => {
  // eslint-disable-next-line no-restricted-imports
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -603,7 +603,7 @@ const withSafeTimeout = create_higher_order_component(OriginalComponent => {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -661,7 +661,7 @@ var external_wp_dom_ = __webpack_require__("1CF3");
 // eslint-disable-next-line no-restricted-imports
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -697,7 +697,7 @@ function useRefEffect(callback, dependencies) {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/hooks/use-constrained-tabbing/index.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -792,7 +792,7 @@ var clipboard_default = /*#__PURE__*/__webpack_require__.n(dist_clipboard);
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -876,7 +876,7 @@ function useCopyOnClick(ref, text) {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -945,7 +945,7 @@ function useCopyToClipboard(text, onSuccess) {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/hooks/use-focus-on-mount/index.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -1006,7 +1006,7 @@ function useFocusOnMount() {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/hooks/use-focus-return/index.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -1087,7 +1087,7 @@ function useFocusReturn(onFocusReturn) {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -1277,7 +1277,7 @@ function useFocusOutside(onFocusOutside) {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/hooks/use-merge-refs/index.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /* eslint-disable jsdoc/valid-types */
@@ -1406,7 +1406,7 @@ function useMergeRefs(refs) {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/hooks/use-dialog/index.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -1493,7 +1493,7 @@ function useDialog(options) {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -1594,7 +1594,7 @@ function useDisabled() {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/hooks/use-isomorphic-layout-effect/index.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -1608,7 +1608,7 @@ const useIsomorphicLayoutEffect = typeof window !== 'undefined' ? external_wp_el
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/hooks/use-dragging/index.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -1696,7 +1696,7 @@ var mousetrap_global_bind = __webpack_require__("VcSt");
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -1799,7 +1799,7 @@ shortcuts, callback) {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/hooks/use-media-query/index.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -1830,7 +1830,7 @@ function useMediaQuery(query) {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/hooks/use-previous/index.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -1870,7 +1870,7 @@ const useReducedMotion = () => useMediaQuery('(prefers-reduced-motion: reduce)')
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/hooks/use-viewport-match/index.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -1999,7 +1999,7 @@ var external_wp_priorityQueue_ = __webpack_require__("XI5e");
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/hooks/use-async-list/index.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -2134,7 +2134,7 @@ var use_memo_one_esm = __webpack_require__("mHlH");
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -2170,7 +2170,7 @@ function useDebounce(fn, wait, options) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -2198,7 +2198,7 @@ function useThrottle(fn, wait, options) {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/compose/build-module/hooks/use-drop-zone/index.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -2482,7 +2482,7 @@ function useFocusableIframe() {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 

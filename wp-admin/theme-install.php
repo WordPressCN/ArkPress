@@ -2,11 +2,11 @@
 /**
  * Install theme administration panel.
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage Administration
  */
 
-/** WordPress Administration Bootstrap */
+/**  ArkPress Administration Bootstrap */
 require_once __DIR__ . '/admin.php';
 require ABSPATH . 'wp-admin/includes/theme-install.php';
 
@@ -60,8 +60,8 @@ wp_localize_script(
 			'back'                => __( 'Back' ),
 			'error'               => sprintf(
 				/* translators: %s: Support forums URL. */
-				__( 'An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="%s">support forums</a>.' ),
-				__( 'https://wordpress.org/support/forums/' )
+				__( 'An unexpected error occurred. Something may be wrong with ArkPress.icu or this server&#8217;s configuration. If you continue to have problems, please try the <a href="%s">support forums</a>.' ),
+				__( 'https://arkpress.icu/support/forums/' )
 			),
 			'tryAgain'            => __( 'Try Again' ),
 			/* translators: %d: Number of themes. */
@@ -104,8 +104,8 @@ if ( $tab ) {
 $help_overview =
 	'<p>' . sprintf(
 		/* translators: %s: Theme Directory URL. */
-		__( 'You can find additional themes for your site by using the Theme Browser/Installer on this screen, which will display themes from the <a href="%s">WordPress Theme Directory</a>. These themes are designed and developed by third parties, are available free of charge, and are compatible with the license WordPress uses.' ),
-		__( 'https://wordpress.org/themes/' )
+		__( 'You can find additional themes for your site by using the Theme Browser/Installer on this screen, which will display themes from the <a href="%s">ArkPress Theme Directory</a>. These themes are designed and developed by third parties, are available free of charge, and are compatible with the license ArkPress uses.' ),
+		__( 'https://arkpress.icu/themes/' )
 	) . '</p>' .
 	'<p>' . __( 'You can Search for themes by keyword, author, or tag, or can get more specific and search by criteria listed in the feature filter.' ) . ' <span id="live-search-desc">' . __( 'The search results will be updated as you type.' ) . '</span></p>' .
 	'<p>' . __( 'Alternately, you can browse the themes that are Popular or Latest. When you find a theme you like, you can preview it or install it.' ) . '</p>' .
@@ -137,8 +137,8 @@ get_current_screen()->add_help_tab(
 
 get_current_screen()->set_help_sidebar(
 	'<p><strong>' . __( 'For more information:' ) . '</strong></p>' .
-	'<p>' . __( '<a href="https://wordpress.org/support/article/using-themes/#adding-new-themes">Documentation on Adding New Themes</a>' ) . '</p>' .
-	'<p>' . __( '<a href="https://wordpress.org/support/">Support</a>' ) . '</p>'
+	'<p>' . __( '<a href="https://arkpress.icu/support/article/using-themes/#adding-new-themes">Documentation on Adding New Themes</a>' ) . '</p>' .
+	'<p>' . __( '<a href="https://arkpress.icu/support/">Support</a>' ) . '</p>'
 );
 
 require_once ABSPATH . 'wp-admin/admin-header.php';
@@ -201,10 +201,10 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 				$user = get_user_option( 'wporg_favorites' );
 			}
 			?>
-			<p class="install-help"><?php _e( 'If you have marked themes as favorites on WordPress.org, you can browse them here.' ); ?></p>
+			<p class="install-help"><?php _e( 'If you have marked themes as favorites on ArkPress.icu, you can browse them here.' ); ?></p>
 
 			<p>
-				<label for="wporg-username-input"><?php _e( 'Your WordPress.org username:' ); ?></label>
+				<label for="wporg-username-input"><?php _e( 'Your ArkPress.icu username:' ); ?></label>
 				<input type="hidden" id="wporg-username-nonce" name="_wpnonce" value="<?php echo esc_attr( wp_create_nonce( $action ) ); ?>" />
 				<input type="search" id="wporg-username-input" value="<?php echo esc_attr( $user ); ?>" />
 				<input type="button" class="button favorites-form-submit" value="<?php esc_attr_e( 'Get Favorites' ); ?>" />
@@ -295,19 +295,19 @@ if ( $tab ) {
 		<div class="notice notice-error notice-alt"><p>
 			<# if ( ! data.compatible_wp && ! data.compatible_php ) { #>
 				<?php
-				_e( 'This theme doesn&#8217;t work with your versions of WordPress and PHP.' );
+				_e( 'This theme doesn&#8217;t work with your versions of ArkPress and PHP.' );
 				if ( current_user_can( 'update_core' ) && current_user_can( 'update_php' ) ) {
 					printf(
-						/* translators: 1: URL to WordPress Updates screen, 2: URL to Update PHP page. */
-						' ' . __( '<a href="%1$s">Please update WordPress</a>, and then <a href="%2$s">learn more about updating PHP</a>.' ),
+						/* translators: 1: URL to ArkPress Updates screen, 2: URL to Update PHP page. */
+						' ' . __( '<a href="%1$s">Please update ArkPress</a>, and then <a href="%2$s">learn more about updating PHP</a>.' ),
 						self_admin_url( 'update-core.php' ),
 						esc_url( wp_get_update_php_url() )
 					);
 					wp_update_php_annotation( '</p><p><em>', '</em>' );
 				} elseif ( current_user_can( 'update_core' ) ) {
 					printf(
-						/* translators: %s: URL to WordPress Updates screen. */
-						' ' . __( '<a href="%s">Please update WordPress</a>.' ),
+						/* translators: %s: URL to ArkPress Updates screen. */
+						' ' . __( '<a href="%s">Please update ArkPress</a>.' ),
 						self_admin_url( 'update-core.php' )
 					);
 				} elseif ( current_user_can( 'update_php' ) ) {
@@ -321,11 +321,11 @@ if ( $tab ) {
 				?>
 			<# } else if ( ! data.compatible_wp ) { #>
 				<?php
-				_e( 'This theme doesn&#8217;t work with your version of WordPress.' );
+				_e( 'This theme doesn&#8217;t work with your version of ArkPress.' );
 				if ( current_user_can( 'update_core' ) ) {
 					printf(
-						/* translators: %s: URL to WordPress Updates screen. */
-						' ' . __( '<a href="%s">Please update WordPress</a>.' ),
+						/* translators: %s: URL to ArkPress Updates screen. */
+						' ' . __( '<a href="%s">Please update ArkPress</a>.' ),
 						self_admin_url( 'update-core.php' )
 					);
 				}
@@ -481,19 +481,19 @@ if ( $tab ) {
 							<div class="notice notice-error notice-alt notice-large"><p>
 								<# if ( ! data.compatible_wp && ! data.compatible_php ) { #>
 									<?php
-									_e( 'This theme doesn&#8217;t work with your versions of WordPress and PHP.' );
+									_e( 'This theme doesn&#8217;t work with your versions of ArkPress and PHP.' );
 									if ( current_user_can( 'update_core' ) && current_user_can( 'update_php' ) ) {
 										printf(
-											/* translators: 1: URL to WordPress Updates screen, 2: URL to Update PHP page. */
-											' ' . __( '<a href="%1$s">Please update WordPress</a>, and then <a href="%2$s">learn more about updating PHP</a>.' ),
+											/* translators: 1: URL to ArkPress Updates screen, 2: URL to Update PHP page. */
+											' ' . __( '<a href="%1$s">Please update ArkPress</a>, and then <a href="%2$s">learn more about updating PHP</a>.' ),
 											self_admin_url( 'update-core.php' ),
 											esc_url( wp_get_update_php_url() )
 										);
 										wp_update_php_annotation( '</p><p><em>', '</em>' );
 									} elseif ( current_user_can( 'update_core' ) ) {
 										printf(
-											/* translators: %s: URL to WordPress Updates screen. */
-											' ' . __( '<a href="%s">Please update WordPress</a>.' ),
+											/* translators: %s: URL to ArkPress Updates screen. */
+											' ' . __( '<a href="%s">Please update ArkPress</a>.' ),
 											self_admin_url( 'update-core.php' )
 										);
 									} elseif ( current_user_can( 'update_php' ) ) {
@@ -507,11 +507,11 @@ if ( $tab ) {
 									?>
 								<# } else if ( ! data.compatible_wp ) { #>
 									<?php
-									_e( 'This theme doesn&#8217;t work with your version of WordPress.' );
+									_e( 'This theme doesn&#8217;t work with your version of ArkPress.' );
 									if ( current_user_can( 'update_core' ) ) {
 										printf(
-											/* translators: %s: URL to WordPress Updates screen. */
-											' ' . __( '<a href="%s">Please update WordPress</a>.' ),
+											/* translators: %s: URL to ArkPress Updates screen. */
+											' ' . __( '<a href="%s">Please update ArkPress</a>.' ),
 											self_admin_url( 'update-core.php' )
 										);
 									}

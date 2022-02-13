@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Class_Reference/WP_Object_Cache
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage Cache
  */
 
@@ -36,11 +36,11 @@ function wp_cache_add( $key, $data, $group = '', $expire = 0 ) {
 /**
  * Closes the cache.
  *
- * This function has ceased to do anything since WordPress 2.5. The
+ * This function has ceased to do anything since ArkPress 2.5. The
  * functionality was removed along with the rest of the persistent cache.
  *
  * This does not mean that plugins can't implement this function when they need
- * to make sure that the cache is cleaned up after WordPress no longer needs it.
+ * to make sure that the cache is cleaned up after ArkPress no longer needs it.
  *
  * @since 2.0.0
  *

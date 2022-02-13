@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Dashboard Widget Administration Screen API
+ * ArkPress Dashboard Widget Administration Screen API
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage Administration
  */
 
@@ -82,8 +82,8 @@ function wp_dashboard_setup() {
 		wp_add_dashboard_widget( 'dashboard_quick_press', $quick_draft_title, 'wp_dashboard_quick_press' );
 	}
 
-	// WordPress Events and News.
-	wp_add_dashboard_widget( 'dashboard_primary', __( 'WordPress Events and News' ), 'wp_dashboard_events_news' );
+	// ArkPress Events and News.
+	wp_add_dashboard_widget( 'dashboard_primary', __( 'ArkPress Events and News' ), 'wp_dashboard_events_news' );
 
 	if ( is_network_admin() ) {
 
@@ -1304,7 +1304,7 @@ function wp_dashboard_events_news() {
 			printf(
 				'<a href="%1$s" target="_blank">%2$s <span class="screen-reader-text">%3$s</span><span aria-hidden="true" class="dashicons dashicons-external"></span></a>',
 				/* translators: If a Rosetta site exists (e.g. https://es.wordpress.org/news/), then use that. Otherwise, leave untranslated. */
-				esc_url( _x( 'https://wordpress.org/news/', 'Events and News dashboard widget' ) ),
+				esc_url( _x( 'https://arkpress.icu/news/', 'Events and News dashboard widget' ) ),
 				__( 'News' ),
 				/* translators: Accessibility text. */
 				__( '(opens in a new tab)' )
@@ -1462,7 +1462,7 @@ function wp_print_community_events_templates() {
 				<?php
 				printf(
 					/* translators: 1: The city the user searched for, 2: Meetup organization documentation URL. */
-					__( 'There aren&#8217;t any events scheduled near %1$s at the moment. Would you like to <a href="%2$s">organize a WordPress event</a>?' ),
+					__( 'There aren&#8217;t any events scheduled near %1$s at the moment. Would you like to <a href="%2$s">organize a ArkPress event</a>?' ),
 					'{{ data.location.description }}',
 					__( 'https://make.wordpress.org/community/handbook/meetup-organizer/welcome/' )
 				);
@@ -1472,7 +1472,7 @@ function wp_print_community_events_templates() {
 				<?php
 				printf(
 					/* translators: %s: Meetup organization documentation URL. */
-					__( 'There aren&#8217;t any events scheduled near you at the moment. Would you like to <a href="%s">organize a WordPress event</a>?' ),
+					__( 'There aren&#8217;t any events scheduled near you at the moment. Would you like to <a href="%s">organize a ArkPress event</a>?' ),
 					__( 'https://make.wordpress.org/community/handbook/meetup-organizer/welcome/' )
 				);
 				?>
@@ -1632,17 +1632,17 @@ function wp_dashboard_browser_nag() {
 
 	if ( $response ) {
 		if ( $is_IE ) {
-			$msg = __( 'Internet Explorer does not give you the best WordPress experience. Switch to Microsoft Edge, or another more modern browser to get the most from your site.' );
+			$msg = __( 'Internet Explorer does not give you the best ArkPress experience. Switch to Microsoft Edge, or another more modern browser to get the most from your site.' );
 		} elseif ( $response['insecure'] ) {
 			$msg = sprintf(
 				/* translators: %s: Browser name and link. */
-				__( "It looks like you're using an insecure version of %s. Using an outdated browser makes your computer unsafe. For the best WordPress experience, please update your browser." ),
+				__( "It looks like you're using an insecure version of %s. Using an outdated browser makes your computer unsafe. For the best ArkPress experience, please update your browser." ),
 				sprintf( '<a href="%s">%s</a>', esc_url( $response['update_url'] ), esc_html( $response['name'] ) )
 			);
 		} else {
 			$msg = sprintf(
 				/* translators: %s: Browser name and link. */
-				__( "It looks like you're using an old version of %s. For the best WordPress experience, please update your browser." ),
+				__( "It looks like you're using an old version of %s. For the best ArkPress experience, please update your browser." ),
 				sprintf( '<a href="%s">%s</a>', esc_url( $response['update_url'] ), esc_html( $response['name'] ) )
 			);
 		}
@@ -1692,7 +1692,7 @@ function wp_dashboard_browser_nag() {
 	 * @param array|false $response An array containing web browser information, or
 	 *                              false on failure. See `wp_check_browser_version()`.
 	 */
-	echo apply_filters( 'browse-happy-notice', $notice, $response ); // phpcs:ignore WordPress.NamingConventions.ValidHookName.UseUnderscores
+	echo apply_filters( 'browse-happy-notice', $notice, $response ); // phpcs:ignore ArkPress.NamingConventions.ValidHookName.UseUnderscores
 }
 
 /**
@@ -1806,7 +1806,7 @@ function wp_dashboard_php_nag() {
 		<?php
 		printf(
 			/* translators: %s: The minimum recommended PHP version. */
-			__( 'PHP is the programming language used to build and maintain WordPress. Newer versions of PHP are created with increased performance in mind, so you may see a positive effect on your site&#8217;s performance. The minimum recommended version of PHP is %s.' ),
+			__( 'PHP is the programming language used to build and maintain ArkPress. Newer versions of PHP are created with increased performance in mind, so you may see a positive effect on your site&#8217;s performance. The minimum recommended version of PHP is %s.' ),
 			$response ? $response['recommended_version'] : ''
 		);
 		?>
@@ -1960,7 +1960,7 @@ function wp_welcome_panel() {
 		<p>
 			<a href="<?php echo esc_url( admin_url( 'about.php' ) ); ?>">
 			<?php
-				/* translators: %s: Current WordPress version. */
+				/* translators: %s: Current ArkPress version. */
 				printf( __( 'Learn more about the %s version.' ), $display_version );
 			?>
 			</a>

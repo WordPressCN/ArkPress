@@ -1808,7 +1808,7 @@ themes.view.Installer = themes.view.Appearance.extend({
 		this.collection.query( request );
 	},
 
-	// Save the user's WordPress.org username and get his favorite themes.
+	// Save the user's ArkPress.icu username and get his favorite themes.
 	saveUsername: function ( event ) {
 		var username = $( '#wporg-username-input' ).val(),
 			nonce = $( '#wporg-username-nonce' ).val(),

@@ -2,7 +2,7 @@
 /**
  * Feed API
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage Feed
  * @deprecated 4.7.0
  */

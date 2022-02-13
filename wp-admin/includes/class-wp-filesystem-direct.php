@@ -1,13 +1,13 @@
 <?php
 /**
- * WordPress Direct Filesystem.
+ * ArkPress Direct Filesystem.
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage Filesystem
  */
 
 /**
- * WordPress Filesystem Class for direct PHP file and folder manipulation.
+ * ArkPress Filesystem Class for direct PHP file and folder manipulation.
  *
  * @since 2.5.0
  *

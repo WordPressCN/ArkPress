@@ -2,7 +2,7 @@
 /**
  * Screen API: WP_Screen class
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage Administration
  * @since 4.4.0
  */
@@ -388,7 +388,7 @@ final class WP_Screen {
 	 * @see set_current_screen()
 	 * @since 3.3.0
 	 *
-	 * @global WP_Screen $current_screen WordPress current screen object.
+	 * @global WP_Screen $current_screen ArkPress current screen object.
 	 * @global string    $taxnow
 	 * @global string    $typenow
 	 */

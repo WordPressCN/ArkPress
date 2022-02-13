@@ -1,8 +1,8 @@
 <?php
 /**
- * Base WordPress Image Editor
+ * Base ArkPress Image Editor
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage Image_Editor
  */
 

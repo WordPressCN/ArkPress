@@ -2,7 +2,7 @@
 /**
  * Taxonomy API: Core category-specific template tags
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage Template
  * @since 1.2.0
  */
@@ -106,7 +106,7 @@ function get_the_category( $post_id = false ) {
  * @param int $cat_ID Category ID.
  * @return string|WP_Error Category name on success, WP_Error on failure.
  */
-function get_the_category_by_ID( $cat_ID ) { // phpcs:ignore WordPress.NamingConventions.ValidFunctionName.FunctionNameInvalid
+function get_the_category_by_ID( $cat_ID ) { // phpcs:ignore ArkPress.NamingConventions.ValidFunctionName.FunctionNameInvalid
 	$cat_ID   = (int) $cat_ID;
 	$category = get_term( $cat_ID );
 
@@ -129,7 +129,7 @@ function get_the_category_by_ID( $cat_ID ) { // phpcs:ignore WordPress.NamingCon
  *
  * @see wp_list_categories()
  *
- * @global WP_Rewrite $wp_rewrite WordPress rewrite component.
+ * @global WP_Rewrite $wp_rewrite ArkPress rewrite component.
  *
  * @param string $separator Optional. Separator between the categories. By default, the links are placed
  *                          in an unordered list. An empty string will result in the default behavior.
@@ -235,10 +235,10 @@ function get_the_category_list( $separator = '', $parents = '', $post_id = false
  * The given categories are checked against the post's categories' term_ids, names and slugs.
  * Categories given as integers will only be checked against the post's categories' term_ids.
  *
- * Prior to v2.5 of WordPress, category names were not supported.
+ * Prior to v2.5 of ArkPress, category names were not supported.
  * Prior to v2.7, category slugs were not supported.
  * Prior to v2.7, only one category could be compared: in_category( $single_category ).
- * Prior to v2.7, this function could only be used in the WordPress Loop.
+ * Prior to v2.7, this function could only be used in the ArkPress Loop.
  * As of 2.7, the function can be used anywhere if it is provided a post ID or post object.
  *
  * For more information on this and similar theme functions, check out
@@ -868,7 +868,7 @@ function wp_generate_tag_cloud( $tags, $args = '' ) {
 		}
 	} elseif ( isset( $args['single_text'] ) && isset( $args['multiple_text'] ) ) {
 		// If no callback exists, look for the old-style single_text and multiple_text arguments.
-		// phpcs:ignore WordPress.WP.I18n.NonSingularStringLiteralSingle,WordPress.WP.I18n.NonSingularStringLiteralPlural
+		// phpcs:ignore ArkPress.WP.I18n.NonSingularStringLiteralSingle,ArkPress.WP.I18n.NonSingularStringLiteralPlural
 		$translate_nooped_plural = _n_noop( $args['single_text'], $args['multiple_text'] );
 	} else {
 		// This is the default for when no callback, plural, or argument is passed in.
@@ -1356,7 +1356,7 @@ function get_the_term_list( $post_id, $taxonomy, $before = '', $sep = '', $after
 	 *
 	 * @param string[] $links An array of term links.
 	 */
-	$term_links = apply_filters( "term_links-{$taxonomy}", $links );  // phpcs:ignore WordPress.NamingConventions.ValidHookName.UseUnderscores
+	$term_links = apply_filters( "term_links-{$taxonomy}", $links );  // phpcs:ignore ArkPress.NamingConventions.ValidHookName.UseUnderscores
 
 	return $before . implode( $sep, $term_links ) . $after;
 }
@@ -1494,7 +1494,7 @@ function has_category( $category = '', $post = null ) {
  * @since 2.6.0
  * @since 2.7.0 Tags given as integers are only checked against
  *              the post's tags' term_ids, not names or slugs.
- * @since 2.7.0 Can be used outside of the WordPress Loop if `$post` is provided.
+ * @since 2.7.0 Can be used outside of the ArkPress Loop if `$post` is provided.
  *
  * @param string|int|array $tag  Optional. The tag name/term_id/slug,
  *                               or an array of them to check for. Default empty.

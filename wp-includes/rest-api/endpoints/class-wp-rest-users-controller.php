@@ -2,7 +2,7 @@
 /**
  * REST API: WP_REST_Users_Controller class
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage REST_API
  * @since 4.7.0
  */
@@ -1191,7 +1191,7 @@ class WP_REST_Users_Controller extends WP_REST_Controller {
 	 *
 	 * @since 4.7.0
 	 *
-	 * @global WP_Roles $wp_roles WordPress role management object.
+	 * @global WP_Roles $wp_roles ArkPress role management object.
 	 *
 	 * @param int   $user_id User ID.
 	 * @param array $roles   New user roles.

@@ -937,7 +937,7 @@ function gmdateI18n(dateFormat) {
   return format(dateFormat, dateMoment);
 }
 /**
- * Check whether a date is considered in the future according to the WordPress settings.
+ * Check whether a date is considered in the future according to the ArkPress settings.
  *
  * @param {string} dateValue Date String or Date object in the Defined WP Timezone.
  *

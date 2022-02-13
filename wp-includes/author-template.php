@@ -2,11 +2,11 @@
 /**
  * Author Template functions for use in themes.
  *
- * These functions must be used within the WordPress Loop.
+ * These functions must be used within the ArkPress Loop.
  *
  * @link https://codex.wordpress.org/Author_Templates
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage Template
  */
 
@@ -335,7 +335,7 @@ function the_author_posts_link( $deprecated = '' ) {
  *
  * @since 2.1.0
  *
- * @global WP_Rewrite $wp_rewrite WordPress rewrite component.
+ * @global WP_Rewrite $wp_rewrite ArkPress rewrite component.
  *
  * @param int    $author_id       Author ID.
  * @param string $author_nicename Optional. The author's nicename (slug). Default empty.
@@ -381,7 +381,7 @@ function get_author_posts_url( $author_id, $author_nicename = '' ) {
  *
  * @since 1.2.0
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb ArkPress database abstraction object.
  *
  * @param string|array $args {
  *     Optional. Array or string of default arguments.
@@ -537,7 +537,7 @@ function wp_list_authors( $args = '' ) {
  *
  * @since 3.2.0
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb ArkPress database abstraction object.
  *
  * @return bool Whether or not we have more than one author
  */
@@ -567,6 +567,6 @@ function is_multi_author() {
  * @since 3.2.0
  * @access private
  */
-function __clear_multi_author_cache() { // phpcs:ignore WordPress.NamingConventions.ValidFunctionName.FunctionDoubleUnderscore,PHPCompatibility.FunctionNameRestrictions.ReservedFunctionNames.FunctionDoubleUnderscore
+function __clear_multi_author_cache() { // phpcs:ignore ArkPress.NamingConventions.ValidFunctionName.FunctionDoubleUnderscore,PHPCompatibility.FunctionNameRestrictions.ReservedFunctionNames.FunctionDoubleUnderscore
 	delete_transient( 'is_multi_author' );
 }

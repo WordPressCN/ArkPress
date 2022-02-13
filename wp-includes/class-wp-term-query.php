@@ -3,7 +3,7 @@
 /**
  * Taxonomy API: WP_Term_Query class.
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage Taxonomy
  * @since 4.6.0
  */
@@ -339,7 +339,7 @@ class WP_Term_Query {
 	 *
 	 * @since 4.6.0
 	 *
-	 * @global wpdb $wpdb WordPress database abstraction object.
+	 * @global wpdb $wpdb ArkPress database abstraction object.
 	 *
 	 * @return WP_Term[]|int[]|string[]|string Array of terms, or number of terms as numeric string
 	 *                                         when 'count' is passed as a query var.
@@ -728,7 +728,7 @@ class WP_Term_Query {
 		/**
 		 * Filters the terms array before the query takes place.
 		 *
-		 * Return a non-null value to bypass WordPress' default term queries.
+		 * Return a non-null value to bypass ArkPress' default term queries.
 		 *
 		 * @since 5.3.0
 		 *
@@ -895,7 +895,7 @@ class WP_Term_Query {
 	 *
 	 * @since 4.6.0
 	 *
-	 * @global wpdb $wpdb WordPress database abstraction object.
+	 * @global wpdb $wpdb ArkPress database abstraction object.
 	 *
 	 * @param string $orderby_raw Alias for the field to order by.
 	 * @return string|false Value to used in the ORDER clause. False otherwise.
@@ -1033,7 +1033,7 @@ class WP_Term_Query {
 	 *
 	 * @since 4.6.0
 	 *
-	 * @global wpdb $wpdb WordPress database abstraction object.
+	 * @global wpdb $wpdb ArkPress database abstraction object.
 	 *
 	 * @param string $string
 	 * @return string

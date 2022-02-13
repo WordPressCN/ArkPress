@@ -2,7 +2,7 @@
 /**
  * File contains all the administration image manipulation functions.
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage Administration
  */
 
@@ -677,7 +677,7 @@ function wp_exif_frac2dec( $str ) {
 	}
 
 	// The denominator must not be zero.
-	if ( 0 == $denominator ) { // phpcs:ignore WordPress.PHP.StrictComparisons.LooseComparison -- Deliberate loose comparison.
+	if ( 0 == $denominator ) { // phpcs:ignore ArkPress.PHP.StrictComparisons.LooseComparison -- Deliberate loose comparison.
 		return 0;
 	}
 
@@ -759,7 +759,7 @@ function wp_read_image_metadata( $file ) {
 			) {
 				$iptc = iptcparse( $info['APP13'] );
 			} else {
-				// phpcs:ignore WordPress.PHP.NoSilencedErrors -- Silencing notice and warning is intentional. See https://core.trac.wordpress.org/ticket/42480
+				// phpcs:ignore ArkPress.PHP.NoSilencedErrors -- Silencing notice and warning is intentional. See https://core.trac.wordpress.org/ticket/42480
 				$iptc = @iptcparse( $info['APP13'] );
 			}
 
@@ -828,7 +828,7 @@ function wp_read_image_metadata( $file ) {
 		) {
 			$exif = exif_read_data( $file );
 		} else {
-			// phpcs:ignore WordPress.PHP.NoSilencedErrors -- Silencing notice and warning is intentional. See https://core.trac.wordpress.org/ticket/42480
+			// phpcs:ignore ArkPress.PHP.NoSilencedErrors -- Silencing notice and warning is intentional. See https://core.trac.wordpress.org/ticket/42480
 			$exif = @exif_read_data( $file );
 		}
 

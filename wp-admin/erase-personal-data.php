@@ -2,11 +2,11 @@
 /**
  * Privacy tools, Erase Personal Data screen.
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage Administration
  */
 
-/** WordPress Administration Bootstrap */
+/**  ArkPress Administration Bootstrap */
 require_once __DIR__ . '/admin.php';
 
 if ( ! current_user_can( 'erase_others_personal_data' ) || ! current_user_can( 'delete_users' ) ) {
@@ -21,8 +21,8 @@ get_current_screen()->add_help_tab(
 		'content' =>
 					'<p>' . __( 'This screen allows you to manage requests to erase or delete personal data.' ) . '</p>' .
 					'<p>' . __( 'Deleting, anonymizing, or forgetting all data that a business or website has collected about an individual is a requirement of many Privacy Laws around the world, and is sometimes referred to as the "Right To Be Forgotten".' ) . '</p>' .
-					'<p>' . __( 'The tool associates data stored in WordPress by a supplied email address, including profile data and comments.' ) . '</p>' .
-					'<p><strong>' . __( 'Note: As this tool only gathers data from WordPress and participating plugins, you may need to do more to comply with erasure requests. You should also delete any data collected by or stored with any 3rd party services used by your business or site.' ) . '</strong></p>',
+					'<p>' . __( 'The tool associates data stored in ArkPress by a supplied email address, including profile data and comments.' ) . '</p>' .
+					'<p><strong>' . __( 'Note: As this tool only gathers data from ArkPress and participating plugins, you may need to do more to comply with erasure requests. You should also delete any data collected by or stored with any 3rd party services used by your business or site.' ) . '</strong></p>',
 	)
 );
 
@@ -31,7 +31,7 @@ get_current_screen()->add_help_tab(
 		'id'      => 'default-data',
 		'title'   => __( 'Default Data' ),
 		'content' =>
-					'<p>' . __( 'Personal data that is collected by WordPress and is deleted or anonymized include:' ) . '</p>' .
+					'<p>' . __( 'Personal data that is collected by ArkPress and is deleted or anonymized include:' ) . '</p>' .
 					'<p>' . __( '<strong>Profile Information</strong> &mdash; user email address, username, display name, nickname, first name, last name, description/bio, and registration date.' ) . '</p>' .
 					'<p>' . __( '<strong>Community Events Location</strong> &mdash; The IP Address of the user which is used for the Upcoming Community Events shown in the dashboard widget.' ) . '</p>' .
 					'<p>' . __( '<strong>Session Tokens</strong> &mdash; User login information, IP Addresses, Expiration Date, User Agent (Browser/OS), and Last Login.' ) . '</p>' .
@@ -51,7 +51,7 @@ get_current_screen()->add_help_tab(
 		'id'      => 'plugin-data',
 		'title'   => __( 'Plugin Data' ),
 		'content' =>
-					'<p>' . __( 'Many plugins may collect or store personal data either in the WordPress database or remotely. Any Erase Personal Data request should delete data from plugins as well.' ) . '</p>' .
+					'<p>' . __( 'Many plugins may collect or store personal data either in the ArkPress database or remotely. Any Erase Personal Data request should delete data from plugins as well.' ) . '</p>' .
 					'<p>' . __( 'Plugin authors can <a href="https://developer.wordpress.org/plugins/privacy/adding-the-personal-data-eraser-to-your-plugin/" target="_blank">learn more about how to add support for the Personal Data Eraser to a plugin here</a>.' ) . '</p>' .
 					$privacy_policy_guide,
 	)
@@ -59,8 +59,8 @@ get_current_screen()->add_help_tab(
 
 get_current_screen()->set_help_sidebar(
 	'<p><strong>' . __( 'For more information:' ) . '</strong></p>' .
-	'<p>' . __( '<a href="https://wordpress.org/support/article/tools-erase-personal-data-screen/">Documentation on Erase Personal Data</a>' ) . '</p>' .
-	'<p>' . __( '<a href="https://wordpress.org/support/">Support</a>' ) . '</p>'
+	'<p>' . __( '<a href="https://arkpress.icu/support/article/tools-erase-personal-data-screen/">Documentation on Erase Personal Data</a>' ) . '</p>' .
+	'<p>' . __( '<a href="https://arkpress.icu/support/">Support</a>' ) . '</p>'
 );
 
 // Handle list table actions.

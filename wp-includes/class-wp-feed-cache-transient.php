@@ -2,7 +2,7 @@
 /**
  * Feed API: WP_Feed_Cache_Transient class
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage Feed
  * @since 4.7.0
  */

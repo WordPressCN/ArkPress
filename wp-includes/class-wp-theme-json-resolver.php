@@ -2,7 +2,7 @@
 /**
  * WP_Theme_JSON_Resolver class
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage Theme
  * @since 5.8.0
  */

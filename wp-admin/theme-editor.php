@@ -2,11 +2,11 @@
 /**
  * Theme file editor administration panel.
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage Administration
  */
 
-/** WordPress Administration Bootstrap */
+/**  ArkPress Administration Bootstrap */
 require_once __DIR__ . '/admin.php';
 
 if ( is_multisite() && ! is_network_admin() ) {
@@ -50,10 +50,10 @@ get_current_screen()->add_help_tab(
 get_current_screen()->set_help_sidebar(
 	'<p><strong>' . __( 'For more information:' ) . '</strong></p>' .
 	'<p>' . __( '<a href="https://developer.wordpress.org/themes/">Documentation on Theme Development</a>' ) . '</p>' .
-	'<p>' . __( '<a href="https://wordpress.org/support/article/appearance-editor-screen/">Documentation on Editing Themes</a>' ) . '</p>' .
-	'<p>' . __( '<a href="https://wordpress.org/support/article/editing-files/">Documentation on Editing Files</a>' ) . '</p>' .
+	'<p>' . __( '<a href="https://arkpress.icu/support/article/appearance-editor-screen/">Documentation on Editing Themes</a>' ) . '</p>' .
+	'<p>' . __( '<a href="https://arkpress.icu/support/article/editing-files/">Documentation on Editing Files</a>' ) . '</p>' .
 	'<p>' . __( '<a href="https://developer.wordpress.org/themes/basics/template-tags/">Documentation on Template Tags</a>' ) . '</p>' .
-	'<p>' . __( '<a href="https://wordpress.org/support/">Support</a>' ) . '</p>'
+	'<p>' . __( '<a href="https://arkpress.icu/support/">Support</a>' ) . '</p>'
 );
 
 wp_reset_vars( array( 'action', 'error', 'file', 'theme' ) );
@@ -321,7 +321,7 @@ else :
 					printf(
 						/* translators: %s: Documentation URL. */
 						__( 'You need to make this file writable before you can save your changes. See <a href="%s">Changing File Permissions</a> for more information.' ),
-						__( 'https://wordpress.org/support/article/changing-file-permissions/' )
+						__( 'https://arkpress.icu/support/article/changing-file-permissions/' )
 					);
 					?>
 				</p>
@@ -359,7 +359,7 @@ if ( ! in_array( 'theme_editor_notice', $dismissed_pointers, true ) ) :
 					<h1><?php _e( 'Heads up!' ); ?></h1>
 					<p>
 						<?php
-						_e( 'You appear to be making direct edits to your theme in the WordPress dashboard. It is not recommended! Editing your theme directly could break your site and your changes may be lost in future updates.' );
+						_e( 'You appear to be making direct edits to your theme in the ArkPress dashboard. It is not recommended! Editing your theme directly could break your site and your changes may be lost in future updates.' );
 						?>
 					</p>
 						<?php

@@ -2,14 +2,14 @@
 /**
  * Widget administration screen.
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage Administration
  */
 
-/** WordPress Administration Bootstrap */
+/**  ArkPress Administration Bootstrap */
 require_once __DIR__ . '/admin.php';
 
-/** WordPress Administration Widgets API */
+/**  ArkPress Administration Widgets API */
 require_once ABSPATH . 'wp-admin/includes/widgets.php';
 
 if ( ! current_user_can( 'edit_theme_options' ) ) {

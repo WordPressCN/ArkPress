@@ -2,11 +2,11 @@
 /**
  * Privacy Settings Screen.
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage Administration
  */
 
-/** WordPress Administration Bootstrap */
+/**  ArkPress Administration Bootstrap */
 require_once __DIR__ . '/admin.php';
 
 if ( ! current_user_can( 'manage_privacy_options' ) ) {
@@ -41,7 +41,7 @@ get_current_screen()->add_help_tab(
 
 get_current_screen()->set_help_sidebar(
 	'<p><strong>' . __( 'For more information:' ) . '</strong></p>' .
-	'<p>' . __( '<a href="https://wordpress.org/support/article/settings-privacy-screen/">Documentation on Privacy Settings</a>' ) . '</p>'
+	'<p>' . __( '<a href="https://arkpress.icu/support/article/settings-privacy-screen/">Documentation on Privacy Settings</a>' ) . '</p>'
 );
 
 if ( ! empty( $action ) ) {

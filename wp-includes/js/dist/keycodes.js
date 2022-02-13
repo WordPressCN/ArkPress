@@ -189,7 +189,7 @@ function isAppleOS() {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 

@@ -136,7 +136,7 @@ const STORE_NAME = 'core/annotations';
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/annotations/build-module/format/annotation.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -330,7 +330,7 @@ const annotation_annotation = {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/annotations/build-module/format/index.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -352,7 +352,7 @@ var external_wp_data_ = __webpack_require__("1ZqX");
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/annotations/build-module/block/index.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -694,7 +694,7 @@ function __experimentalRemoveAnnotationsBySource(source) {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/annotations/build-module/store/index.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**

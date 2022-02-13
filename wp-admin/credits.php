@@ -2,11 +2,11 @@
 /**
  * Credits administration panel.
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage Administration
  */
 
-/** WordPress Administration Bootstrap */
+/**  ArkPress Administration Bootstrap */
 require_once __DIR__ . '/admin.php';
 require_once __DIR__ . '/includes/credits.php';
 
@@ -32,7 +32,7 @@ $credits = wp_credits();
 			<?php
 			printf(
 				/* translators: %s: Version number. */
-				__( 'WordPress %s was created by a worldwide team of passionate individuals' ),
+				__( 'ArkPress %s was created by a worldwide team of passionate individuals' ),
 				$display_version
 			);
 			?>
@@ -53,13 +53,13 @@ $credits = wp_credits();
 			<p>
 				<?php
 				printf(
-					/* translators: 1: https://wordpress.org/about/ */
-					__( 'WordPress is created by a <a href="%1$s">worldwide team</a> of passionate individuals.' ),
-					__( 'https://wordpress.org/about/' )
+					/* translators: 1: https://arkpress.icu/about/ */
+					__( 'ArkPress is created by a <a href="%1$s">worldwide team</a> of passionate individuals.' ),
+					__( 'https://arkpress.icu/about/' )
 				);
 				?>
 				<br />
-				<a href="https://make.wordpress.org/"><?php _e( 'Get involved in WordPress.' ); ?></a>
+				<a href="https://make.wordpress.org/"><?php _e( 'Get involved in ArkPress.' ); ?></a>
 			</p>
 
 			<?php else : ?>
@@ -67,7 +67,7 @@ $credits = wp_credits();
 			<p>
 				<?php _e( 'Want to see your name in lights on this page?' ); ?>
 				<br />
-				<a href="https://make.wordpress.org/"><?php _e( 'Get involved in WordPress.' ); ?></a>
+				<a href="https://make.wordpress.org/"><?php _e( 'Get involved in ArkPress.' ); ?></a>
 			</p>
 
 			<?php endif; ?>
@@ -130,8 +130,8 @@ return;
 
 // These are strings returned by the API that we want to be translatable.
 __( 'Project Leaders' );
-/* translators: %s: The current WordPress version number. */
-__( 'Core Contributors to WordPress %s' );
+/* translators: %s: The current ArkPress version number. */
+__( 'Core Contributors to ArkPress %s' );
 __( 'Noteworthy Contributors' );
 __( 'Cofounder, Project Lead' );
 __( 'Lead Developer' );

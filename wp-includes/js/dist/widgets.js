@@ -136,7 +136,7 @@ var external_wp_primitives_ = __webpack_require__("Tqx9");
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const widget_widget = Object(external_wp_element_["createElement"])(external_wp_primitives_["SVG"], {
@@ -161,7 +161,7 @@ var external_wp_components_ = __webpack_require__("tI+e");
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const brush = Object(external_wp_element_["createElement"])(external_wp_primitives_["SVG"], {
@@ -185,7 +185,7 @@ var external_wp_coreData_ = __webpack_require__("jZUy");
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -273,7 +273,7 @@ var external_wp_apiFetch_default = /*#__PURE__*/__webpack_require__.n(external_w
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -720,7 +720,7 @@ function serializeForm(form) {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -829,7 +829,7 @@ function Form(_ref) {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -936,7 +936,7 @@ function Preview(_ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 function NoPreview(_ref) {
@@ -952,7 +952,7 @@ function NoPreview(_ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -992,7 +992,7 @@ function ConvertToBlocksButton(_ref) {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -1145,7 +1145,7 @@ function NotEmpty(_ref3) {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/widgets/build-module/blocks/legacy-widget/transforms.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const legacyWidgetTransforms = [{
@@ -1377,7 +1377,7 @@ const transforms = {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/widgets/build-module/blocks/legacy-widget/index.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -1431,7 +1431,7 @@ var group = __webpack_require__("u6za");
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -1490,7 +1490,7 @@ function PreviewContent(_ref2) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 function save(_ref) {
@@ -1506,7 +1506,7 @@ function save(_ref) {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/widgets/build-module/blocks/widget-group/index.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -1587,7 +1587,7 @@ const widget_group_settings = {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const moveTo = Object(external_wp_element_["createElement"])(external_wp_primitives_["SVG"], {
@@ -1602,7 +1602,7 @@ const moveTo = Object(external_wp_element_["createElement"])(external_wp_primiti
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -1676,7 +1676,7 @@ function addWidgetIdToBlock(block, widgetId) {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/widgets/build-module/register-legacy-widget-variations.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -1709,7 +1709,7 @@ function registerLegacyWidgetVariations(settings) {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/widgets/build-module/index.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -1905,7 +1905,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const group = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_1__["SVG"], {

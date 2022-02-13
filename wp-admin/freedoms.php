@@ -2,11 +2,11 @@
 /**
  * Your Rights administration panel.
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage Administration
  */
 
-/** WordPress Administration Bootstrap */
+/**  ArkPress Administration Bootstrap */
 require_once __DIR__ . '/admin.php';
 
 // This file was used to also display the Privacy tab on the About screen from 4.9.6 until 5.3.0.
@@ -32,7 +32,7 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 		</div>
 
 		<div class="about__header-text">
-			<?php _e( 'WordPress is free and open source software' ); ?>
+			<?php _e( 'ArkPress is free and open source software' ); ?>
 		</div>
 
 		<nav class="about__header-navigation nav-tab-wrapper wp-clearfix" aria-label="<?php esc_attr_e( 'Secondary menu' ); ?>">
@@ -47,9 +47,9 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 		<p class="about-description">
 		<?php
 		printf(
-			/* translators: %s: https://wordpress.org/about/license/ */
-			__( 'WordPress comes with some awesome, worldview-changing rights courtesy of its <a href="%s">license</a>, the GPL.' ),
-			__( 'https://wordpress.org/about/license/' )
+			/* translators: %s: https://arkpress.icu/about/license/ */
+			__( 'ArkPress comes with some awesome, worldview-changing rights courtesy of its <a href="%s">license</a>, the GPL.' ),
+			__( 'https://arkpress.icu/about/license/' )
 		);
 		?>
 		</p>
@@ -84,7 +84,7 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 			<?php
 			printf(
 				/* translators: %s: https://wordpressfoundation.org/trademark-policy/ */
-				__( 'WordPress grows when people like you tell their friends about it, and the thousands of businesses and services that are built on and around WordPress share that fact with their users. We&#8217;re flattered every time someone spreads the good word, just make sure to <a href="%s">check out our trademark guidelines</a> first.' ),
+				__( 'ArkPress grows when people like you tell their friends about it, and the thousands of businesses and services that are built on and around ArkPress share that fact with their users. We&#8217;re flattered every time someone spreads the good word, just make sure to <a href="%s">check out our trademark guidelines</a> first.' ),
 				'https://wordpressfoundation.org/trademark-policy/'
 			);
 			?>
@@ -92,14 +92,14 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 
 			<p>
 			<?php
-			$plugins_url = current_user_can( 'activate_plugins' ) ? admin_url( 'plugins.php' ) : __( 'https://wordpress.org/plugins/' );
-			$themes_url  = current_user_can( 'switch_themes' ) ? admin_url( 'themes.php' ) : __( 'https://wordpress.org/themes/' );
+			$plugins_url = current_user_can( 'activate_plugins' ) ? admin_url( 'plugins.php' ) : __( 'https://arkpress.icu/plugins/' );
+			$themes_url  = current_user_can( 'switch_themes' ) ? admin_url( 'themes.php' ) : __( 'https://arkpress.icu/themes/' );
 			printf(
-				/* translators: 1: URL to Plugins screen, 2: URL to Themes screen, 3: https://wordpress.org/about/license/ */
-				__( 'Every plugin and theme in WordPress.org&#8217;s directory is 100%% GPL or a similarly free and compatible license, so you can feel safe finding <a href="%1$s">plugins</a> and <a href="%2$s">themes</a> there. If you get a plugin or theme from another source, make sure to <a href="%3$s">ask them if it&#8217;s GPL</a> first. If they don&#8217;t respect the WordPress license, we don&#8217;t recommend them.' ),
+				/* translators: 1: URL to Plugins screen, 2: URL to Themes screen, 3: https://arkpress.icu/about/license/ */
+				__( 'Every plugin and theme in ArkPress.icu&#8217;s directory is 100%% GPL or a similarly free and compatible license, so you can feel safe finding <a href="%1$s">plugins</a> and <a href="%2$s">themes</a> there. If you get a plugin or theme from another source, make sure to <a href="%3$s">ask them if it&#8217;s GPL</a> first. If they don&#8217;t respect the ArkPress license, we don&#8217;t recommend them.' ),
 				$plugins_url,
 				$themes_url,
-				__( 'https://wordpress.org/about/license/' )
+				__( 'https://arkpress.icu/about/license/' )
 			);
 			?>
 			</p>

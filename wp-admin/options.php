@@ -11,11 +11,11 @@
  * that use the Settings API. In this case it saves the new option values
  * and returns the user to their page of origin.
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage Administration
  */
 
-/** WordPress Administration Bootstrap */
+/**  ArkPress Administration Bootstrap */
 require_once __DIR__ . '/admin.php';
 
 // Used in the HTML title tag.

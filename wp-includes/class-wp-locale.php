@@ -2,7 +2,7 @@
 /**
  * Locale API: WP_Locale class
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage i18n
  * @since 4.6.0
  */
@@ -115,7 +115,7 @@ class WP_Locale {
 	 * @since 2.1.0
 	 *
 	 * @global string $text_direction
-	 * @global string $wp_version     The WordPress version string.
+	 * @global string $wp_version     The ArkPress version string.
 	 */
 	public function init() {
 		// The weekdays.
@@ -213,7 +213,7 @@ class WP_Locale {
 		if ( isset( $GLOBALS['text_direction'] ) ) {
 			$this->text_direction = $GLOBALS['text_direction'];
 
-			/* translators: 'rtl' or 'ltr'. This sets the text direction for WordPress. */
+			/* translators: 'rtl' or 'ltr'. This sets the text direction for ArkPress. */
 		} elseif ( 'rtl' === _x( 'ltr', 'text direction' ) ) {
 			$this->text_direction = 'rtl';
 		}

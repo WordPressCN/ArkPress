@@ -212,7 +212,7 @@ var external_wp_url_ = __webpack_require__("Mmq9");
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/api-fetch/build-module/middlewares/preloading.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -272,7 +272,7 @@ function createPreloadingMiddleware(preloadedData) {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/api-fetch/build-module/middlewares/fetch-all-middleware.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -459,7 +459,7 @@ const httpV1Middleware = (options, next) => {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/api-fetch/build-module/middlewares/user-locale.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -486,7 +486,7 @@ const userLocaleMiddleware = (options, next) => {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/api-fetch/build-module/utils/response.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -574,7 +574,7 @@ function parseAndThrowError(response) {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/api-fetch/build-module/middlewares/media-upload.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -659,7 +659,7 @@ const mediaUploadMiddleware = (options, next) => {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/api-fetch/build-module/index.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**

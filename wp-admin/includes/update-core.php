@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress core upgrade functionality.
+ * ArkPress core upgrade functionality.
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage Administration
  * @since 2.7.0
  */
@@ -849,7 +849,7 @@ $_old_files = array(
  * Stores new files in wp-content to copy
  *
  * The contents of this array indicate any new bundled plugins/themes which
- * should be installed with the WordPress Upgrade. These items will not be
+ * should be installed with the ArkPress Upgrade. These items will not be
  * re-installed in future upgrades, this behaviour is controlled by the
  * introduced version present here being older than the current installed version.
  *
@@ -884,9 +884,9 @@ $_new_bundled_files = array(
 );
 
 /**
- * Upgrades the core of WordPress.
+ * Upgrades the core of ArkPress.
  *
- * This will create a .maintenance file at the base of the WordPress directory
+ * This will create a .maintenance file at the base of the ArkPress directory
  * to ensure that people can not access the web site, when the files are being
  * copied to their locations.
  *
@@ -899,13 +899,13 @@ $_new_bundled_files = array(
  * The steps for the upgrader for after the new release is downloaded and
  * unzipped is:
  *   1. Test unzipped location for select files to ensure that unzipped worked.
- *   2. Create the .maintenance file in current WordPress base.
- *   3. Copy new WordPress directory over old WordPress files.
- *   4. Upgrade WordPress to new version.
+ *   2. Create the .maintenance file in current ArkPress base.
+ *   3. Copy new ArkPress directory over old ArkPress files.
+ *   4. Upgrade ArkPress to new version.
  *     4.1. Copy all files/folders other than wp-content
  *     4.2. Copy any language files to WP_LANG_DIR (which may differ from WP_CONTENT_DIR
  *     4.3. Copy any new bundled themes/plugins to their respective locations
- *   5. Delete new WordPress directory path.
+ *   5. Delete new ArkPress directory path.
  *   6. Delete .maintenance file.
  *   7. Remove old files.
  *   8. Delete 'update_core' option.
@@ -916,8 +916,8 @@ $_new_bundled_files = array(
  * automatically remove old files and remove the 'update_core' option. This
  * isn't that bad.
  *
- * If the copy of the new WordPress over the old fails, then the worse is that
- * the new WordPress directory will remain.
+ * If the copy of the new ArkPress over the old fails, then the worse is that
+ * the new ArkPress directory will remain.
  *
  * If it is assumed that every file will be copied over, including plugins and
  * themes, then if you edit the default theme, you should rename it, so that
@@ -925,17 +925,17 @@ $_new_bundled_files = array(
  *
  * @since 2.7.0
  *
- * @global WP_Filesystem_Base $wp_filesystem          WordPress filesystem subclass.
+ * @global WP_Filesystem_Base $wp_filesystem          ArkPress filesystem subclass.
  * @global array              $_old_files
  * @global array              $_new_bundled_files
- * @global wpdb               $wpdb                   WordPress database abstraction object.
+ * @global wpdb               $wpdb                   ArkPress database abstraction object.
  * @global string             $wp_version
  * @global string             $required_php_version
  * @global string             $required_mysql_version
  *
  * @param string $from New release unzipped path.
- * @param string $to   Path to old WordPress installation.
- * @return string|WP_Error New WordPress version on success, WP_Error on failure.
+ * @param string $to   Path to old ArkPress installation.
+ * @return string|WP_Error New ArkPress version on success, WP_Error on failure.
  */
 function update_core( $from, $to ) {
 	global $wp_filesystem, $_old_files, $_new_bundled_files, $wpdb;
@@ -949,9 +949,9 @@ function update_core( $from, $to ) {
 	 * has been downloaded and unzipped. It is evaluated five more times during
 	 * the process:
 	 *
-	 * 1. Before WordPress begins the core upgrade process.
+	 * 1. Before ArkPress begins the core upgrade process.
 	 * 2. Before Maintenance Mode is enabled.
-	 * 3. Before WordPress begins copying over the necessary files.
+	 * 3. Before ArkPress begins copying over the necessary files.
 	 * 4. Before Maintenance Mode is disabled.
 	 * 5. Before the database is upgraded.
 	 *
@@ -1002,7 +1002,7 @@ function update_core( $from, $to ) {
 	$wp_filesystem->chmod( $versions_file, FS_CHMOD_FILE );
 
 	/*
-	 * `wp_opcache_invalidate()` only exists in WordPress 5.5 or later,
+	 * `wp_opcache_invalidate()` only exists in ArkPress 5.5 or later,
 	 * so don't run it when upgrading from older versions.
 	 */
 	if ( function_exists( 'wp_opcache_invalidate' ) ) {
@@ -1014,7 +1014,7 @@ function update_core( $from, $to ) {
 
 	$php_version       = phpversion();
 	$mysql_version     = $wpdb->db_version();
-	$old_wp_version    = $GLOBALS['wp_version']; // The version of WordPress we're updating from.
+	$old_wp_version    = $GLOBALS['wp_version']; // The version of ArkPress we're updating from.
 	$development_build = ( false !== strpos( $old_wp_version . $wp_version, '-' ) ); // A dash in the version indicates a development release.
 	$php_compat        = version_compare( $php_version, $required_php_version, '>=' );
 
@@ -1050,8 +1050,8 @@ function update_core( $from, $to ) {
 		return new WP_Error(
 			'php_mysql_not_compatible',
 			sprintf(
-				/* translators: 1: WordPress version number, 2: Minimum required PHP version number, 3: Minimum required MySQL version number, 4: Current PHP version number, 5: Current MySQL version number. */
-				__( 'The update cannot be installed because WordPress %1$s requires PHP version %2$s or higher and MySQL version %3$s or higher. You are running PHP version %4$s and MySQL version %5$s.' ),
+				/* translators: 1: ArkPress version number, 2: Minimum required PHP version number, 3: Minimum required MySQL version number, 4: Current PHP version number, 5: Current MySQL version number. */
+				__( 'The update cannot be installed because ArkPress %1$s requires PHP version %2$s or higher and MySQL version %3$s or higher. You are running PHP version %4$s and MySQL version %5$s.' ),
 				$wp_version,
 				$required_php_version,
 				$required_mysql_version,
@@ -1063,8 +1063,8 @@ function update_core( $from, $to ) {
 		return new WP_Error(
 			'php_not_compatible',
 			sprintf(
-				/* translators: 1: WordPress version number, 2: Minimum required PHP version number, 3: Current PHP version number. */
-				__( 'The update cannot be installed because WordPress %1$s requires PHP version %2$s or higher. You are running version %3$s.' ),
+				/* translators: 1: ArkPress version number, 2: Minimum required PHP version number, 3: Current PHP version number. */
+				__( 'The update cannot be installed because ArkPress %1$s requires PHP version %2$s or higher. You are running version %3$s.' ),
 				$wp_version,
 				$required_php_version,
 				$php_version
@@ -1074,8 +1074,8 @@ function update_core( $from, $to ) {
 		return new WP_Error(
 			'mysql_not_compatible',
 			sprintf(
-				/* translators: 1: WordPress version number, 2: Minimum required MySQL version number, 3: Current MySQL version number. */
-				__( 'The update cannot be installed because WordPress %1$s requires MySQL version %2$s or higher. You are running version %3$s.' ),
+				/* translators: 1: ArkPress version number, 2: Minimum required MySQL version number, 3: Current MySQL version number. */
+				__( 'The update cannot be installed because ArkPress %1$s requires MySQL version %2$s or higher. You are running version %3$s.' ),
 				$wp_version,
 				$required_mysql_version,
 				$mysql_version
@@ -1088,8 +1088,8 @@ function update_core( $from, $to ) {
 		return new WP_Error(
 			'php_not_compatible_json',
 			sprintf(
-				/* translators: 1: WordPress version number, 2: The PHP extension name needed. */
-				__( 'The update cannot be installed because WordPress %1$s requires the %2$s PHP extension.' ),
+				/* translators: 1: ArkPress version number, 2: The PHP extension name needed. */
+				__( 'The update cannot be installed because ArkPress %1$s requires the %2$s PHP extension.' ),
 				$wp_version,
 				'JSON'
 			)
@@ -1210,7 +1210,7 @@ function update_core( $from, $to ) {
 		$wp_filesystem->chmod( $to . 'wp-includes/version.php', FS_CHMOD_FILE );
 
 		/*
-		 * `wp_opcache_invalidate()` only exists in WordPress 5.5 or later,
+		 * `wp_opcache_invalidate()` only exists in ArkPress 5.5 or later,
 		 * so don't run it when upgrading from older versions.
 		 */
 		if ( function_exists( 'wp_opcache_invalidate' ) ) {
@@ -1328,7 +1328,7 @@ function update_core( $from, $to ) {
 	/*
 	 * Copy new bundled plugins & themes.
 	 * This gives us the ability to install new plugins & themes bundled with
-	 * future versions of WordPress whilst avoiding the re-install upon upgrade issue.
+	 * future versions of ArkPress whilst avoiding the re-install upon upgrade issue.
 	 * $development_build controls us overwriting bundled themes and plugins when a non-stable release is being updated.
 	 */
 	if ( ! is_wp_error( $result )
@@ -1444,11 +1444,11 @@ function update_core( $from, $to ) {
 	}
 
 	/**
-	 * Fires after WordPress core has been successfully updated.
+	 * Fires after ArkPress core has been successfully updated.
 	 *
 	 * @since 3.3.0
 	 *
-	 * @param string $wp_version The current WordPress version.
+	 * @param string $wp_version The current ArkPress version.
 	 */
 	do_action( '_core_updated_successfully', $wp_version );
 
@@ -1461,13 +1461,13 @@ function update_core( $from, $to ) {
 }
 
 /**
- * Copies a directory from one location to another via the WordPress Filesystem Abstraction.
+ * Copies a directory from one location to another via the ArkPress Filesystem Abstraction.
  *
  * Assumes that WP_Filesystem() has already been called and setup.
  *
  * This is a standalone copy of the `copy_dir()` function that is used to
  * upgrade the core files. It is placed here so that the version of this
- * function from the *new* WordPress version will be called.
+ * function from the *new* ArkPress version will be called.
  *
  * It was initially added for the 3.1 -> 3.2 upgrade.
  *
@@ -1513,7 +1513,7 @@ function _copy_dir( $from, $to, $skip_list = array() ) {
 			}
 
 			/*
-			 * `wp_opcache_invalidate()` only exists in WordPress 5.5 or later,
+			 * `wp_opcache_invalidate()` only exists in ArkPress 5.5 or later,
 			 * so don't run it when upgrading from older versions.
 			 */
 			if ( function_exists( 'wp_opcache_invalidate' ) ) {
@@ -1550,13 +1550,13 @@ function _copy_dir( $from, $to, $skip_list = array() ) {
 }
 
 /**
- * Redirect to the About WordPress page after a successful upgrade.
+ * Redirect to the About ArkPress page after a successful upgrade.
  *
  * This function is only needed when the existing installation is older than 3.4.0.
  *
  * @since 3.3.0
  *
- * @global string $wp_version The WordPress version string.
+ * @global string $wp_version The ArkPress version string.
  * @global string $pagenow
  * @global string $action
  *
@@ -1582,21 +1582,21 @@ function _redirect_to_about_wordpress( $new_version ) {
 	load_default_textdomain();
 
 	// See do_core_upgrade().
-	show_message( __( 'WordPress updated successfully.' ) );
+	show_message( __( 'ArkPress updated successfully.' ) );
 
 	// self_admin_url() won't exist when upgrading from <= 3.0, so relative URLs are intentional.
 	show_message(
 		'<span class="hide-if-no-js">' . sprintf(
-			/* translators: 1: WordPress version, 2: URL to About screen. */
-			__( 'Welcome to WordPress %1$s. You will be redirected to the About WordPress screen. If not, click <a href="%2$s">here</a>.' ),
+			/* translators: 1: ArkPress version, 2: URL to About screen. */
+			__( 'Welcome to ArkPress %1$s. You will be redirected to the About ArkPress screen. If not, click <a href="%2$s">here</a>.' ),
 			$new_version,
 			'about.php?updated'
 		) . '</span>'
 	);
 	show_message(
 		'<span class="hide-if-js">' . sprintf(
-			/* translators: 1: WordPress version, 2: URL to About screen. */
-			__( 'Welcome to WordPress %1$s. <a href="%2$s">Learn more</a>.' ),
+			/* translators: 1: ArkPress version, 2: URL to About screen. */
+			__( 'Welcome to ArkPress %1$s. <a href="%2$s">Learn more</a>.' ),
 			$new_version,
 			'about.php?updated'
 		) . '</span>'

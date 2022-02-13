@@ -129,7 +129,7 @@ var external_wp_data_ = __webpack_require__("1ZqX");
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/nux/build-module/store/reducer.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -353,7 +353,7 @@ function selectors_areTipsEnabled(state) {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/nux/build-module/store/index.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -406,7 +406,7 @@ var library_close = __webpack_require__("w95h");
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -507,7 +507,7 @@ function DotTip(_ref) {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/nux/build-module/index.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -862,7 +862,7 @@ function isShallowEqual( a, b, fromIndex ) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const close = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_1__["SVG"], {

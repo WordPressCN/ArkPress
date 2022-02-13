@@ -98,7 +98,7 @@ this["wp"] = this["wp"] || {}; this["wp"]["plugins"] =
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 const plugins = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_primitives__WEBPACK_IMPORTED_MODULE_1__["SVG"], {
@@ -347,7 +347,7 @@ var external_wp_compose_ = __webpack_require__("K9lf");
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -381,7 +381,7 @@ var plugins = __webpack_require__("0Ene");
 /* eslint no-console: [ 'error', { allow: [ 'error' ] } ] */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -612,7 +612,7 @@ function getPlugins(scope) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 

@@ -1,8 +1,8 @@
 <?php
 /**
- * Facilitates adding of the WordPress editor as used on the Write and Edit screens.
+ * Facilitates adding of the ArkPress editor as used on the Write and Edit screens.
  *
- * @package WordPress
+ * @package ArkPress
  * @since 3.3.0
  *
  * Private, not included by default. See wp_editor() in wp-includes/general-template.php.
@@ -444,7 +444,7 @@ final class _WP_Editors {
 					 * Filters the list of default TinyMCE plugins.
 					 *
 					 * The filter specifies which of the default plugins included
-					 * in WordPress should be added to the TinyMCE instance.
+					 * in ArkPress should be added to the TinyMCE instance.
 					 *
 					 * @since 3.3.0
 					 * @since 5.3.0 The `$editor_id` parameter was added.
@@ -1373,7 +1373,7 @@ final class _WP_Editors {
 				'Table'                                => _x( 'Table', 'TinyMCE menu' ),
 				'Format'                               => _x( 'Format', 'TinyMCE menu' ),
 
-				// WordPress strings.
+				// ArkPress strings.
 				'Toolbar Toggle'                       => array( __( 'Toolbar Toggle' ), 'accessZ' ),
 				'Insert Read More tag'                 => array( __( 'Insert Read More tag' ), 'accessT' ),
 				'Insert Page Break tag'                => array( __( 'Insert Page Break tag' ), 'accessP' ),

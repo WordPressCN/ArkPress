@@ -539,7 +539,7 @@ var external_lodash_ = __webpack_require__("YLtl");
 
 
 /**
- * A base class to create WordPress Components (Refs, state and lifecycle hooks)
+ * A base class to create ArkPress Components (Refs, state and lifecycle hooks)
  */
 
 
@@ -907,7 +907,7 @@ function RawHTML(_ref) {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 

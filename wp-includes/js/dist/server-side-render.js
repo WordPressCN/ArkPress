@@ -145,7 +145,7 @@ var external_wp_blocks_ = __webpack_require__("HSyU");
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -335,7 +335,7 @@ function ServerSideRender(props) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 

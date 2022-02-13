@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Customize Control classes
+ * ArkPress Customize Control classes
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage Customize
  * @since 3.4.0
  */

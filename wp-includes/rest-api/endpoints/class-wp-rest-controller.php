@@ -2,7 +2,7 @@
 /**
  * REST API: WP_REST_Controller class
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage REST_API
  * @since 4.7.0
  */
@@ -246,7 +246,7 @@ abstract class WP_REST_Controller {
 	 *
 	 * @since 4.7.0
 	 *
-	 * @param mixed           $item    WordPress representation of the item.
+	 * @param mixed           $item    ArkPress representation of the item.
 	 * @param WP_REST_Request $request Request object.
 	 * @return WP_REST_Response|WP_Error Response object on success, or WP_Error object on failure.
 	 */

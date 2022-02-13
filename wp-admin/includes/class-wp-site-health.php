@@ -1,8 +1,8 @@
 <?php
 /**
- * Class for looking up a site's health based on a user's WordPress environment.
+ * Class for looking up a site's health based on a user's ArkPress environment.
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage Site_Health
  * @since 5.2.0
  */
@@ -200,16 +200,16 @@ class WP_Site_Health {
 	 *
 	 * @since 5.2.0
 	 *
-	 * @global wpdb $wpdb WordPress database abstraction object.
+	 * @global wpdb $wpdb ArkPress database abstraction object.
 	 */
 	private function prepare_sql_data() {
 		global $wpdb;
 
 		if ( $wpdb->use_mysqli ) {
-			// phpcs:ignore WordPress.DB.RestrictedFunctions.mysql_mysqli_get_server_info
+			// phpcs:ignore ArkPress.DB.RestrictedFunctions.mysql_mysqli_get_server_info
 			$mysql_server_type = mysqli_get_server_info( $wpdb->dbh );
 		} else {
-			// phpcs:ignore WordPress.DB.RestrictedFunctions.mysql_mysql_get_server_info,PHPCompatibility.Extensions.RemovedExtensions.mysql_DeprecatedRemoved
+			// phpcs:ignore ArkPress.DB.RestrictedFunctions.mysql_mysql_get_server_info,PHPCompatibility.Extensions.RemovedExtensions.mysql_DeprecatedRemoved
 			$mysql_server_type = mysql_get_server_info( $wpdb->dbh );
 		}
 
@@ -248,7 +248,7 @@ class WP_Site_Health {
 	}
 
 	/**
-	 * Tests for WordPress version and outputs it.
+	 * Tests for ArkPress version and outputs it.
 	 *
 	 * Gives various results depending on what kind of updates are available, if any, to encourage
 	 * the user to install security updates as a priority.
@@ -277,14 +277,14 @@ class WP_Site_Health {
 			$result['status'] = 'recommended';
 
 			$result['label'] = sprintf(
-				/* translators: %s: Your current version of WordPress. */
-				__( 'WordPress version %s' ),
+				/* translators: %s: Your current version of ArkPress. */
+				__( 'ArkPress version %s' ),
 				$core_current_version
 			);
 
 			$result['description'] = sprintf(
 				'<p>%s</p>',
-				__( 'Unable to check if any new versions of WordPress are available.' )
+				__( 'Unable to check if any new versions of ArkPress are available.' )
 			);
 
 			$result['actions'] = sprintf(
@@ -302,15 +302,15 @@ class WP_Site_Health {
 					$new_major     = $new_version[0] . '.' . $new_version[1];
 
 					$result['label'] = sprintf(
-						/* translators: %s: The latest version of WordPress available. */
-						__( 'WordPress update available (%s)' ),
+						/* translators: %s: The latest version of ArkPress available. */
+						__( 'ArkPress update available (%s)' ),
 						$update->version
 					);
 
 					$result['actions'] = sprintf(
 						'<a href="%s">%s</a>',
 						esc_url( admin_url( 'update-core.php' ) ),
-						__( 'Install the latest version of WordPress' )
+						__( 'Install the latest version of ArkPress' )
 					);
 
 					if ( $current_major !== $new_major ) {
@@ -318,7 +318,7 @@ class WP_Site_Health {
 						$result['status']      = 'recommended';
 						$result['description'] = sprintf(
 							'<p>%s</p>',
-							__( 'A new version of WordPress is available.' )
+							__( 'A new version of ArkPress is available.' )
 						);
 					} else {
 						// This is a minor version, sometimes considered more critical.
@@ -332,14 +332,14 @@ class WP_Site_Health {
 				} else {
 					$result['status'] = 'good';
 					$result['label']  = sprintf(
-						/* translators: %s: The current version of WordPress installed on this site. */
-						__( 'Your version of WordPress (%s) is up to date' ),
+						/* translators: %s: The current version of ArkPress installed on this site. */
+						__( 'Your version of ArkPress (%s) is up to date' ),
 						$core_current_version
 					);
 
 					$result['description'] = sprintf(
 						'<p>%s</p>',
-						__( 'You are currently running the latest version of WordPress available, keep it up!' )
+						__( 'You are currently running the latest version of ArkPress available, keep it up!' )
 					);
 				}
 			}
@@ -652,8 +652,8 @@ class WP_Site_Health {
 							$themes_inactive
 						),
 						sprintf(
-							/* translators: 1: The default theme for WordPress. 2: The currently active theme. 3: The active theme's parent theme. */
-							__( 'To enhance your site&#8217;s security, you should consider removing any themes you&#8217;re not using. You should keep %1$s, the default WordPress theme, %2$s, your current theme, and %3$s, its parent theme.' ),
+							/* translators: 1: The default theme for ArkPress. 2: The currently active theme. 3: The active theme's parent theme. */
+							__( 'To enhance your site&#8217;s security, you should consider removing any themes you&#8217;re not using. You should keep %1$s, the default ArkPress theme, %2$s, your current theme, and %3$s, its parent theme.' ),
 							$default_theme ? $default_theme->name : WP_DEFAULT_THEME,
 							$active_theme->name,
 							$active_theme->parent()->name
@@ -685,10 +685,10 @@ class WP_Site_Health {
 					$result['description'] .= sprintf(
 						'<p>%s %s</p>',
 						sprintf(
-							/* translators: 1: The amount of inactive themes. 2: The default theme for WordPress. 3: The currently active theme. */
+							/* translators: 1: The amount of inactive themes. 2: The default theme for ArkPress. 3: The currently active theme. */
 							_n(
-								'Your site has %1$d inactive theme, other than %2$s, the default WordPress theme, and %3$s, your active theme.',
-								'Your site has %1$d inactive themes, other than %2$s, the default WordPress theme, and %3$s, your active theme.',
+								'Your site has %1$d inactive theme, other than %2$s, the default ArkPress theme, and %3$s, your active theme.',
+								'Your site has %1$d inactive themes, other than %2$s, the default ArkPress theme, and %3$s, your active theme.',
 								$themes_inactive
 							),
 							$themes_inactive,
@@ -709,7 +709,7 @@ class WP_Site_Health {
 
 			$result['description'] .= sprintf(
 				'<p>%s</p>',
-				__( 'Your site does not have any default theme. Default themes are used by WordPress automatically if anything is wrong with your chosen theme.' )
+				__( 'Your site does not have any default theme. Default themes are used by ArkPress automatically if anything is wrong with your chosen theme.' )
 			);
 		}
 
@@ -741,7 +741,7 @@ class WP_Site_Health {
 				'<p>%s</p>',
 				sprintf(
 					/* translators: %s: The minimum recommended PHP version. */
-					__( 'PHP is the programming language used to build and maintain WordPress. Newer versions of PHP are created with increased performance in mind, so you may see a positive effect on your site&#8217;s performance. The minimum recommended version of PHP is %s.' ),
+					__( 'PHP is the programming language used to build and maintain ArkPress. Newer versions of PHP are created with increased performance in mind, so you may see a positive effect on your site&#8217;s performance. The minimum recommended version of PHP is %s.' ),
 					$response ? $response['recommended_version'] : ''
 				)
 			),
@@ -835,7 +835,7 @@ class WP_Site_Health {
 	/**
 	 * Test if required PHP modules are installed on the host.
 	 *
-	 * This test builds on the recommendations made by the WordPress Hosting Team
+	 * This test builds on the recommendations made by the ArkPress Hosting Team
 	 * as seen at https://make.wordpress.org/hosting/handbook/handbook/server-environment/#php-extensions
 	 *
 	 * @since 5.2.0
@@ -855,7 +855,7 @@ class WP_Site_Health {
 				__( 'PHP modules perform most of the tasks on the server that make your site run. Any changes to these must be made by your server administrator.' ),
 				sprintf(
 					/* translators: 1: Link to the hosting group page about recommended PHP modules. 2: Additional link attributes. 3: Accessibility text. */
-					__( 'The WordPress Hosting Team maintains a list of those modules, both recommended and required, in <a href="%1$s" %2$s>the team handbook%3$s</a>.' ),
+					__( 'The ArkPress Hosting Team maintains a list of those modules, both recommended and required, in <a href="%1$s" %2$s>the team handbook%3$s</a>.' ),
 					/* translators: Localized team handbook, if one exists. */
 					esc_url( __( 'https://make.wordpress.org/hosting/handbook/handbook/server-environment/#php-extensions' ) ),
 					'target="_blank" rel="noopener"',
@@ -1085,7 +1085,7 @@ class WP_Site_Health {
 			),
 			'description' => sprintf(
 				'<p>%s</p>',
-				__( 'PHP default timezone was configured by WordPress on loading. This is necessary for correct calculations of dates and times.' )
+				__( 'PHP default timezone was configured by ArkPress on loading. This is necessary for correct calculations of dates and times.' )
 			),
 			'actions'     => '',
 			'test'        => 'php_default_timezone',
@@ -1100,7 +1100,7 @@ class WP_Site_Health {
 				'<p>%s</p>',
 				sprintf(
 					/* translators: %s: date_default_timezone_set() */
-					__( 'PHP default timezone was changed after WordPress loading by a %s function call. This interferes with correct calculations of dates and times.' ),
+					__( 'PHP default timezone was changed after ArkPress loading by a %s function call. This interferes with correct calculations of dates and times.' ),
 					'<code>date_default_timezone_set()</code>'
 				)
 			);
@@ -1176,13 +1176,13 @@ class WP_Site_Health {
 			),
 			'description' => sprintf(
 				'<p>%s</p>',
-				__( 'The SQL server is a required piece of software for the database WordPress uses to store all your site&#8217;s content and settings.' )
+				__( 'The SQL server is a required piece of software for the database ArkPress uses to store all your site&#8217;s content and settings.' )
 			),
 			'actions'     => sprintf(
 				'<p><a href="%s" target="_blank" rel="noopener">%s <span class="screen-reader-text">%s</span><span aria-hidden="true" class="dashicons dashicons-external"></span></a></p>',
-				/* translators: Localized version of WordPress requirements if one exists. */
-				esc_url( __( 'https://wordpress.org/about/requirements/' ) ),
-				__( 'Learn more about what WordPress requires to run.' ),
+				/* translators: Localized version of ArkPress requirements if one exists. */
+				esc_url( __( 'https://arkpress.icu/about/requirements/' ) ),
+				__( 'Learn more about what ArkPress requires to run.' ),
 				/* translators: Accessibility text. */
 				__( '(opens in a new tab)' )
 			),
@@ -1217,7 +1217,7 @@ class WP_Site_Health {
 				'<p>%s</p>',
 				sprintf(
 					/* translators: 1: The database engine in use (MySQL or MariaDB). 2: Database server minimum version number. */
-					__( 'WordPress requires %1$s version %2$s or higher. Contact your web hosting company to correct this.' ),
+					__( 'ArkPress requires %1$s version %2$s or higher. Contact your web hosting company to correct this.' ),
 					( $this->is_mariadb ? 'MariaDB' : 'MySQL' ),
 					$this->health_check_mysql_required_version
 				)
@@ -1267,7 +1267,7 @@ class WP_Site_Health {
 			),
 			'description' => sprintf(
 				'<p>%s</p>',
-				__( 'UTF8MB4 is the character set WordPress prefers for database storage because it safely supports the widest set of characters and encodings, including Emoji, enabling better support for non-English languages.' )
+				__( 'UTF8MB4 is the character set ArkPress prefers for database storage because it safely supports the widest set of characters and encodings, including Emoji, enabling better support for non-English languages.' )
 			),
 			'actions'     => '',
 			'test'        => 'utf8mb4_support',
@@ -1283,7 +1283,7 @@ class WP_Site_Health {
 					'<p>%s</p>',
 					sprintf(
 						/* translators: %s: Version number. */
-						__( 'WordPress&#8217; utf8mb4 support requires MySQL version %s or greater. Please contact your server administrator.' ),
+						__( 'ArkPress&#8217; utf8mb4 support requires MySQL version %s or greater. Please contact your server administrator.' ),
 						'5.5.3'
 					)
 				);
@@ -1303,7 +1303,7 @@ class WP_Site_Health {
 					'<p>%s</p>',
 					sprintf(
 						/* translators: %s: Version number. */
-						__( 'WordPress&#8217; utf8mb4 support requires MariaDB version %s or greater. Please contact your server administrator.' ),
+						__( 'ArkPress&#8217; utf8mb4 support requires MariaDB version %s or greater. Please contact your server administrator.' ),
 						'5.5.0'
 					)
 				);
@@ -1316,10 +1316,10 @@ class WP_Site_Health {
 		}
 
 		if ( $wpdb->use_mysqli ) {
-			// phpcs:ignore WordPress.DB.RestrictedFunctions.mysql_mysqli_get_client_info
+			// phpcs:ignore ArkPress.DB.RestrictedFunctions.mysql_mysqli_get_client_info
 			$mysql_client_version = mysqli_get_client_info();
 		} else {
-			// phpcs:ignore WordPress.DB.RestrictedFunctions.mysql_mysql_get_client_info,PHPCompatibility.Extensions.RemovedExtensions.mysql_DeprecatedRemoved
+			// phpcs:ignore ArkPress.DB.RestrictedFunctions.mysql_mysql_get_client_info,PHPCompatibility.Extensions.RemovedExtensions.mysql_DeprecatedRemoved
 			$mysql_client_version = mysql_get_client_info();
 		}
 
@@ -1338,7 +1338,7 @@ class WP_Site_Health {
 					'<p>%s</p>',
 					sprintf(
 						/* translators: 1: Name of the library, 2: Number of version. */
-						__( 'WordPress&#8217; utf8mb4 support requires MySQL client library (%1$s) version %2$s or newer. Please contact your server administrator.' ),
+						__( 'ArkPress&#8217; utf8mb4 support requires MySQL client library (%1$s) version %2$s or newer. Please contact your server administrator.' ),
 						'mysqlnd',
 						'5.0.9'
 					)
@@ -1354,7 +1354,7 @@ class WP_Site_Health {
 					'<p>%s</p>',
 					sprintf(
 						/* translators: 1: Name of the library, 2: Number of version. */
-						__( 'WordPress&#8217; utf8mb4 support requires MySQL client library (%1$s) version %2$s or newer. Please contact your server administrator.' ),
+						__( 'ArkPress&#8217; utf8mb4 support requires MySQL client library (%1$s) version %2$s or newer. Please contact your server administrator.' ),
 						'libmysql',
 						'5.5.3'
 					)
@@ -1366,7 +1366,7 @@ class WP_Site_Health {
 	}
 
 	/**
-	 * Test if the site can communicate with WordPress.org.
+	 * Test if the site can communicate with ArkPress.icu.
 	 *
 	 * @since 5.2.0
 	 *
@@ -1374,7 +1374,7 @@ class WP_Site_Health {
 	 */
 	public function get_test_dotorg_communication() {
 		$result = array(
-			'label'       => __( 'Can communicate with WordPress.org' ),
+			'label'       => __( 'Can communicate with ArkPress.icu' ),
 			'status'      => '',
 			'badge'       => array(
 				'label' => __( 'Security' ),
@@ -1382,7 +1382,7 @@ class WP_Site_Health {
 			),
 			'description' => sprintf(
 				'<p>%s</p>',
-				__( 'Communicating with the WordPress servers is used to check for new versions, and to both install and update WordPress core, themes or plugins.' )
+				__( 'Communicating with the ArkPress servers is used to check for new versions, and to both install and update ArkPress core, themes or plugins.' )
 			),
 			'actions'     => '',
 			'test'        => 'dotorg_communication',
@@ -1399,7 +1399,7 @@ class WP_Site_Health {
 		} else {
 			$result['status'] = 'critical';
 
-			$result['label'] = __( 'Could not reach WordPress.org' );
+			$result['label'] = __( 'Could not reach ArkPress.icu' );
 
 			$result['description'] .= sprintf(
 				'<p>%s</p>',
@@ -1407,8 +1407,8 @@ class WP_Site_Health {
 					'<span class="error"><span class="screen-reader-text">%s</span></span> %s',
 					__( 'Error' ),
 					sprintf(
-						/* translators: 1: The IP address WordPress.org resolves to. 2: The error returned by the lookup. */
-						__( 'Your site is unable to reach WordPress.org at %1$s, and returned the error: %2$s' ),
+						/* translators: 1: The IP address ArkPress.icu resolves to. 2: The error returned by the lookup. */
+						__( 'Your site is unable to reach ArkPress.icu at %1$s, and returned the error: %2$s' ),
 						gethostbyname( 'api.arkpress.icu' ),
 						$wp_dotorg->get_error_message()
 					)
@@ -1418,7 +1418,7 @@ class WP_Site_Health {
 			$result['actions'] = sprintf(
 				'<p><a href="%s" target="_blank" rel="noopener">%s <span class="screen-reader-text">%s</span><span aria-hidden="true" class="dashicons dashicons-external"></span></a></p>',
 				/* translators: Localized Support reference. */
-				esc_url( __( 'https://wordpress.org/support' ) ),
+				esc_url( __( 'https://arkpress.icu/support' ) ),
 				__( 'Get help resolving this issue.' ),
 				/* translators: Accessibility text. */
 				__( '(opens in a new tab)' )
@@ -1455,9 +1455,9 @@ class WP_Site_Health {
 			),
 			'actions'     => sprintf(
 				'<p><a href="%s" target="_blank" rel="noopener">%s <span class="screen-reader-text">%s</span><span aria-hidden="true" class="dashicons dashicons-external"></span></a></p>',
-				/* translators: Documentation explaining debugging in WordPress. */
-				esc_url( __( 'https://wordpress.org/support/article/debugging-in-wordpress/' ) ),
-				__( 'Learn more about debugging in WordPress.' ),
+				/* translators: Documentation explaining debugging in ArkPress. */
+				esc_url( __( 'https://arkpress.icu/support/article/debugging-in-wordpress/' ) ),
+				__( 'Learn more about debugging in ArkPress.' ),
 				/* translators: Accessibility text. */
 				__( '(opens in a new tab)' )
 			),
@@ -1575,8 +1575,8 @@ class WP_Site_Health {
 					$result['description'] = sprintf(
 						'<p>%s</p>',
 						sprintf(
-							/* translators: 1: URL to Settings > General > WordPress Address, 2: URL to Settings > General > Site Address. */
-							__( 'You are accessing this website using HTTPS, but your <a href="%1$s">WordPress Address</a> and <a href="%2$s">Site Address</a> are not set up to use HTTPS by default.' ),
+							/* translators: 1: URL to Settings > General > ArkPress Address, 2: URL to Settings > General > Site Address. */
+							__( 'You are accessing this website using HTTPS, but your <a href="%1$s">ArkPress Address</a> and <a href="%2$s">Site Address</a> are not set up to use HTTPS by default.' ),
 							esc_url( admin_url( 'options-general.php' ) . '#siteurl' ),
 							esc_url( admin_url( 'options-general.php' ) . '#home' )
 						)
@@ -1585,8 +1585,8 @@ class WP_Site_Health {
 					$result['description'] = sprintf(
 						'<p>%s</p>',
 						sprintf(
-							/* translators: 1: URL to Settings > General > WordPress Address, 2: URL to Settings > General > Site Address. */
-							__( 'Your <a href="%1$s">WordPress Address</a> and <a href="%2$s">Site Address</a> are not set up to use HTTPS.' ),
+							/* translators: 1: URL to Settings > General > ArkPress Address, 2: URL to Settings > General > Site Address. */
+							__( 'Your <a href="%1$s">ArkPress Address</a> and <a href="%2$s">Site Address</a> are not set up to use HTTPS.' ),
 							esc_url( admin_url( 'options-general.php' ) . '#siteurl' ),
 							esc_url( admin_url( 'options-general.php' ) . '#home' )
 						)
@@ -1605,7 +1605,7 @@ class WP_Site_Health {
 						'<p>%s</p>',
 						sprintf(
 							/* translators: 1: wp-config.php, 2: WP_HOME, 3: WP_SITEURL */
-							__( 'However, your WordPress Address is currently controlled by a PHP constant and therefore cannot be updated. You need to edit your %1$s and remove or update the definitions of %2$s and %3$s.' ),
+							__( 'However, your ArkPress Address is currently controlled by a PHP constant and therefore cannot be updated. You need to edit your %1$s and remove or update the definitions of %2$s and %3$s.' ),
 							'<code>wp-config.php</code>',
 							'<code>WP_HOME</code>',
 							'<code>WP_SITEURL</code>'
@@ -1717,7 +1717,7 @@ class WP_Site_Health {
 			),
 			'description' => sprintf(
 				'<p>%s</p>',
-				__( 'Scheduled events are what periodically looks for updates to plugins, themes and WordPress itself. It is also what makes sure scheduled posts are published on time. It may also be used by various plugins to make sure that planned actions are executed.' )
+				__( 'Scheduled events are what periodically looks for updates to plugins, themes and ArkPress itself. It is also what makes sure scheduled posts are published on time. It may also be used by various plugins to make sure that planned actions are executed.' )
 			),
 			'actions'     => '',
 			'test'        => 'scheduled_events',
@@ -1770,9 +1770,9 @@ class WP_Site_Health {
 	}
 
 	/**
-	 * Test if WordPress can run automated background updates.
+	 * Test if ArkPress can run automated background updates.
 	 *
-	 * Background updates in WordPress are primarily used for minor releases and security updates.
+	 * Background updates in ArkPress are primarily used for minor releases and security updates.
 	 * It's important to either have these working, or be aware that they are intentionally disabled
 	 * for whatever reason.
 	 *
@@ -1790,7 +1790,7 @@ class WP_Site_Health {
 			),
 			'description' => sprintf(
 				'<p>%s</p>',
-				__( 'Background updates ensure that WordPress can auto-update if a security update is released for the version you are currently using.' )
+				__( 'Background updates ensure that ArkPress can auto-update if a security update is released for the version you are currently using.' )
 			),
 			'actions'     => '',
 			'test'        => 'background_updates',
@@ -1885,7 +1885,7 @@ class WP_Site_Health {
 	/**
 	 * Test if loopbacks work as expected.
 	 *
-	 * A loopback is when WordPress queries itself, for example to start a new WP_Cron instance,
+	 * A loopback is when ArkPress queries itself, for example to start a new WP_Cron instance,
 	 * or when editing a plugin or theme. This has shown itself to be a recurring issue,
 	 * as code can very easily break this interaction.
 	 *
@@ -2017,7 +2017,7 @@ class WP_Site_Health {
 			),
 			'description' => sprintf(
 				'<p>%s</p>',
-				__( 'The REST API is one way WordPress, and other applications, communicate with the server. One example is the block editor screen, which relies on this to display, and save, your posts and pages.' )
+				__( 'The REST API is one way ArkPress, and other applications, communicate with the server. One example is the block editor screen, which relies on this to display, and save, your posts and pages.' )
 			),
 			'actions'     => '',
 			'test'        => 'rest_availability',
@@ -2060,7 +2060,7 @@ class WP_Site_Health {
 					'%s<br>%s',
 					__( 'The REST API request failed due to an error.' ),
 					sprintf(
-						/* translators: 1: The WordPress error message. 2: The WordPress error code. */
+						/* translators: 1: The ArkPress error message. 2: The ArkPress error code. */
 						__( 'Error: %1$s (%2$s)' ),
 						$r->get_error_message(),
 						$r->get_error_code()
@@ -2267,7 +2267,7 @@ class WP_Site_Health {
 		$tests = array(
 			'direct' => array(
 				'wordpress_version'         => array(
-					'label' => __( 'WordPress Version' ),
+					'label' => __( 'ArkPress Version' ),
 					'test'  => 'wordpress_version',
 				),
 				'plugin_version'            => array(
@@ -2334,7 +2334,7 @@ class WP_Site_Health {
 			),
 			'async'  => array(
 				'dotorg_communication' => array(
-					'label'             => __( 'Communication with WordPress.org' ),
+					'label'             => __( 'Communication with ArkPress.icu' ),
 					'test'              => rest_url( 'wp-site-health/v1/tests/dotorg-communication' ),
 					'has_rest'          => true,
 					'async_direct_test' => array( WP_Site_Health::get_instance(), 'get_test_dotorg_communication' ),
@@ -2375,7 +2375,7 @@ class WP_Site_Health {
 		 * Add or modify which site status tests are run on a site.
 		 *
 		 * The site health is determined by a set of tests based on best practices from
-		 * both the WordPress Hosting Team and web standards in general.
+		 * both the ArkPress Hosting Team and web standards in general.
 		 *
 		 * Some sites may not have the same requirements, for example the automatic update
 		 * checks may be handled by a host, and are therefore disabled in core.
@@ -2574,7 +2574,7 @@ class WP_Site_Health {
 			'slug'          => 'a-fake-plugin',
 			'plugin'        => 'a-fake-plugin/a-fake-plugin.php',
 			'new_version'   => '9.9',
-			'url'           => 'https://wordpress.org/plugins/a-fake-plugin/',
+			'url'           => 'https://arkpress.icu/plugins/a-fake-plugin/',
 			'package'       => 'https://d.w.org.ibadboy.net/plugin/a-fake-plugin.9.9.zip',
 			'icons'         => array(
 				'2x' => 'https://ps.w.org.ibadboy.net/a-fake-plugin/assets/icon-256x256.png',
@@ -2593,7 +2593,7 @@ class WP_Site_Health {
 		$mock_theme = (object) array(
 			'theme'        => 'a-fake-theme',
 			'new_version'  => '9.9',
-			'url'          => 'https://wordpress.org/themes/a-fake-theme/',
+			'url'          => 'https://arkpress.icu/themes/a-fake-theme/',
 			'package'      => 'https://d.w.org.ibadboy.net/theme/a-fake-theme.9.9.zip',
 			'requires'     => '5.0.0',
 			'requires_php' => '5.6.20',
@@ -2644,7 +2644,7 @@ class WP_Site_Health {
 	/**
 	 * Run a loopback test on our site.
 	 *
-	 * Loopbacks are what WordPress uses to communicate with itself to start up WP_Cron, scheduled posts,
+	 * Loopbacks are what ArkPress uses to communicate with itself to start up WP_Cron, scheduled posts,
 	 * make sure plugin or theme edits don't cause site failures and similar.
 	 *
 	 * @since 5.2.0
@@ -2675,7 +2675,7 @@ class WP_Site_Health {
 		 * - the loopback request finishes sooner providing a quicker result.
 		 *
 		 * Using a POST request causes the loopback to differ slightly to the standard
-		 * GET request WordPress uses for wp-cron.php loopback requests but is close
+		 * GET request ArkPress uses for wp-cron.php loopback requests but is close
 		 * enough. See https://core.trac.wordpress.org/ticket/52547
 		 */
 		$r = wp_remote_post( $url, compact( 'body', 'cookies', 'headers', 'timeout', 'sslverify' ) );
@@ -2687,7 +2687,7 @@ class WP_Site_Health {
 					'%s<br>%s',
 					__( 'The loopback request to your site failed, this means features relying on them are not currently working as expected.' ),
 					sprintf(
-						/* translators: 1: The WordPress error message. 2: The WordPress error code. */
+						/* translators: 1: The ArkPress error message. 2: The ArkPress error code. */
 						__( 'Error: %1$s (%2$s)' ),
 						$r->get_error_message(),
 						$r->get_error_code()

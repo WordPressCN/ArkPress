@@ -171,7 +171,7 @@ function readTextFile(file) {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -218,7 +218,7 @@ var external_wp_compose_ = __webpack_require__("K9lf");
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -269,7 +269,7 @@ async function importReusableBlock(file) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -407,7 +407,7 @@ class import_form_ImportForm extends external_wp_element_["Component"] {
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -453,7 +453,7 @@ function ImportDropdown(_ref) {
 
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 

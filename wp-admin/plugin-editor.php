@@ -2,11 +2,11 @@
 /**
  * Edit plugin file editor administration panel.
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage Administration
  */
 
-/** WordPress Administration Bootstrap */
+/**  ArkPress Administration Bootstrap */
 require_once __DIR__ . '/admin.php';
 
 if ( is_multisite() && ! is_network_admin() ) {
@@ -140,9 +140,9 @@ get_current_screen()->add_help_tab(
 
 get_current_screen()->set_help_sidebar(
 	'<p><strong>' . __( 'For more information:' ) . '</strong></p>' .
-	'<p>' . __( '<a href="https://wordpress.org/support/article/plugins-editor-screen/">Documentation on Editing Plugins</a>' ) . '</p>' .
+	'<p>' . __( '<a href="https://arkpress.icu/support/article/plugins-editor-screen/">Documentation on Editing Plugins</a>' ) . '</p>' .
 	'<p>' . __( '<a href="https://developer.wordpress.org/plugins/">Documentation on Writing Plugins</a>' ) . '</p>' .
-	'<p>' . __( '<a href="https://wordpress.org/support/">Support</a>' ) . '</p>'
+	'<p>' . __( '<a href="https://arkpress.icu/support/">Support</a>' ) . '</p>'
 );
 
 $settings = array(
@@ -294,7 +294,7 @@ $content = esc_textarea( $content );
 			printf(
 				/* translators: %s: Documentation URL. */
 				__( 'You need to make this file writable before you can save your changes. See <a href="%s">Changing File Permissions</a> for more information.' ),
-				__( 'https://wordpress.org/support/article/changing-file-permissions/' )
+				__( 'https://arkpress.icu/support/article/changing-file-permissions/' )
 			);
 			?>
 		</p>
@@ -326,7 +326,7 @@ if ( ! in_array( 'plugin_editor_notice', $dismissed_pointers, true ) ) :
 			<div class="file-editor-warning-content">
 				<div class="file-editor-warning-message">
 					<h1><?php _e( 'Heads up!' ); ?></h1>
-					<p><?php _e( 'You appear to be making direct edits to your plugin in the WordPress dashboard. Editing plugins directly is not recommended as it may introduce incompatibilities that break your site and your changes may be lost in future updates.' ); ?></p>
+					<p><?php _e( 'You appear to be making direct edits to your plugin in the ArkPress dashboard. Editing plugins directly is not recommended as it may introduce incompatibilities that break your site and your changes may be lost in future updates.' ); ?></p>
 					<p><?php _e( 'If you absolutely have to make direct edits to this plugin, use a file manager to create a copy with a new name and hang on to the original. That way, you can re-enable a functional version if something goes wrong.' ); ?></p>
 				</div>
 				<p>

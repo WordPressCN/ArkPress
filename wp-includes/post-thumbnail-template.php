@@ -1,11 +1,11 @@
 <?php
 /**
- * WordPress Post Thumbnail Template Functions.
+ * ArkPress Post Thumbnail Template Functions.
  *
  * Support for post thumbnails.
  * Theme's functions.php must call add_theme_support( 'post-thumbnails' ) to use these.
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage Template
  */
 
@@ -97,7 +97,7 @@ function the_post_thumbnail( $size = 'post-thumbnail', $attr = '' ) {
  *
  * @since 3.2.0
  *
- * @global WP_Query $wp_query WordPress Query object.
+ * @global WP_Query $wp_query ArkPress Query object.
  *
  * @param WP_Query $wp_query Optional. A WP_Query instance. Defaults to the $wp_query global.
  */

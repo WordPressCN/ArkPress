@@ -2,7 +2,7 @@
 /**
  * HTTP API: WP_Http_Cookie class
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage HTTP
  * @since 4.4.0
  */
@@ -13,7 +13,7 @@
  * Returned cookies are represented using this class, and when cookies are set, if they are not
  * already a WP_Http_Cookie() object, then they are turned into one.
  *
- * @todo The WordPress convention is to use underscores instead of camelCase for function and method
+ * @todo The ArkPress convention is to use underscores instead of camelCase for function and method
  * names. Need to switch to use underscores instead for the methods.
  *
  * @since 2.8.0
@@ -226,7 +226,7 @@ class WP_Http_Cookie {
 	 *
 	 * @return string Header encoded cookie name and value.
 	 */
-	public function getHeaderValue() { // phpcs:ignore WordPress.NamingConventions.ValidFunctionName.MethodNameInvalid
+	public function getHeaderValue() { // phpcs:ignore ArkPress.NamingConventions.ValidFunctionName.MethodNameInvalid
 		if ( ! isset( $this->name ) || ! isset( $this->value ) ) {
 			return '';
 		}
@@ -243,13 +243,13 @@ class WP_Http_Cookie {
 	}
 
 	/**
-	 * Retrieve cookie header for usage in the rest of the WordPress HTTP API.
+	 * Retrieve cookie header for usage in the rest of the ArkPress HTTP API.
 	 *
 	 * @since 2.8.0
 	 *
 	 * @return string
 	 */
-	public function getFullHeader() { // phpcs:ignore WordPress.NamingConventions.ValidFunctionName.MethodNameInvalid
+	public function getFullHeader() { // phpcs:ignore ArkPress.NamingConventions.ValidFunctionName.MethodNameInvalid
 		return 'Cookie: ' . $this->getHeaderValue();
 	}
 

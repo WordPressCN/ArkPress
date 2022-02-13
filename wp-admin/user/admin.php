@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress User Administration Bootstrap
+ * ArkPress User Administration Bootstrap
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage Administration
  * @since 3.1.0
  */

@@ -112,7 +112,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_deprecated__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("NMb1");
 /* harmony import */ var _wordpress_deprecated__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_deprecated__WEBPACK_IMPORTED_MODULE_2__);
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -217,7 +217,7 @@ const __unstableAwaitPromise = function (promise) {
  *
  * @example
  * ```js
- * // WordPress dependencies
+ * // ArkPress dependencies
  * import { controls } from '@wordpress/data-controls';
  * import { registerStore } from '@wordpress/data';
  *

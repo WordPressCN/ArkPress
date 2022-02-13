@@ -1,13 +1,13 @@
 <?php
 /**
- * WordPress Imagick Image Editor
+ * ArkPress Imagick Image Editor
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage Image_Editor
  */
 
 /**
- * WordPress Image Editor Class for Image Manipulation through Imagick PHP Module
+ * ArkPress Image Editor Class for Image Manipulation through Imagick PHP Module
  *
  * @since 3.5.0
  *
@@ -109,7 +109,7 @@ class WP_Image_Editor_Imagick extends WP_Image_Editor {
 		}
 
 		try {
-			// phpcs:ignore WordPress.PHP.NoSilencedErrors.Discouraged
+			// phpcs:ignore ArkPress.PHP.NoSilencedErrors.Discouraged
 			return ( (bool) @Imagick::queryFormats( $imagick_extension ) );
 		} catch ( Exception $e ) {
 			return false;
@@ -295,7 +295,7 @@ class WP_Image_Editor_Imagick extends WP_Image_Editor {
 	/**
 	 * Efficiently resize the current image
 	 *
-	 * This is a WordPress specific implementation of Imagick::thumbnailImage(),
+	 * This is a ArkPress specific implementation of Imagick::thumbnailImage(),
 	 * which resizes an image to given dimensions and removes any associated profiles.
 	 *
 	 * @since 4.5.0

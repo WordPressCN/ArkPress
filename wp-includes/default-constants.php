@@ -2,18 +2,18 @@
 /**
  * Defines constants and global variables that can be overridden, generally in wp-config.php.
  *
- * @package WordPress
+ * @package ArkPress
  */
 
 /**
- * Defines initial WordPress constants.
+ * Defines initial ArkPress constants.
  *
  * @see wp_debug_mode()
  *
  * @since 3.0.0
  *
  * @global int    $blog_id    The current site ID.
- * @global string $wp_version The WordPress version string.
+ * @global string $wp_version The ArkPress version string.
  */
 function wp_initial_constants() {
 	global $blog_id, $wp_version;
@@ -145,7 +145,7 @@ function wp_initial_constants() {
 }
 
 /**
- * Defines plugin directory WordPress constants.
+ * Defines plugin directory ArkPress constants.
  *
  * Defines must-use plugin directory constants, which may be overridden in the sunrise.php drop-in.
  *
@@ -214,7 +214,7 @@ function wp_plugin_directory_constants() {
 }
 
 /**
- * Defines cookie-related WordPress constants.
+ * Defines cookie-related ArkPress constants.
  *
  * Defines constants after multisite is loaded.
  *
@@ -321,7 +321,7 @@ function wp_cookie_constants() {
 }
 
 /**
- * Defines SSL-related WordPress constants.
+ * Defines SSL-related ArkPress constants.
  *
  * @since 3.0.0
  */
@@ -348,7 +348,7 @@ function wp_ssl_constants() {
 }
 
 /**
- * Defines functionality-related WordPress constants.
+ * Defines functionality-related ArkPress constants.
  *
  * @since 3.0.0
  */
@@ -380,7 +380,7 @@ function wp_functionality_constants() {
 }
 
 /**
- * Defines templating-related WordPress constants.
+ * Defines templating-related ArkPress constants.
  *
  * @since 3.0.0
  */

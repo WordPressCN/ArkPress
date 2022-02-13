@@ -2,12 +2,12 @@
 /**
  * Network Plugins administration panel.
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage Multisite
  * @since 3.1.0
  */
 
-/** Load WordPress Administration Bootstrap */
+/** Load ArkPress Administration Bootstrap */
 require_once __DIR__ . '/admin.php';
 
 require ABSPATH . 'wp-admin/plugins.php';

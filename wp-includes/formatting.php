@@ -1,10 +1,10 @@
 <?php
 /**
- * Main WordPress Formatting API.
+ * Main ArkPress Formatting API.
  *
  * Handles many functions for formatting output.
  *
- * @package WordPress
+ * @package ArkPress
  */
 
 /**
@@ -827,7 +827,7 @@ function shortcode_unautop( $pee ) {
 	$tagregexp = implode( '|', array_map( 'preg_quote', array_keys( $shortcode_tags ) ) );
 	$spaces    = wp_spaces_regexp();
 
-	// phpcs:disable Squiz.Strings.ConcatenationSpacing.PaddingFound,WordPress.WhiteSpace.PrecisionAlignment.Found -- don't remove regex indentation
+	// phpcs:disable Squiz.Strings.ConcatenationSpacing.PaddingFound,ArkPress.WhiteSpace.PrecisionAlignment.Found -- don't remove regex indentation
 	$pattern =
 		'/'
 		. '<p>'                              // Opening paragraph.
@@ -1113,7 +1113,7 @@ function wp_check_invalid_utf8( $string, $strip = false ) {
 	// Check for support for utf8 in the installed PCRE library once and store the result in a static.
 	static $utf8_pcre = null;
 	if ( ! isset( $utf8_pcre ) ) {
-		// phpcs:ignore WordPress.PHP.NoSilencedErrors.Discouraged
+		// phpcs:ignore ArkPress.PHP.NoSilencedErrors.Discouraged
 		$utf8_pcre = @preg_match( '/^./u', 'a' );
 	}
 	// We can't demand utf8 in the PCRE installation, so just return the string in those cases.
@@ -1121,7 +1121,7 @@ function wp_check_invalid_utf8( $string, $strip = false ) {
 		return $string;
 	}
 
-	// phpcs:ignore WordPress.PHP.NoSilencedErrors.Discouraged -- preg_match fails when it encounters invalid UTF8 in $string.
+	// phpcs:ignore ArkPress.PHP.NoSilencedErrors.Discouraged -- preg_match fails when it encounters invalid UTF8 in $string.
 	if ( 1 === @preg_match( '/^./us', $string ) ) {
 		return $string;
 	}
@@ -1998,7 +1998,7 @@ function sanitize_file_name( $filename ) {
 	// Check for support for utf8 in the installed PCRE library once and store the result in a static.
 	static $utf8_pcre = null;
 	if ( ! isset( $utf8_pcre ) ) {
-		// phpcs:ignore WordPress.PHP.NoSilencedErrors.Discouraged
+		// phpcs:ignore ArkPress.PHP.NoSilencedErrors.Discouraged
 		$utf8_pcre = @preg_match( '/^./u', 'a' );
 	}
 
@@ -2489,7 +2489,7 @@ function convert_invalid_entities( $content ) {
  * @param bool   $force If true, forces balancing, ignoring the value of the option. Default false.
  * @return string Balanced text
  */
-function balanceTags( $text, $force = false ) {  // phpcs:ignore WordPress.NamingConventions.ValidFunctionName.FunctionNameInvalid
+function balanceTags( $text, $force = false ) {  // phpcs:ignore ArkPress.NamingConventions.ValidFunctionName.FunctionNameInvalid
 	if ( $force || (int) get_option( 'use_balanceTags' ) === 1 ) {
 		return force_balance_tags( $text );
 	} else {
@@ -4319,7 +4319,7 @@ function _deep_replace( $search, $subject ) {
  *
  * @since 2.8.0
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb ArkPress database abstraction object.
  *
  * @param string|array $data Unescaped data
  * @return string|array Escaped data
@@ -4701,7 +4701,7 @@ function wp_make_link_relative( $link ) {
  *
  * @since 2.0.5
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb ArkPress database abstraction object.
  *
  * @param string $option The name of the option.
  * @param string $value  The unsanitised value.
@@ -4832,7 +4832,7 @@ function sanitize_option( $option, $value ) {
 				if ( preg_match( '#http(s?)://(.+)#i', $value ) ) {
 					$value = esc_url_raw( $value );
 				} else {
-					$error = __( 'The WordPress address you entered did not appear to be a valid URL. Please enter a valid URL.' );
+					$error = __( 'The ArkPress address you entered did not appear to be a valid URL. Please enter a valid URL.' );
 				}
 			}
 			break;
@@ -4925,7 +4925,7 @@ function sanitize_option( $option, $value ) {
 				$error = sprintf(
 					/* translators: %s: Documentation URL. */
 					__( 'A structure tag is required when using custom permalinks. <a href="%s">Learn more</a>' ),
-					__( 'https://wordpress.org/support/article/using-permalinks/#choosing-your-permalink-structure' )
+					__( 'https://arkpress.icu/support/article/using-permalinks/#choosing-your-permalink-structure' )
 				);
 			}
 			break;
@@ -5054,7 +5054,7 @@ function wp_pre_kses_less_than_callback( $matches ) {
 }
 
 /**
- * WordPress implementation of PHP sprintf() with filters.
+ * ArkPress implementation of PHP sprintf() with filters.
  *
  * @since 2.5.0
  * @since 5.3.0 Formalized the existing and already documented `...$args` parameter
@@ -5475,9 +5475,9 @@ function wp_basename( $path, $suffix = '' ) {
 	return urldecode( basename( str_replace( array( '%2F', '%5C' ), '/', urlencode( $path ) ), $suffix ) );
 }
 
-// phpcs:disable WordPress.WP.CapitalPDangit.Misspelled, WordPress.NamingConventions.ValidFunctionName.FunctionNameInvalid -- 8-)
+// phpcs:disable ArkPress.WP.CapitalPDangit.Misspelled, ArkPress.NamingConventions.ValidFunctionName.FunctionNameInvalid -- 8-)
 /**
- * Forever eliminate "Wordpress" from the planet (or at least the little bit we can influence).
+ * Forever eliminate "Arkpress" from the planet (or at least the little bit we can influence).
  *
  * Violating our coding standards for a good function name.
  *
@@ -5490,7 +5490,7 @@ function capital_P_dangit( $text ) {
 	// Simple replacement for titles.
 	$current_filter = current_filter();
 	if ( 'the_title' === $current_filter || 'wp_title' === $current_filter ) {
-		return str_replace( 'Wordpress', 'WordPress', $text );
+		return str_replace( 'Arkpress', 'ArkPress', $text );
 	}
 	// Still here? Use the more judicious replacement.
 	static $dblq = false;
@@ -5498,8 +5498,8 @@ function capital_P_dangit( $text ) {
 		$dblq = _x( '&#8220;', 'opening curly double quote' );
 	}
 	return str_replace(
-		array( ' Wordpress', '&#8216;Wordpress', $dblq . 'Wordpress', '>Wordpress', '(Wordpress' ),
-		array( ' WordPress', '&#8216;WordPress', $dblq . 'WordPress', '>WordPress', '(WordPress' ),
+		array( ' Arkpress', '&#8216;Arkpress', $dblq . 'Arkpress', '>Arkpress', '(Arkpress' ),
+		array( ' ArkPress', '&#8216;ArkPress', $dblq . 'ArkPress', '>ArkPress', '(ArkPress' ),
 		$text
 	);
 }
@@ -5962,7 +5962,7 @@ function wp_staticize_emoji_for_email( $mail ) {
  * @access private
  *
  * @param string $type Optional. Which array type to return. Accepts 'partials' or 'entities', default 'entities'.
- * @return array An array to match all emoji that WordPress recognises.
+ * @return array An array to match all emoji that ArkPress recognises.
  */
 function _wp_emoji_list( $type = 'entities' ) {
 	// Do not remove the START/END comments - they're used to find where to insert the arrays.

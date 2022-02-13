@@ -1,14 +1,14 @@
 <?php
 /**
- * WordPress Translation Installation Administration API
+ * ArkPress Translation Installation Administration API
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage Administration
  */
 
 
 /**
- * Retrieve translations from WordPress Translation API.
+ * Retrieve translations from ArkPress Translation API.
  *
  * @since 4.0.0
  *
@@ -25,7 +25,7 @@ function translations_api( $type, $args = null ) {
 	}
 
 	/**
-	 * Allows a plugin to override the WordPress.org Translation Installation API entirely.
+	 * Allows a plugin to override the ArkPress.icu Translation Installation API entirely.
 	 *
 	 * @since 4.0.0
 	 *
@@ -62,9 +62,9 @@ function translations_api( $type, $args = null ) {
 			trigger_error(
 				sprintf(
 					/* translators: %s: Support forums URL. */
-					__( 'An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="%s">support forums</a>.' ),
-					__( 'https://wordpress.org/support/forums/' )
-				) . ' ' . __( '(WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.)' ),
+					__( 'An unexpected error occurred. Something may be wrong with ArkPress.icu or this server&#8217;s configuration. If you continue to have problems, please try the <a href="%s">support forums</a>.' ),
+					__( 'https://arkpress.icu/support/forums/' )
+				) . ' ' . __( '(ArkPress could not establish a secure connection to ArkPress.icu. Please contact your server administrator.)' ),
 				headers_sent() || WP_DEBUG ? E_USER_WARNING : E_USER_NOTICE
 			);
 
@@ -76,8 +76,8 @@ function translations_api( $type, $args = null ) {
 				'translations_api_failed',
 				sprintf(
 					/* translators: %s: Support forums URL. */
-					__( 'An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="%s">support forums</a>.' ),
-					__( 'https://wordpress.org/support/forums/' )
+					__( 'An unexpected error occurred. Something may be wrong with ArkPress.icu or this server&#8217;s configuration. If you continue to have problems, please try the <a href="%s">support forums</a>.' ),
+					__( 'https://arkpress.icu/support/forums/' )
 				),
 				$request->get_error_message()
 			);
@@ -88,8 +88,8 @@ function translations_api( $type, $args = null ) {
 					'translations_api_failed',
 					sprintf(
 						/* translators: %s: Support forums URL. */
-						__( 'An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="%s">support forums</a>.' ),
-						__( 'https://wordpress.org/support/forums/' )
+						__( 'An unexpected error occurred. Something may be wrong with ArkPress.icu or this server&#8217;s configuration. If you continue to have problems, please try the <a href="%s">support forums</a>.' ),
+						__( 'https://arkpress.icu/support/forums/' )
 					),
 					wp_remote_retrieve_body( $request )
 				);
@@ -110,7 +110,7 @@ function translations_api( $type, $args = null ) {
 }
 
 /**
- * Get available translations from the WordPress.org API.
+ * Get available translations from the ArkPress.icu API.
  *
  * @since 4.0.0
  *
@@ -250,7 +250,7 @@ function wp_download_language_pack( $download ) {
 }
 
 /**
- * Check if WordPress has access to the filesystem without asking for
+ * Check if ArkPress has access to the filesystem without asking for
  * credentials.
  *
  * @since 4.0.0

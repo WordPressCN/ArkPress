@@ -1538,7 +1538,7 @@ var external_wp_hooks_ = __webpack_require__("g56x");
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 

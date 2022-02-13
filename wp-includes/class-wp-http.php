@@ -2,7 +2,7 @@
 /**
  * HTTP API: WP_Http class
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage HTTP
  * @since 2.7.0
  */
@@ -19,7 +19,7 @@ if ( ! class_exists( 'Requests' ) ) {
  *
  * This class is used to consistently make outgoing HTTP requests easy for developers
  * while still being compatible with the many PHP configurations under which
- * WordPress runs.
+ * ArkPress runs.
  *
  * Debugging includes several actions, which pass different variables for debugging the HTTP API.
  *
@@ -185,7 +185,7 @@ class WP_Http {
 			 * @since 2.7.0
 			 * @since 5.1.0 The `$url` parameter was added.
 			 *
-			 * @param string $user_agent WordPress user agent string.
+			 * @param string $user_agent ArkPress user agent string.
 			 * @param string $url        The request URL.
 			 */
 			'user-agent'          => apply_filters( 'http_headers_useragent', 'WordPress/' . get_bloginfo( 'version' ) . '; ArkPress/' . get_bloginfo( 'version' ) . '; ' . get_bloginfo( 'url' ), $url ),
@@ -663,7 +663,7 @@ class WP_Http {
 	 *     @type string $body    HTTP response body.
 	 * }
 	 */
-	public static function processResponse( $str_response ) { // phpcs:ignore WordPress.NamingConventions.ValidFunctionName.MethodNameInvalid
+	public static function processResponse( $str_response ) { // phpcs:ignore ArkPress.NamingConventions.ValidFunctionName.MethodNameInvalid
 		$response = explode( "\r\n\r\n", $str_response, 2 );
 
 		return array(
@@ -695,7 +695,7 @@ class WP_Http {
 	 *                                        an array containing `WP_Http_Cookie` objects is returned.
 	 * }
 	 */
-	public static function processHeaders( $headers, $url = '' ) { // phpcs:ignore WordPress.NamingConventions.ValidFunctionName.MethodNameInvalid
+	public static function processHeaders( $headers, $url = '' ) { // phpcs:ignore ArkPress.NamingConventions.ValidFunctionName.MethodNameInvalid
 		// Split headers, one per array element.
 		if ( is_string( $headers ) ) {
 			// Tolerate line terminator: CRLF = LF (RFC 2616 19.3).
@@ -778,7 +778,7 @@ class WP_Http {
 	 *
 	 * @param array $r Full array of args passed into ::request()
 	 */
-	public static function buildCookieHeader( &$r ) { // phpcs:ignore WordPress.NamingConventions.ValidFunctionName.MethodNameInvalid
+	public static function buildCookieHeader( &$r ) { // phpcs:ignore ArkPress.NamingConventions.ValidFunctionName.MethodNameInvalid
 		if ( ! empty( $r['cookies'] ) ) {
 			// Upgrade any name => value cookie pairs to WP_HTTP_Cookie instances.
 			foreach ( $r['cookies'] as $name => $value ) {
@@ -814,7 +814,7 @@ class WP_Http {
 	 * @param string $body Body content.
 	 * @return string Chunked decoded body on success or raw body on failure.
 	 */
-	public static function chunkTransferDecode( $body ) { // phpcs:ignore WordPress.NamingConventions.ValidFunctionName.MethodNameInvalid
+	public static function chunkTransferDecode( $body ) { // phpcs:ignore ArkPress.NamingConventions.ValidFunctionName.MethodNameInvalid
 		// The body is not chunked encoded or is malformed.
 		if ( ! preg_match( '/^([0-9a-f]+)[^\r\n]*\r\n/i', trim( $body ) ) ) {
 			return $body;

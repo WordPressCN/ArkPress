@@ -1,6 +1,6 @@
 <?php
 /**
- * A pseudo-cron daemon for scheduling WordPress tasks.
+ * A pseudo-cron daemon for scheduling ArkPress tasks.
  *
  * WP-Cron is triggered when the site receives a visit. In the scenario
  * where a site may not receive enough visits to execute scheduled tasks
@@ -13,7 +13,7 @@
  * The HTTP request to this file will not slow down the visitor who happens to
  * visit when a scheduled cron event runs.
  *
- * @package WordPress
+ * @package ArkPress
  */
 
 ignore_user_abort( true );
@@ -33,14 +33,14 @@ if ( ! empty( $_POST ) || defined( 'DOING_AJAX' ) || defined( 'DOING_CRON' ) ) {
 }
 
 /**
- * Tell WordPress we are doing the cron task.
+ * Tell ArkPress we are doing the cron task.
  *
  * @var bool
  */
 define( 'DOING_CRON', true );
 
 if ( ! defined( 'ABSPATH' ) ) {
-	/** Set up WordPress environment */
+	/** Set up ArkPress environment */
 	require_once __DIR__ . '/wp-load.php';
 }
 
@@ -52,7 +52,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @ignore
  * @since 3.3.0
  *
- * @global wpdb $wpdb WordPress database abstraction object.
+ * @global wpdb $wpdb ArkPress database abstraction object.
  *
  * @return string|false Value of the `doing_cron` transient, 0|false otherwise.
  */

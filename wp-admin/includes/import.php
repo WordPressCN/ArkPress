@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress Administration Importer API.
+ * ArkPress Administration Importer API.
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage Administration
  */
 
@@ -39,7 +39,7 @@ function _usort_by_first_member( $a, $b ) {
 }
 
 /**
- * Register importer for WordPress.
+ * Register importer for ArkPress.
  *
  * @since 2.0.0
  *
@@ -129,7 +129,7 @@ function wp_import_handle_upload() {
 }
 
 /**
- * Returns a list from WordPress.org of popular importer plugins.
+ * Returns a list from ArkPress.icu of popular importer plugins.
  *
  * @since 3.5.0
  *
@@ -174,10 +174,10 @@ function wp_get_popular_importers() {
 		}
 
 		foreach ( $popular_importers['importers'] as &$importer ) {
-			// phpcs:ignore WordPress.WP.I18n.LowLevelTranslationFunction,WordPress.WP.I18n.NonSingularStringLiteralText
+			// phpcs:ignore ArkPress.WP.I18n.LowLevelTranslationFunction,ArkPress.WP.I18n.NonSingularStringLiteralText
 			$importer['description'] = translate( $importer['description'] );
-			if ( 'WordPress' !== $importer['name'] ) {
-				// phpcs:ignore WordPress.WP.I18n.LowLevelTranslationFunction,WordPress.WP.I18n.NonSingularStringLiteralText
+			if ( 'ArkPress' !== $importer['name'] ) {
+				// phpcs:ignore ArkPress.WP.I18n.LowLevelTranslationFunction,ArkPress.WP.I18n.NonSingularStringLiteralText
 				$importer['name'] = translate( $importer['name'] );
 			}
 		}
@@ -223,8 +223,8 @@ function wp_get_popular_importers() {
 			'importer-id' => 'tumblr',
 		),
 		'wordpress'   => array(
-			'name'        => 'WordPress',
-			'description' => __( 'Import posts, pages, comments, custom fields, categories, and tags from a WordPress export file.' ),
+			'name'        => 'ArkPress',
+			'description' => __( 'Import posts, pages, comments, custom fields, categories, and tags from a ArkPress export file.' ),
 			'plugin-slug' => 'wordpress-importer',
 			'importer-id' => 'wordpress',
 		),

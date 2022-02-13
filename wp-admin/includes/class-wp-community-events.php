@@ -2,7 +2,7 @@
 /**
  * Administration: Community Events class.
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage Administration
  * @since 4.8.0
  */
@@ -16,7 +16,7 @@
  */
 class WP_Community_Events {
 	/**
-	 * ID for a WordPress user account.
+	 * ID for a ArkPress user account.
 	 *
 	 * @since 4.8.0
 	 *

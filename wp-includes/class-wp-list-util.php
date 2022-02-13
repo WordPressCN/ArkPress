@@ -1,8 +1,8 @@
 <?php
 /**
- * WordPress List utility class
+ * ArkPress List utility class
  *
- * @package WordPress
+ * @package ArkPress
  * @since 4.7.0
  */
 

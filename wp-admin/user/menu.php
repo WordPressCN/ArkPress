@@ -2,7 +2,7 @@
 /**
  * Build User Administration Menu.
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage Administration
  * @since 3.1.0
  */

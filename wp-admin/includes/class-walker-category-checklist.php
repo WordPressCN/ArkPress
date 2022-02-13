@@ -2,7 +2,7 @@
 /**
  * Taxonomy API: Walker_Category_Checklist class
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage Administration
  * @since 4.4.0
  */

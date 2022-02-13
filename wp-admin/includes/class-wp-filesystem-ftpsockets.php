@@ -1,13 +1,13 @@
 <?php
 /**
- * WordPress FTP Sockets Filesystem.
+ * ArkPress FTP Sockets Filesystem.
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage Filesystem
  */
 
 /**
- * WordPress Filesystem Class for implementing FTP Sockets.
+ * ArkPress Filesystem Class for implementing FTP Sockets.
  *
  * @since 2.5.0
  *

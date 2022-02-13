@@ -205,7 +205,7 @@ function isViewportMatch(state, query) {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/viewport/build-module/store/index.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**
@@ -237,7 +237,7 @@ Object(external_wp_data_["register"])(store);
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -303,7 +303,7 @@ var external_wp_element_ = __webpack_require__("GRId");
  */
 
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 
@@ -359,7 +359,7 @@ const withViewportMatch = queries => {
 
 // CONCATENATED MODULE: ./node_modules/@wordpress/viewport/build-module/if-viewport-matches.js
 /**
- * WordPress dependencies
+ * ArkPress dependencies
  */
 
 /**

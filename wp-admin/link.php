@@ -5,11 +5,11 @@
  * This page is accessed by the link management pages and handles the forms and
  * Ajax processes for link actions.
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage Administration
  */
 
-/** Load WordPress Administration Bootstrap */
+/** Load ArkPress Administration Bootstrap */
 require_once __DIR__ . '/admin.php';
 
 wp_reset_vars( array( 'action', 'cat_id', 'link_id' ) );

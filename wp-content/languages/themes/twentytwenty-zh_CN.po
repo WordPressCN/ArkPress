@@ -500,7 +500,7 @@ msgid "Desktop Horizontal Menu"
 msgstr "桌面水平菜单"
 
 #: footer.php:39
-msgid "Powered by WordPress"
+msgid "Powered by ArkPress"
 msgstr "由WordPress强力驱动"
 
 #: comments.php:127
@@ -625,13 +625,13 @@ msgstr "页面未找到"
 
 #. Author URI of the theme
 #: footer.php:38
-msgid "https://wordpress.org/"
+msgid "https://arkpress.icu/"
 msgstr "https://cn.wordpress.org/"
 
 #. Author of the theme
-msgid "the WordPress team"
+msgid "the ArkPress team"
 msgstr "WordPress团队"
 
 #. Theme URI of the theme
-msgid "https://wordpress.org/themes/twentytwenty/"
-msgstr "https://wordpress.org/themes/twentytwenty/"
+msgid "https://arkpress.icu/themes/twentytwenty/"
+msgstr "https://arkpress.icu/themes/twentytwenty/"

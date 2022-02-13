@@ -2,7 +2,7 @@
 /**
  * User API: WP_User_Query class
  *
- * @package WordPress
+ * @package ArkPress
  * @subpackage Users
  * @since 4.4.0
  */
@@ -140,7 +140,7 @@ class WP_User_Query {
 	 * @since 5.3.0 Introduced the 'meta_type_key' parameter.
 	 * @since 5.9.0 Added 'capability', 'capability__in', and 'capability__not_in' parameters.
 	 *
-	 * @global wpdb $wpdb WordPress database abstraction object.
+	 * @global wpdb $wpdb ArkPress database abstraction object.
 	 * @global int  $blog_id
 	 *
 	 * @param string|array $query {
@@ -744,7 +744,7 @@ class WP_User_Query {
 	 *
 	 * @since 3.1.0
 	 *
-	 * @global wpdb $wpdb WordPress database abstraction object.
+	 * @global wpdb $wpdb ArkPress database abstraction object.
 	 */
 	public function query() {
 		global $wpdb;
@@ -754,7 +754,7 @@ class WP_User_Query {
 		/**
 		 * Filters the users array before the query takes place.
 		 *
-		 * Return a non-null value to bypass WordPress' default user queries.
+		 * Return a non-null value to bypass ArkPress' default user queries.
 		 *
 		 * Filtering functions that require pagination information are encouraged to set
 		 * the `total_users` property of the WP_User_Query object, passed to the filter
@@ -785,7 +785,7 @@ class WP_User_Query {
 				 * @since 3.2.0
 				 * @since 5.1.0 Added the `$this` parameter.
 				 *
-				 * @global wpdb $wpdb WordPress database abstraction object.
+				 * @global wpdb $wpdb ArkPress database abstraction object.
 				 *
 				 * @param string        $sql   The SELECT FOUND_ROWS() query for the current WP_User_Query.
 				 * @param WP_User_Query $query The current WP_User_Query instance.
@@ -849,7 +849,7 @@ class WP_User_Query {
 	 *
 	 * @since 3.1.0
 	 *
-	 * @global wpdb $wpdb WordPress database abstraction object.
+	 * @global wpdb $wpdb ArkPress database abstraction object.
 	 *
 	 * @param string $string
 	 * @param array  $cols
@@ -903,7 +903,7 @@ class WP_User_Query {
 	 *
 	 * @since 4.2.0
 	 *
-	 * @global wpdb $wpdb WordPress database abstraction object.
+	 * @global wpdb $wpdb ArkPress database abstraction object.
 	 *
 	 * @param string $orderby Alias for the field to order by.
 	 * @return string Value to used in the ORDER clause, if `$orderby` is valid.

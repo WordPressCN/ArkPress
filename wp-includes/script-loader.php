@@ -543,7 +543,7 @@ function wp_tinymce_inline_scripts() {
 	$script = 'window.wpEditorL10n = {
 		tinymce: {
 			baseURL: ' . wp_json_encode( includes_url( 'js/tinymce' ) ) . ',
-			suffix: ' . ( SCRIPT_DEBUG ? '""' : '".min"' ) . ',
+			suffix: ' . ( '".min"' ) . ',
 			settings: ' . $init_obj . ',
 		}
 	}';
@@ -588,10 +588,10 @@ function wp_scripts_get_suffix( $type = '' ) {
 		$develop_src = false !== strpos( $wp_version, '-src' );
 
 		if ( ! defined( 'SCRIPT_DEBUG' ) ) {
-			define( 'SCRIPT_DEBUG', $develop_src );
+			define( 'SCRIPT_DEBUG', false );
 		}
-		$suffix     = SCRIPT_DEBUG ? '' : '.min';
-		$dev_suffix = $develop_src ? '' : '.min';
+		$suffix     = '.min';
+		$dev_suffix = '.min';
 
 		$suffixes = array(
 			'suffix'     => $suffix,
@@ -1399,7 +1399,7 @@ function wp_default_styles( $styles ) {
 	require ABSPATH . WPINC . '/version.php';
 
 	if ( ! defined( 'SCRIPT_DEBUG' ) ) {
-		define( 'SCRIPT_DEBUG', false !== strpos( $wp_version, '-src' ) );
+		define( 'SCRIPT_DEBUG', false );
 	}
 
 	$guessurl = site_url();
@@ -1445,7 +1445,7 @@ function wp_default_styles( $styles ) {
 	// Register a stylesheet for the selected admin color scheme.
 	$styles->add( 'colors', true, array( 'wp-admin', 'buttons' ) );
 
-	$suffix = SCRIPT_DEBUG ? '' : '.min';
+	$suffix = '.min';
 
 	// Admin CSS.
 	$styles->add( 'common', "/wp-admin/css/common$suffix.css" );

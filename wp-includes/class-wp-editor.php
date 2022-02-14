@@ -982,7 +982,7 @@ final class _WP_Editors {
 		<?php
 
 		if ( $user_can_richedit ) {
-			$suffix  = SCRIPT_DEBUG ? '' : '.min';
+			$suffix  = '.min';
 			$baseurl = self::get_baseurl();
 
 			?>
@@ -1108,7 +1108,7 @@ final class _WP_Editors {
 			'wp_shortcut_labels'           => wp_json_encode( $shortcut_labels ),
 		);
 
-		$suffix  = SCRIPT_DEBUG ? '' : '.min';
+		$suffix  = '.min';
 		$version = 'ver=' . get_bloginfo( 'version' );
 
 		// Default stylesheets.
@@ -1596,7 +1596,7 @@ final class _WP_Editors {
 			'language' => self::$mce_locale,
 		);
 
-		$suffix  = SCRIPT_DEBUG ? '' : '.min';
+		$suffix  = '.min';
 		$baseurl = self::get_baseurl();
 		$version = 'ver=' . $tinymce_version;
 

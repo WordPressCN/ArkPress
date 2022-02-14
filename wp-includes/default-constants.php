@@ -96,16 +96,9 @@ function wp_initial_constants() {
 		define( 'WP_CACHE', false );
 	}
 
-	// Add define( 'SCRIPT_DEBUG', true ); to wp-config.php to enable loading of non-minified,
-	// non-concatenated scripts and stylesheets.
+	// 添加 define( 'SCRIPT_DEBUG', true ); 到 wp-config.php 以打开脚本调试。
 	if ( ! defined( 'SCRIPT_DEBUG' ) ) {
-		if ( ! empty( $wp_version ) ) {
-			$develop_src = false !== strpos( $wp_version, '-src' );
-		} else {
-			$develop_src = false;
-		}
-
-		define( 'SCRIPT_DEBUG', $develop_src );
+		define( 'SCRIPT_DEBUG', false );
 	}
 
 	/**
